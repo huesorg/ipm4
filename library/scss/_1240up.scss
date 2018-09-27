@@ -1,0 +1,82 @@
+/******************************************************************
+
+Stylesheet: Super Large Monitor Stylesheet
+
+******************************************************************/
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.header {
+	background-position:0 80px;
+	#inner-header {
+
+		#logo a img {
+			height:100px;
+		}
+		a {
+            display:flex;
+            flex-direction:column;
+			justify-content:center;
+			align-items: center;
+
+            span {
+                display:flex;
+            }
+        }
+
+		nav#siteSections {
+
+			ul {
+
+				li {
+
+					&#donate {
+						display:flex;
+						a {
+							border:3px dashed $purple;
+							border-radius:6px;
+							align-self:center;
+							padding:17px 18px;
+							transition: transform .1s ease-in-out;
+
+							&:hover {
+								animation:none;
+								border-color:transparent;
+								background:$purple;
+								color:rgba(255,255,255,.95);
+								transform: translateY(-2px);
+								text-shadow: 0 1px 1px darken($purple, 20%);
+								box-shadow:0 7px 2px 0px rgba(50,50,50,.15);
+							}
+
+							&:active {
+								box-shadow:inset 0 3px 5px 0 rgba(0,0,0,.4);
+								color:rgba(0,0,0,.5);
+								text-shadow:none;
+							}
+						}
+					}
+
+					a {
+					}
+				}
+			}
+		}
+	}
+}
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+/**********************
+DONATE PAGE
+**********************/
+.page-template-page-donate {
+
+	article.loopCard {
+		padding:1vw;
+		flex-direction:row;
+	}
+}

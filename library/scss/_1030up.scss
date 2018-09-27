@@ -1,0 +1,168 @@
+/******************************************************************
+
+Stylesheet: Desktop Stylsheet
+
+******************************************************************/
+html {
+    line-height:1.6;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+    #inner-header {
+        #logo {
+            a {
+                img {
+                    height:80px;
+                    width:auto;
+                }
+            }
+
+            #beta {
+				margin:0;
+				left:54%;
+				bottom:10px;
+				top:auto;
+			}
+        }
+
+        a.mainNavToggle, a.supportNavToggle {
+            img {
+                padding:0 10px 20px;
+            }
+            span {
+                width:100%;
+                bottom:0;
+                height:40px;
+                line-height:40px;
+                left:0;
+                text-align:center;
+            }
+        }
+
+
+        nav#siteSections {
+        	margin:0;
+            display:flex;
+        	align-self:stretch;
+
+        	ul {
+        		margin:0;
+        		padding:0;
+
+        		li {
+        			display:flex;
+        			align-items: stretch;
+
+        			a {
+        				text-decoration:none;
+        				line-height:1;
+                        color:black;
+        				display:flex;
+        				flex-direction: column;
+        				padding:0 20px;
+                        font-size:.9rem;
+        				justify-content: center;
+        				align-items: stretch;
+        				margin:10px;
+
+                        &:hover {
+                          animation-name: wiggle;
+                          animation-duration: 300ms;
+                          animation-iteration-count: 1;
+                          animation-timing-function: ease-in-out;
+                        }
+        			}
+
+                    &#donate {display:none;}
+
+                    .newsFlag {
+                        position:absolute;
+                        top:0;
+                        font-size:12px;
+                        font-weight:bold;
+                        padding:4px 6px;
+                        right:0;
+                        display:inline-block;
+                        border-radius:100px;
+                        background:black;
+                    }
+
+                    #CampusProgramsFlag {
+                        bottom:0;
+                        top:auto;
+                        left:50%;
+                        color:white;
+                        right:auto;
+                        transform:rotate(-12deg) translate(-50%,-50%);
+                    }
+
+        			&:nth-child(1) a {color: $pink;}
+        			&:nth-child(2) a {color: $orange;}
+        			&:nth-child(3) a {color: $yellow;}
+        			&:nth-child(4) a {color:$green;}
+        			&:nth-child(5) a {color:$blue;}
+        			&:nth-child(6) a {color:$purple;}
+        		}
+        	}
+        }
+    }
+}
+            body.page-template-page-programs .header #inner-header nav#siteSections ul li#campusprograms a,
+            body.page-template-page-articles-books .header #inner-header nav#siteSections ul li#articles a,
+            body.page-template-page-edugraphics-printables .header #inner-header nav#siteSections ul li#edugraphics a,
+            body.page-template-page-activities-classes .header #inner-header nav#siteSections ul li#activities a,
+            body.page-template-page-videos-podcasts .header #inner-header nav#siteSections ul li#videos a{
+                background:#fefefe; margin-bottom:-1px;
+                -webkit-border-radius: 4px 4px 0 0;
+                border-radius: 4px 4px 0 0;
+                -webkit-box-shadow: 0 -10px 20px -10px rgba(0,0,0,.2);
+                box-shadow: 0 -10px 20px -10px rgba(0,0,0,.2);
+
+                &:hover {
+                    animation: none;
+                }
+            }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+#primaryNavContainer {
+
+	nav#primaryNav {
+
+		ul {
+
+			li {
+
+				a {
+					padding:0 16px;
+					font-size:13px;
+				}
+			}
+		}
+	}
+}
+
+.single {
+    .authorSnapshot, .catSplaining, .byline {
+		font-size:.8em;
+	}
+}
+
+
+
+/**********************
+ACTIVITIES AND CLASSES PAGE STYLES
+**********************/
+
+.page-template-page-activities-classes {
+
+	aside#TheHotness {
+		flex-basis:500px;
+    }
+}
