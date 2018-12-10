@@ -936,6 +936,7 @@ ul.circleShare {
 				&.goat:after {background-image:url(../images/badge-goat.svg);}
 				&.greatest-hits:after {background-image:url(../images/badge-greatest-hits.svg);}
 				&.seedling:after {background-image:url(../images/badge-seedling.svg);}
+				&.crowd-pleaser:after {background-image:url(../images/badge-crowd-pleaser.svg);}
 				&.sensation:after {background-image:url(../images/badge-sensation.svg);}
 				&.bona-fide-hit:after {background-image:url(../images/badge-bona-fide-hit.svg);}
 			}
@@ -990,6 +991,7 @@ ul.circleShare {
 				.shareBox {
 					top:calc(100%);
 					max-height:200px;
+					min-width:235px;
 					box-shadow:0px 20px 70px 0px rgba(0,0,0,.7);
 				}
 			}

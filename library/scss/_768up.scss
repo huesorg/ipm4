@@ -216,6 +216,10 @@ HOME PAGE
 		.loopImage, .loopTitle{
 			flex-basis:50%;
 		}
+
+		.loopImage {
+			align-self:flex-start;
+		}
 		.loopContent {
 			flex-basis:100%;
 		}

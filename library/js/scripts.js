@@ -108,28 +108,19 @@ jQuery(document).ready(function($) {
 
     const greeting = `
 
-    IIIIIIIIII PPPPPPPPPPPPPPPPP   MMMMMMMM               MMMMMMMM
-    I::::::::I P::::::::::::::::P  M:::::::M             M:::::::M
-    I::::::::I P::::::PPPPPP:::::P M::::::::M           M::::::::M
-    II::::::II PP:::::P     P:::::PM:::::::::M         M:::::::::M
-      I::::I    P::::P     P:::::P M::::::::::M       M::::::::::M
-      I::::I    P::::P     P:::::P M:::::::::::M     M:::::::::::M
-      I::::I    P::::PPPPPP:::::P  M:::::::M::::M   M::::M:::::::M
-      I::::I    P:::::::::::::PP   M::::::M M::::M M::::M M::::::M
-      I::::I    P::::PPPPPPPPP     M::::::M  M::::M::::M  M::::::M
-      I::::I    P::::P             M::::::M   M:::::::M   M::::::M
-      I::::I    P::::P             M::::::M    M:::::M    M::::::M
-      I::::I    P::::P             M::::::M     MMMMM     M::::::M
-    II::::::II PP::::::PP          M::::::M               M::::::M
-    I::::::::I P::::::::P          M::::::M               M::::::M
-    I::::::::I P::::::::P          M::::::M               M::::::M
-    IIIIIIIIII PPPPPPPPPP          MMMMMMMM               MMMMMMMM
+.####.########..##.....##
+..##..##.....##.###...###
+..##..##.....##.####.####
+..##..########..##.###.##
+..##..##........##.....##
+..##..##........##.....##
+.####.##........##.....##
 
-    uncopyright by Sam Killermann
+uncopyright by Sam Killermann
 
-    sam@itspronouncedmetrosexual.com
+sam@itspronouncedmetrosexual.com
 
-    source: github.com/killermann/ipm4
+source: github.com/killermann/ipm4
 
     `;
 

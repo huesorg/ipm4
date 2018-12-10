@@ -9,7 +9,7 @@
 	<header class="page-header">
 		<section class="articleDetails">
 			<div class="shareBrag">
-				<?php if (has_tag('g-o-a-t')) : ?>
+				<?php if (has_tag('greatest-of-all-time')) : ?>
 					<span class="shareCount goat">
 						🐐 Over <strong class="count">500K</strong> Shares 📣
 					</span>
