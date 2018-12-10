@@ -253,46 +253,46 @@ HEADER STYLES
 	background-position:0px 60px;
 	background-repeat:no-repeat;
 	background-color:#f1f1f1;
+}
 
-	#inner-header {
+#inner-header {
 
-		a {
-			position:relative;
-			img {
+	a {
+		position:relative;
+		img {
+			height:80px;
+			padding:10px;
+			margin:0;
+		}
+
+		&.mainNavToggle, &.supportNavToggle {
+			span {
+				display:block;
+				position:absolute;
+				font-size:12px;
+				bottom:0;
+				left:80%;
+				width:140px;
 				height:80px;
-				padding:10px;
-				margin:0;
-			}
-
-			&.mainNavToggle, &.supportNavToggle {
-				span {
-					display:block;
-					position:absolute;
-					font-size:12px;
-					bottom:0;
-					left:80%;
-					width:140px;
-					height:80px;
-					line-height:80px;
-					color:#000;
-					font-weight:bold;
-					text-align:left;
-				}
+				line-height:80px;
+				color:#000;
+				font-weight:bold;
+				text-align:left;
 			}
 		}
+	}
 
-		a.supportNavToggle span {
-			right:75%;
-			left:auto;
-			text-align:right;
-		}
+	a.supportNavToggle span {
+		right:75%;
+		left:auto;
+		text-align:right;
+	}
 
-		#logo {
-			margin-right:0;
+	#logo {
+		margin-right:0;
 
-			a img {
-				padding-right:0;
-			}
+		a img {
+			padding-right:0;
 		}
 	}
 }
