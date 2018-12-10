@@ -63,13 +63,19 @@
 					</div>
 					<nav id="siteSections">
 						<ul class="flex flex-row">
-							<li id="campusprograms" class="is-current-page">
+							<li id="about">
+								<a href="<?php echo home_url(); ?>/about" title="About the Site &amp; Sam Killermann" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'About the Site'});">
+									<strong>About</strong>
+									<span>the Site</span>
+								</a>
+							</li>
+							<!-- <li id="campusprograms" class="is-current-page">
 								<a href="<?php echo home_url(); ?>/campus-programs" title="Campus Programs" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Campus Programs'});">
 									<div id="CampusProgramsFlag" class="newsFlag closed">Closed</div>
 									<strong>Campus</strong>
 									<span>Programs</span>
 								</a>
-							</li>
+							</li> -->
 							<li id="articles">
 								<a href="<?php echo home_url(); ?>/articles-books" title="Articles and Books" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Articles-Books'});">
 									<strong>Articles</strong>

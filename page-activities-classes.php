@@ -43,7 +43,7 @@ Template Name: Activities & Classes
 			</div>
 			<div class="loopImage">
 				<a href="http://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone (LGBTQ+) Training">
-					<img src="http://itspronouncedmetrosexual.com/wp-content/uploads/2018/08/szp-online-course-featured-image.jpg" alt="Person learning on computer"/>
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/szp-online-courses-featured-image.jpg" alt="Person learning on computer"/>
 				</a>
 			</div>
 		</article>

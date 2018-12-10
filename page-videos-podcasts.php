@@ -27,7 +27,7 @@ Template Name: Videos & Podcasts
 
 
 		<section id="videos">
-			<h2>A Couple Videos that Already Exist</h2>
+			<h2>A Few Videos that Already Exist</h2>
 			<article class="vidcard loopCard">
 				<div class="loopText">
 					<h3 class="loopTitle"><span class="flag">Full</span> Understanding the Complexities of Gender TEDxTalk by Sam Killermann</h3>
@@ -44,6 +44,14 @@ Template Name: Videos & Podcasts
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/89Az3m-qJeU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</article>
+			<article class="vidcard loopCard">
+				<div class="loopText">
+					<h3 class="loopTitle"><span class="flag new-flag">New!</span> Gender: From Boxes to "-Ness", A Journey of Understanding with Sam Killermann at Nerd Nite</h3>
+				</div>
+				<div class="youtube">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/q8bSIuyJHD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</article>
 		</section>
 
 	</div><!--main-->
@@ -52,7 +60,7 @@ Template Name: Videos & Podcasts
 		<h2>Listen to my Social Justice Podcast</h2>
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><span class="flag">NEW!</span> The Heretic Podcast: Social Justice, Minus Dogma (with <a href="https://hereticpodcast.com/about/about-the-team/about-the-host/" title="About the Host">Sam Killermann</a>)</h3>
+				<h3 class="loopTitle"><span class="flag new-flag">NEW!</span> The Heretic Podcast: Social Justice, Minus Dogma (with <a href="https://hereticpodcast.com/about/about-the-team/about-the-host/" title="About the Host">Sam Killermann</a>)</h3>
 				<p>
 					<a href="http://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">Heretic</a> is about the social justice movement and the unwritten rules that underpin (and may undermine) it. It's an extension of the articles I've been posting here in the <a href="http://itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Series">Social Justice Dogma Series</a>, featuring interviews that dig into different tenets.
 				</p>

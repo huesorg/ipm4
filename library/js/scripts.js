@@ -50,13 +50,13 @@ jQuery(document).ready(function($) {
 
         var shownPodcast= localStorage.getItem('isShownPodcast');
 
-        if(shownPodcast !="SEPT2018NEWPODCAST"){
+        if(shownPodcast !="DEC2018NEWPODCAST"){
             $('#NewPodcastFlag').removeClass("hide");
         }
 
         $("#videos").click(function(){
-            localStorage.setItem('isShownPodcast', 'SEPT2018NEWPODCAST');
-            $("#NewPodcastFlag").addClass("hide");
+            localStorage.setItem('isShownPodcast', 'DEC2018NEWPODCAST');
+            $(".new-flag").addClass("hide");
         });
     });
 
