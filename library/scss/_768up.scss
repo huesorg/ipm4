@@ -429,6 +429,10 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	
 	h4 {margin-top:0;}
 
 	.sidebarBook {

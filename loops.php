@@ -93,7 +93,7 @@ function loopBlogged() {?>
 
 				<ul class="bloggedLinks">
 					<li>
-						<a class="download" href="<?php the_field('downloadable_pdf')?>" alt="PDF">
+						<a class="download" target="_blank" href="<?php the_field('downloadable_pdf')?>" title="Download .PDF">
 							.PDF
 						</a>
 					</li>
