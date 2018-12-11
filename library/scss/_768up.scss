@@ -432,7 +432,8 @@ SIDEBARS & ASIDES
 	display:flex;
 	flex-direction:column;
 	justify-content: space-evenly;
-	
+	padding-bottom:330px !important; /* for post carousel */
+
 	h4 {margin-top:0;}
 
 	.sidebarBook {
