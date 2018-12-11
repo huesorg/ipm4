@@ -140,19 +140,37 @@ Template Name: Homepage
 		</div><!--/main-->
 		<div class="grid-cell grid grid--justifyCenter grid--center gradient-grey">
 			<div class="grid-cell">
-				<h2>Popular Today</h2>
-				<?php wpp_get_mostpopular("post_type=post&range='daily'&stats_comments=0&limit=1&pages='0'&order_by='views'&thumbnail_selection='usergenerated'&thumbnail_width='600'&thumbnail_height='400'
-				&post_html='
-				<div class=\"loopCard shadowbox \">
-					<div class=\"featuredImage loopImage\">
-						{thumb}
+				<h2>Popular</h2>
+
+				<?php $popular_today_query = new WP_Query(
+					array(
+						'post_type' => 'post',
+	                    'orderby' => 'RAND',
+						'posts_per_page' => 1,
+						'tag' => 'greatest-of-all-time',
+					)
+                );
+
+				while($popular_today_query->have_posts()) : $popular_today_query->the_post();?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('loopCard shadowbox'); ?> role="article">
+					<div class="loopImage featuredImage">
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+							<?php the_post_thumbnail('medium_large'); ?>
+						</a>
+					</div><!--/teaserImage-->
+
+					<div class="loopText">
+						<h3 class="loopTitle">
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</h3>
 					</div>
 
-					<div class=\"loopText\">
-						<h3 class=\"loopTitle\"><a href=\"{url}\">{text_title}</a></h3>
-					</div>
-				</div>'"); ?>
-			</div>
+				</article> <!-- end teaser -->
+				<?php endwhile; wp_reset_postdata(); ?>
+
+			</div><!--/grid-cell-->
 		</div>
 	</div>
 
