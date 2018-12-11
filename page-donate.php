@@ -10,7 +10,13 @@ Template Name: Donate Page
 	<h1 class="page-title"><?php the_title(); ?></h1>
 
 	<p class="subtitle">
-		Thanks for considering a donation. To make it as easy as possible, I've got a <em>lot</em> of options below, including <a href="#DonatePaypal" alt="Intro">Paypal</a>, <a href="#DonateCrypto" alt="Crypto">Crypto</a>, <a href="#Patreon" alt="Patreon">Patreon</a>, and even <a href="#DonateCheck" alt="Check">check</a>. If you want to support the site, and there's something missing that you'd like me to add, please <a href="http://itspronouncedmetrosexual.com/contact" alt="contact">reach out</a>.
+		<strong>Thank you for considering a donation</strong>. To make it as easy as possible, I've got a <em>lot</em> of options below, including <a href="#DonatePaypal" alt="Intro">Paypal</a>, <a href="#DonateCrypto" alt="Crypto">Crypto</a>, <a href="#Patreon" alt="Patreon">Patreon</a>, and even <a href="#DonateCheck" alt="Check">check</a>. If you want to support the site, and there's something missing that you'd like me to add, please <a href="http://itspronouncedmetrosexual.com/contact" alt="contact">reach out</a>.
+	</p>
+	<p class="subtitle">
+		Reader-funding is a new experiment as of 2018, and <a href="http://itspronouncedmetrosexual.com/2018/09/the-state-of-this-site-or-funding-online-work-in-2018-an-infographic/" title="The State of this Site (Or “Funding Online Work in 2018, an Infographic”)" target="_blank">I wrote all about it 6 months in</a> (disclosing numbers, and some other thoughts), in case you want to read about how it's going.
+	</p>
+	<p class="subtitle">
+		<3 sK
 	</p>
 
 	<div id="stickyPostTitle" class="unactiveSticky">
