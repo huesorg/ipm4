@@ -62,28 +62,37 @@ AD STYLES
 LAYOUT & GRID STYLES
 *********************/
 #content {
-	display: flex;
+	display: grid;
 	flex-wrap: wrap;
 	list-style: none;
+	grid-template-areas:
+		"main sidebar"
+		"singlefooter singlefooter"
+	;
+	grid-template-columns: 1fr 240px;
+	min-height:100vh;
 	margin:0 auto;
-	padding:0 2vw;
+	padding:0 20px;
 
-	& > div[role="main"],
-	& > div[role="complementary"],
-	& > aside[role="complementary"] {
-		flex: 1;
-		padding:0 3vw;
-
-		.pageIntro {
-			padding:0;
-		}
+	.pageIntro {
+		padding:0;
 	}
 
-	& > div[role="complementary"],
-	& > aside[role="complementary"]{
-		flex: 0 0 25%;
-	}
 }
+	#main {
+		grid-area:main;
+		padding:0 3vw;
+	}
+
+	.sidebar, #articleStuff {
+		grid-area:sidebar;
+		padding-left:3vw;
+	}
+
+	#singlefooter {
+		grid-area:singlefooter;
+	}
+
 
 .single {
 
@@ -428,11 +437,14 @@ BLOG AND TEASER STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {
+#sidebar1 {
 	display:flex;
 	flex-direction:column;
 	justify-content: space-evenly;
 	padding-bottom:330px !important; /* for post carousel */
+}
+
+.sidebar {
 
 	h4 {margin-top:0;}
 

@@ -29,7 +29,7 @@ Template Name: Activities & Classes
 </header> <!-- end article header -->
 
 <div id="content">
-	<aside id="TheHotness" class="featuredClass" role="complementary">
+	<aside id="TheHotness" class="featuredClass sidebar" role="complementary">
 		<p class="mobileHide">
 			Wut. No way. That class you all kept asking me to create? 😘 👇
 		</p>
@@ -48,7 +48,7 @@ Template Name: Activities & Classes
 			</div>
 		</article>
 	</aside>
-	<div id="main" role="main">
+	<main id="main" role="main">
 		<section id="top">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -171,7 +171,7 @@ Template Name: Activities & Classes
 			<p>Click the big ol button below, give me a good email to reach out to, and make sure the "Activities &amp; Classes" box is checked. After that, we should be all set, and I'll make sure to email you every once in a while with class updates.</p>
 			<p><a class="button accent-button button-wide" href="https://itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new class" target="_blank">Get New Class Alerts</a></p>
 		</section><!--/classesMailingList-->
-	</div><!--/main-->
+	</main><!--/main-->
 </div><!--/content-->
 <div class="footerPatreon" style="margin-top:4vw;">
 	<?php getPatreonAsk();?>

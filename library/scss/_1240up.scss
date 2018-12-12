@@ -70,6 +70,19 @@ NAVIGATION STYLES
 LAYOUT & GRID STYLES
 *********************/
 
+.single #content {
+	padding:0 3vw;
+	grid-template-columns: 25% 1fr 25%;
+}
+
+	#articleStuff {
+		padding-left:3vw;
+	}
+
+	.sidebar {
+		padding-right:3vw;
+	}
+
 /**********************
 DONATE PAGE
 **********************/

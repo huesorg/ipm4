@@ -40,9 +40,9 @@ Template Name: Donate Page
 
 </header> <!-- end article header -->
 
-<div id="content">
+<div id="content" class="halfsies">
 
-	<div id="main" role="main">
+	<main id="main" role="main">
 		<h2 id="DonatePaypal">Paypal / Credit Card</h2>
 
 		<article class="loopCard">
@@ -166,10 +166,9 @@ Template Name: Donate Page
 
 		</article>
 
+	</main><!--main-->
 
-	</div><!--main-->
-
-	<div id="otherDonations" role="main">
+	<section id="otherDonations" role="sidebar" class="sidebar">
 		<h2 id="Patreon">Patreon</h2>
 		<article class="loopCard">
 			<div class="loopText">
@@ -197,8 +196,10 @@ Template Name: Donate Page
 
 		</article>
 
-	</div>
+	</section>
 
+</div><!--/content-->
+<section class="entry-content">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -212,18 +213,10 @@ Template Name: Donate Page
 
 	<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
-	<div class="fundedByPatreon footerPatreon" style="margin-top:4vw;">
-		<div class="grid grid--fit">
-			<p class="grid-cell">
-				<strong>This free resource is hosted thanks to funding from IPM Patrons.</strong>
-				<span>Join and help support social justice media.</span>
-			</p>
 
-			<a class="button grid-cell" href="http://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize Page-Donate'});">
-				<div>🤗  Become a Patron</div>
-			</a>
-		</div>
-	</div>
-</div><!--/content-->
+</section>
+<div class="footerPatreon" style="margin-top:4vw;">
+	<?php getPatreonAsk();?>
+</div>
 
 <?php get_footer(); ?>

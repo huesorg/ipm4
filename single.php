@@ -3,69 +3,70 @@
 <section class="featuredImage desktopHide">
 	<?php the_post_thumbnail('medium_large'); ?>
 </section>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<header class="page-header">
+	<section class="articleDetails">
+		<div class="shareBrag">
+			<?php if (has_tag('greatest-of-all-time')) : ?>
+				<span class="shareCount goat">
+					🐐 Over <strong class="count">500K</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('greatest-hits')) : ?>
+				<span class="shareCount greatest-hits">
+					🏆 Over <strong class="count">100K</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('bona-fide-hit')) : ?>
+				<span class="shareCount bona-fide-hit">
+					🏅 Approaching <strong class="count">100K</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('rising-star')) : ?>
+				<span class="shareCount rising-star">
+					🌟 Approaching <strong class="count">50K</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('sensation')) : ?>
+				<span class="shareCount sensation">
+					😍 Approaching <strong class="count">10K</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('crowd-pleaser')) : ?>
+				<span class="shareCount crowd-pleaser">
+					👏 Over <strong class="count">1,000</strong> Shares 📣
+				</span>
+			<?php elseif (has_tag('seedling')) : ?>
+				<span class="shareCount seedling">
+					🌱 Almost <strong class="count">1,000</strong> Shares 📣
+				</span>
+			<?php endif;  ?>
 
-<div id="content">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<header class="page-header">
-		<section class="articleDetails">
-			<div class="shareBrag">
-				<?php if (has_tag('greatest-of-all-time')) : ?>
-					<span class="shareCount goat">
-						🐐 Over <strong class="count">500K</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('greatest-hits')) : ?>
-					<span class="shareCount greatest-hits">
-						🏆 Over <strong class="count">100K</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('bona-fide-hit')) : ?>
-					<span class="shareCount bona-fide-hit">
-						🏅 Approaching <strong class="count">100K</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('rising-star')) : ?>
-					<span class="shareCount rising-star">
-						🌟 Approaching <strong class="count">50K</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('sensation')) : ?>
-					<span class="shareCount sensation">
-						😍 Approaching <strong class="count">10K</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('crowd-pleaser')) : ?>
-					<span class="shareCount crowd-pleaser">
-						👏 Over <strong class="count">1,000</strong> Shares 📣
-					</span>
-				<?php elseif (has_tag('seedling')) : ?>
-					<span class="shareCount seedling">
-						🌱 Almost <strong class="count">1,000</strong> Shares 📣
-					</span>
-				<?php endif;  ?>
-
-				<div class="shareBox">
-					<div class="shareBox--inner">
-						<span>Add your voice 👇</span>
-						<a onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'button_click', eventLabel: 'Facebook Share'});" target="_blank" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Share on Facebook">Share on Facebook</a>
-						<a onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'button_click', eventLabel: 'Twitter Share'});" target="_blank" class="twitter" href="https://twitter.com/home?status=<?php the_permalink();?>%20by%20%40Killermann%20on%20%40ActuallyMetro" title="Tweet">Tweet</a>
-					</div>
+			<div class="shareBox">
+				<div class="shareBox--inner">
+					<span>Add your voice 👇</span>
+					<a onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'button_click', eventLabel: 'Facebook Share'});" target="_blank" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Share on Facebook">Share on Facebook</a>
+					<a onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'button_click', eventLabel: 'Twitter Share'});" target="_blank" class="twitter" href="https://twitter.com/home?status=<?php the_permalink();?>%20by%20%40Killermann%20on%20%40ActuallyMetro" title="Tweet">Tweet</a>
 				</div>
 			</div>
-			<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+		</div>
+		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
-			<div class="excerpt">
-				<?php the_excerpt()?>
-			</div>
+		<div class="excerpt">
+			<?php the_excerpt()?>
+		</div>
 
-			<div class="byline desktopHide">
-				<p>
-					By <?php the_author_posts_link(); ?>
-					on <?php the_date(); ?> in <?php the_category(' / ') ?> tagged
-					<?php the_tags('',', ',''); ?>. <span class="updated">Updated <?php the_modified_date(); ?></span>
-				</p>
-			</div>
-		</section>
-		<section class="mobileHide featuredImage">
-			<?php the_post_thumbnail('full'); ?>
-		</section>
-	</header> <!-- end article header -->
-	<div id="articleStuff" role="complementary">
+		<div class="byline desktopHide">
+			<p>
+				By <?php the_author_posts_link(); ?>
+				on <?php the_date(); ?> in <?php the_category(' / ') ?> tagged
+				<?php the_tags('',', ',''); ?>. <span class="updated">Updated <?php the_modified_date(); ?></span>
+			</p>
+		</div>
+	</section>
+	<section class="mobileHide featuredImage">
+		<?php the_post_thumbnail('full'); ?>
+	</section>
+</header> <!-- end article header -->
+
+<section id="content">
+
+	<aside id="articleStuff" role="complementary">
 		<div class="mobileHide byline">
 			<p>
 				By <?php the_author_posts_link(); ?>
@@ -86,8 +87,8 @@
 
 		<?php bones_hook_after_article_stuff();?>
 
-	</div>
-	<div id="main" role="main" class="grid-cell">
+	</aside>
+	<main id="main" role="main">
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -118,7 +119,7 @@
 			</ul>
 		</div><!--/stickyPostTitle-->
 
-	</div> <!-- end #main -->
+	</main> <!-- end #main -->
 	<?php endwhile; else : ?>
 	<article id="post-not-found" class="hentry grid-cell">
 			<header class="page-header">
@@ -130,15 +131,17 @@
 	</article>
 	<?php endif; ?>
 	<?php get_sidebar(); ?>
-	<div class="footerPatreon">
-		<?php getPatreonAsk();?>
+	<div id="singlefooter">
+		<div class="footerPatreon">
+			<?php getPatreonAsk();?>
+		</div>
+
+		<div id="single--subscribe" class="subscribeSection">
+			<?php getSubscribeOptions();?>
+		</div><!--/home-subscribe-->
 	</div>
 
-	<div id="single--subscribe" class="subscribeSection">
-		<?php getSubscribeOptions();?>
-	</div><!--/home-subscribe-->
-
-</div> <!-- end #content -->
+</section> <!-- end #content -->
 
 
 <?php get_footer(); ?>

@@ -8,10 +8,6 @@ Template Name: Videos & Podcasts
 <header class="page-header">
 
 	<h1 class="page-title"><?php the_title(); ?></h1>
-
-</header> <!-- end article header -->
-
-<div id="content">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -23,8 +19,12 @@ Template Name: Videos & Podcasts
 	</article> <!-- end article -->
 
 	<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
-	<div id="main" role="main">
 
+</header> <!-- end article header -->
+
+<div id="content" class="halfsies">
+
+	<main id="main" role="main">
 
 		<section id="videos">
 			<h2>A Few Videos that Already Exist</h2>
@@ -54,9 +54,9 @@ Template Name: Videos & Podcasts
 			</article>
 		</section>
 
-	</div><!--main-->
+	</main><!--main-->
 
-	<div id="podcasts" role="main">
+	<section id="podcasts" class="sidebar" role="sidebar">
 		<h2>Listen to my Social Justice Podcast</h2>
 		<article class="vidcard loopCard">
 			<div class="loopText">
@@ -74,10 +74,9 @@ Template Name: Videos & Podcasts
 			</div>
 		</article>
 
-	</div>
-
-	<div class="footerPatreon" style="margin-top:4vw;">
-		<?php getPatreonAsk();?>
-	</div>
+	</section>
 </div><!--/content-->
+<div class="footerPatreon" style="margin-top:4vw;">
+	<?php getPatreonAsk();?>
+</div>
 <?php get_footer(); ?>

@@ -53,11 +53,6 @@ $white:             #fff;
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
-$link-color:        #eb366e;
-$accent-color:		#31e1ec;
-$link-hover:        darken($link-color, 12%);
-$text-color:		#000;
-
 $blue:				#36a3f0;
 $green:				#73c535;
 $yellow:			#dabb00;
@@ -66,12 +61,19 @@ $pink:				#eb366e;
 $purple:			#af6ee2;
 $grey: 				#cdcdcd;
 
-.blue, .blue a {color:$blue !important;}
-.green, .green a {color:$green !important;}
-.yellow, .yellow a {color:$yellow !important;}
-.orange, .orange a {color:$orange !important;}
-.pink {color:$pink !important;}
-.purple, .purple a {color:$purple !important;}
+$link-color:        #000;
+$accent-color:		#31e1ec;
+$link-hover:        $pink;
+$text-color:		#000;
+
+
+
+.blue, .blue a {text-decoration-color:$blue !important; &:hover {color:$blue !important;}}
+.green, .green a {text-decoration-color:$green !important; &:hover {color:$green !important;}}
+.yellow, .yellow a {text-decoration-color:$yellow !important; &:hover {color:$yellow !important;}}
+.orange, .orange a {text-decoration-color:$orange !important; &:hover {color:$orange !important;}}
+.pink {text-decoration-color:$pink !important; &:hover {color:$pink !important;}}
+.purple, .purple a {text-decoration-color:$purple !important; &:hover {color:$purple !important;}}
 
 /*
 Here's a great tutorial on how to
@@ -286,13 +288,13 @@ BUTTONS
 	padding:.5em .7em;
     line-height:1.2;
 	color: $white;
-    background:$link-color;
+    background:$pink;
 	display: inline-block;
 	font-weight: regular;
 	text-align:center;
     font-family:$alt-font;
 	text-decoration: none;
-	text-shadow: 0 1px 1px darken($link-color, 20%);
+	text-shadow: 0 1px 1px darken($pink, 20%);
 	cursor: pointer;
     margin-bottom:12px;
 	border-radius:10px;
@@ -311,11 +313,11 @@ BUTTONS
 		color: $white;
         transform: translateY(-2px);
         box-shadow:0 7px 2px 0px rgba(50,50,50,.15);
-        background:lighten($link-color,1%);
+        background:lighten($pink,1%);
 	}
 
 	&:active {
-		@include css-gradient(darken($link-color, 20%), darken($link-color, 10%));
+		@include css-gradient(darken($pink, 20%), darken($pink, 10%));
         color:rgba(0,0,0,.5);
         text-shadow:none;
         box-shadow:inset 0 3px 5px 0 rgba(0,0,0,.4);

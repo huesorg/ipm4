@@ -8,6 +8,39 @@ html {
 }
 
 /*********************
+LAYOUT & GRID STYLES
+*********************/
+
+#content {
+    padding:0 3vw;
+    grid-template-columns: 1fr 33.3333%;
+
+    .sidebar {
+        padding:0 3vw;
+    }
+
+    &.halfsies {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.single #content {
+    grid-template-areas:
+        "meta main sidebar"
+        "singlefooter singlefooter singlefooter"
+    ;
+    grid-template-columns: 240px 1fr 240px;
+}
+
+
+    #articleStuff {
+    	grid-area:meta;
+        padding:0 3vw 0 0;
+    }
+
+
+
+
+/*********************
 HEADER STYLES
 *********************/
 
