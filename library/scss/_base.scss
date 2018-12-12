@@ -2189,126 +2189,99 @@ HOME PAGE
 		margin:0 0 5px;
 		text-transform:none;
 	}
+}
 
-	#homeSubscribe {
+#homeSubscribe {
 
-		.fourcol {
-			padding:20px;
-			margin-bottom:1.5em;
-			background:#fff;
-			@include shadow;
-			@include rounded(20px);
-			overflow:hidden;
-			min-height:220px;
-
-			p {
-				font-size:12px;
-				line-height:17px;
-				color:rgba(255,255,255,.75);
-				margin:.5em 0;
-
-				a {
-					color:rgba(255,255,255,.85);
-				}
-
-				span {
-					font-size:.9em;
-					opacity:.8;
-				}
-			}
-		}
-
-		#emailHome {
-			background:$pink;
-
-			input {
-				padding:0 2px 0 7px;
-				font-size:12px;
-				text-align:center;
-			}
-
-			button {
-				background:lighten($pink,10%);
-				color:#fff;
-				font-size:12px;
-			}
-		}
-
-		#fbHome {
-			background:#3B5999;
-		}
-
-		#twitterHome {
-			background:#00abf1;
-
-			.twitter-follow-button{
-				float:left; margin-top:10px;
-			}
-		}
-
-		h3 {
-			font-size:20px;
-			margin:0 0 10px;
-			color:rgba(255,255,255,.6);
-		}
-
-		.fb-like {
-			width:100%;
-			margin-top:10px;
-			overflow:hidden;
-		}
-
-	}
-
-	#homeFeatured {
-
+	.fourcol {
+		padding:20px;
 		margin-bottom:1.5em;
+		background:#fff;
+		@include shadow;
+		@include rounded(20px);
+		overflow:hidden;
+		min-height:220px;
 
+		p {
+			font-size:12px;
+			line-height:17px;
+			color:rgba(255,255,255,.75);
+			margin:.5em 0;
+
+			a {
+				color:rgba(255,255,255,.85);
+			}
+
+			span {
+				font-size:.9em;
+				opacity:.8;
+			}
+		}
+	}
+
+	#emailHome {
+		background:$pink;
+
+		input {
+			padding:0 2px 0 7px;
+			font-size:12px;
+			text-align:center;
+		}
+
+		button {
+			background:lighten($pink,10%);
+			color:#fff;
+			font-size:12px;
+		}
+	}
+
+	#fbHome {
+		background:#3B5999;
+	}
+
+	#twitterHome {
+		background:#00abf1;
+
+		.twitter-follow-button{
+			float:left; margin-top:10px;
+		}
+	}
+
+	h3 {
+		font-size:20px;
+		margin:0 0 10px;
+		color:rgba(255,255,255,.6);
+	}
+
+	.fb-like {
+		width:100%;
+		margin-top:10px;
+		overflow:hidden;
+	}
+
+}
+
+#homeFeatured {
+
+	margin-bottom:1.5em;
+
+	ul.wpp-list {
+		font-size:.8em;
+
+		li {
+			margin-bottom:15px;
+		}
+	}
+
+	#popularToday {
 		ul.wpp-list {
-			font-size:.8em;
-
-			li {
-				margin-bottom:15px;
-			}
+			margin:0;
 		}
 
-		#popularToday {
-			ul.wpp-list {
-				margin:0;
-			}
-
-			.loopTitle {margin:0;}
-		}
-
-
+		.loopTitle {margin:0;}
 	}
 
-	#homeSam {
-		position:relative;
-		h3 {
-			margin-top:0;
-			font-family:$theme-font;
-		}
 
-		h4.head {
-			margin:15px 0;
-		}
-
-		#samPosts {
-			position:relative;
-		}
-
-		#samPhoto {
-			height:750px;
-			position:absolute;
-			bottom:0;
-			right:0;
-			background-image:url(../images/sam-killermann-author.png);
-			background-repeat:no-repeat;
-			background-size:contain;
-			background-position:bottom center;
-		}
-	}
 }
 
 .hcount #count {
@@ -2325,242 +2298,6 @@ ALL POSTS PAGE
 		margin-bottom:15px;
 	}
 }
-.post-filters {
-	border-radius:10px;
-	text-align:center;
-	margin-bottom:15px;
-
-	h3 {
-		margin:0 auto 10px;
-	}
-
-	form.grid {
-		padding:15px;
-		border-radius:13px;
-		.grid-cell {
-			padding:.5vw 1vw;
-
-			label {
-				display:block;
-				width:100%;
-				line-height:1;
-				font-size:.7em;
-				margin:5px auto;
-				font-weight:bold;
-			}
-			select {
-				text-align:center;
-			}
-
-			.button {
-				margin:10px auto 0;
-			}
-		}
-	}
-}
-
-/**********************
-THE SHOW PAGE
-**********************/
-
-.theShow {
-
-	.bigYoutube {
-		background:#ccc;
-		padding:10px;
-		margin-bottom:2.762430939%;
-
-		@include shadow;
-		@include rounded(20px);
-	}
-
-	.youtubeWrap {
-		background:#ccc;
-		margin-bottom:2.762430939%;
-
-		@include shadow;
-		@include rounded(20px);
-
-		.youtube {
-			background:#222;
-			overflow:hidden;
-			@include rounded(20px);
-			@include shadow;
-		}
-	}
-
-	.introParagraph {
-		opacity:.75;
-	}
-	ul.callToAction {
-		margin-bottom:1em;
-
-		.button {
-			width:250px;
-			padding-right:35px;
-			padding-left:0px;
-			text-align:center;
-			position:relative;
-
-			i {
-				position:absolute;
-				right:15px;
-			}
-
-			&:hover i.fa-smile-o:before {
-				content:'\f164' !important;
-			}
-		}
-
-		.accent-button {
-			i {
-				font-size:24px;
-				line-height:22px;
-				right:18px;
-			}
-		}
-	}
-
-	p {
-		font-family:$serif;
-		line-height:1.3;
-		margin:0 0 1em;
-	}
-
-	#praiseShow {
-		h2 {
-			margin:0px 0px .5em;
-		}
-	}
-
-	blockquote, blockquote.testimonial{
-		padding:.8em 1.7em;
-		margin:1em 0 1.5em;
-		position:relative;
-		font-family: $alt-font;
-		font-weight:400;
-		font-size:1em;
-		text-align:center;
-		font-style:normal;
-		color: $pink;
-		background:#fff;
-
-		@include rounded(14px);
-		@include shadow;
-
-		p{
-			margin:.5em 0 0 0;
-		}
-
-		&:before, &:after {
-			display: inline-block;
-			position:absolute;
-			font-size:1.2em;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			color:$pink;
-			line-height: 1;
-			opacity:1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		&:before {
-			content: "\f10d";
-			top:2px;
-			left:5px;
-		}
-
-		&:after {
-			content: "\f10e";
-			bottom:0px;
-			right:5px;
-		}
-
-		& > p:first-child {
-			margin-top:0;
-		}
-
-	}
-
-	.testimonialWrap {
-
-		blockquote.testimonial {
-			margin-bottom:.5em;
-		}
-		.author {
-			margin:0;
-			padding:0;
-			font-size:.8em;
-			text-align:right;
-		}
-	}
-
-	#mediaShow {
-
-		p.introParagraph {
-			margin-bottom:0px;
-		}
-
-		h2 {
-			margin:10px 0;
-		}
-
-		img {
-			max-width:100%;
-			height:auto;
-			background:#fff;
-
-			@include rounded(20px);
-			@include shadow;
-
-			&:hover {opacity:.8;}
-
-			&:active {opacity:1;}
-		}
-	}
-
-	nav.showNav {
-		width:100%;
-		margin-bottom:20px;
-
-		ul {
-			list-style:none;
-			margin:0;
-			padding:0;
-
-			li {
-				float:left;
-				width:25%;
-				margin:0;
-				padding:0;
-
-				a{
-					text-decoration:none;
-					font-size:.9em;
-					display:block;
-					padding:0px 2px 10px;
-					width:100%;
-					border-bottom:#e7e7e7 1px dashed;
-
-					i {
-						margin-top:3px;
-					}
-
-					span {
-						margin-left:1.6em;
-						display:block;
-					}
-
-					&:hover {
-						border-bottom:1px solid $pink;
-					}
-				}
-			}
-		}
-	}
-}
 
 
 /**********************
@@ -2574,6 +2311,7 @@ PROGRAMS PAGE
 
 	#content {
 		margin-bottom:0 !important;
+		display:block;
 	}
 
 	.programsIntro {
@@ -2697,183 +2435,6 @@ PROGRAMS PAGE
 	}
 }
 
-
-/*********************
-CONTACT FORM STYLES
-*********************/
-
-.formspree, .hbspt-form{
-
-	p {
-		display:block;
-		position:relative;
-	}
-
-	fieldset.form-columns-1, fieldset.form-columns-2, fieldset.form-columns-3 {
-		max-width:100%;
-
-		.hs-form-field {
-			padding:calc(5px + .5vw);
-
-			label {
-				font-family:$alt-font;
-				font-size:18px;
-				line-height:1.2;
-				margin:0 0 5px !important;
-				display:inline-block;
-			}
-
-			.hs-field-desc {
-				font-size:15px;
-				display:inline-block;
-				line-height:1.2;
-				margin:0 0 5px !important;
-			}
-
-			.inputs-list {
-				list-style:none;
-				margin:0;
-				padding:0;
-
-				.hs-form-checkbox {
-					margin:0 0 5px;
-
-					label {
-						display:flex;
-						flex-direction:row;
-						align-items:center;
-
-						input[type=checkbox], span{
-							display:flex;
-							align-self:center;
-						}
-
-						input[type=checkbox] {
-							margin-right:3px;
-						}
-					}
-				}
-			}
-		}
-
-		.hs-form-required {
-			color:$pink;
-		}
-
-		.hs-error-msgs {
-			color:$pink;
-			list-style:none;
-			font-size:14px;
-			margin:0;
-
-			li {
-				margin:3px;
-			}
-		}
-	}
-
-	.hs_recaptcha {
-		padding:calc(5px + .5vw);
-	}
-
-	input, textarea {
-		width:100%;
-		padding:13px 17px;
-		font-family:$sans-serif;
-		font-size:15px;
-		background:#fff;
-		border:none;
-		border-radius:6px;
-
-		@include shadow;
-		@include transition(all .2s ease-in-out);
-
-		&.hs-button {
-			@extend .button;
-			@extend .accent-button;
-			font-size:24px;
-			text-transform:uppercase;
-			padding:20px;
-			margin:20px auto 0 !important;
-		}
-	}
-
-	.button {margin:0;}
-
-	span.checkboxTitle {
-		padding:10px 15px;
-		font-family:$sans-serif;
-		font-size:14px;
-	}
-
-	.checkboxWrap {
-		padding:0 0 0 44px;
-		line-height:32px;
-		font-family:$sans-serif;
-		font-size:14px;
-		margin-bottom:5px;
-	}
-
-	input[type=checkbox]{
-		width:32px;
-		height:32px;
-		float:left;
-		display:block;
-		box-shadow:none;
-		background:none;
-	}
-
-	textarea {
-		height:80px;
-	}
-
-	::-webkit-input-placeholder { /* WebKit browsers */
-	    color:    $text-color;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	    color:    $text-color;
-	    opacity:  1;
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	    color:    $text-color;
-	    opacity:  1;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-	    color:    $text-color;
-	}
-
-	input:focus, textarea:focus {
-		background:rgba(255,255,255,1);
-	}
-
-	.ninja-forms-response-msg {
-		padding:20px;
-		@include rounded(20px);
-	}
-
-	.wpcf7-not-valid-tip {
-		color:$yellow;
-	}
-
-	.wpcf7-validation-errors {
-		border-color:$yellow;
-	}
-
-	.ninja-forms-success-msg {
-		border:1px dashed $green;
-	}
-
-	.submitted-message {
-		padding: 3vw;
-		background: #fff;
-		border-radius: 10px;
-		max-width: calc(720px + 6vw);
-		margin: 0 auto;
-		@extend .shadow-high;
-	}
-}
-
-
 /**********************
 ARTICLES AND BOOKS PAGE
 **********************/
@@ -2882,7 +2443,6 @@ ARTICLES AND BOOKS PAGE
 
 	.card{
 		background:#fff;
-		color:$pink;
 		width:100%;
 
 		span.title {
@@ -2926,11 +2486,11 @@ ARTICLES AND BOOKS PAGE
 			}
 		}
 
-		&.socialJustice {color:$blue;span {border-color:$blue}ul li a{color:$blue;&:hover {background:$blue;color:rgba(255,255,255,.8)}}}
-		&.gender {color:$yellow;span {border-color:$yellow}ul li a{color:$yellow;&:hover {background:$yellow;color:rgba(255,255,255,.8)}}}
-		&.opEd {color:$orange;span {border-color:$orange}ul li a{color:$orange;&:hover {background:$orange;color:rgba(255,255,255,.8)}}}
-		&.sexuality {color:$purple;span {border-color:$purple}ul li a{color:$purple;&:hover {background:$purple;color:rgba(255,255,255,.8)}}}
-		&.edugraphics {color:$green;span {border-color:$green}ul li a{color:$green;&:hover {background:$green;color:rgba(255,255,255,.8)}}}
+		&.socialJustice {color:$blue;span {border-color:$blue}ul li a:hover {background:$blue;color:rgba(255,255,255,.8)}}
+		&.gender {color:$yellow;span {border-color:$yellow}ul li a:hover {background:$yellow;color:rgba(255,255,255,.8)}}
+		&.opEd {color:$orange;span {border-color:$orange}ul li a:hover {background:$orange;color:rgba(255,255,255,.8)}}
+		&.sexuality {color:$purple;span {border-color:$purple}ul li a:hover {background:$purple;color:rgba(255,255,255,.8)}}
+		&.edugraphics {color:$green;span {border-color:$green}ul li a:hover {background:$green;color:rgba(255,255,255,.8)}}
 	}
 }
 
@@ -2939,6 +2499,7 @@ ARTICLES AND BOOKS PAGE
 	.preorder .text{padding:10px !important;}
 
 	.bookCard {
+		padding:2vw;
 		text-align:center;
 		position:relative;
 		width:100%;
@@ -2976,31 +2537,19 @@ ARTICLES AND BOOKS PAGE
 		p {
 			line-height:1.2;
 			font-size:.9em;
+			text-align:left;
 		}
 
 		img {
 			height:auto;
-			max-width:300px;
+			width:280px;
+			margin:0 auto;
+			max-width:100%;
 			z-index:1;
 			display:block;
 		}
 
-		.text {
-			text-align:center;
-			z-index:2;
-			position:relative;
-			font-family:$serif;
-			padding:10px 10px 10px 0;
-			margin-top:0;
-			font-size:17px;
-			line-height:24px;
-			color:#333;
-			background:rgba(247,247,247,.6);
-
-			em{
-				font-family:$alt-font;
-			}
-		}
+		ul li {display:inline-block;}
 	}
 
 	.mailchimp {
