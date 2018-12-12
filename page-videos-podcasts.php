@@ -8,23 +8,23 @@ Template Name: Videos & Podcasts
 <header class="page-header">
 
 	<h1 class="page-title"><?php the_title(); ?></h1>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-	<article id="post-<?php the_ID(); ?>" <?php post_class('pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-		<section class="entry-content" itemprop="articleBody">
-			<?php the_content(); ?>
-		</section> <!-- end article section -->
-
-	</article> <!-- end article -->
-
-	<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
 </header> <!-- end article header -->
 
 <div id="content" class="halfsies">
 
 	<main id="main" role="main">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class('subtitle'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+			<section class="entry-content" itemprop="articleBody">
+				<?php the_content(); ?>
+			</section> <!-- end article section -->
+
+		</article> <!-- end article -->
+
+		<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
 		<section id="videos">
 			<h2>A Few Videos that Already Exist</h2>
