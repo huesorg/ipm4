@@ -2866,16 +2866,13 @@ DONATE PAGE
 	select {
 		margin:0 auto 10px;
 		@extend .shadow;
-		@extend .gradient-warm;
-		height:3em;
 		font-size:.8em;
-		color:#fff;
-		border:transparent;
+		height:3em;
 		transition:transform .1s ease-in-out;
+
 
 		option {
 			padding:1vw;
-			color:#fff;
 			display:block;
 			height:2em;
 		}
