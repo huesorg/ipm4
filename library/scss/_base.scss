@@ -1825,7 +1825,9 @@ HOME PAGE
 			padding:0 4vw 4vw;
 
 			.more-link {
-				color:$pink;
+				@extend .button;
+				display:block;
+				margin:2em auto;
 			}
 		}
 	}
