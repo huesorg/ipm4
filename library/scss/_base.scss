@@ -1426,6 +1426,7 @@ TEASER STYLES
 
 		h3 {
 			font-size:calc(20px + 1.5vw);
+
 			a {
 				display:block;
 				position:relative;
@@ -1453,6 +1454,10 @@ TEASER STYLES
 				}
 			}
 		}
+	}
+
+	a {
+		text-decoration-color:black;
 	}
 
 	&.category-socialjustice {a:hover, .loopTitle h3 a:hover{color:$blue}.loopTitle h3 a:after {background-color:$blue;}}

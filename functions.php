@@ -194,7 +194,7 @@ function getPatreonAsk() {?>
 
             <div class="funding--buttons grid-cell">
                 <a class="button" href="http://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize'});">
-                    <div>🤗 Become a Supporting Patron</div>
+                    <div>🤗 Become a Member</div>
                 </a>
                 <a class="button" href="http://itspronouncedmetrosexual.com/donate/" alt="Donate" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Donate'});">
                     <div>💳 Donate</div>
