@@ -30,20 +30,20 @@ function getSnapshot() {?>
 	<h4>About the Author</h4>
 	<img src="<?php echo get_template_directory_uri();?>/library/images/sam-killermann-2016-headshot.jpg" alt="Sam Killermann Headshot"/>
 	<p>
-		Hi! I'm <a href="http://bit.ly/16fQZbg" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist. This site is part of <a href="http://bit.ly/2FZpVkB" alt="hues">hues</a>, a collection of global justice work created by me &amp; friends. Here are some other sites I've made that you might dig:
+		Hi! I'm <a href="http://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who creates for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
 	</p>
 	<ul>
 		<li>
 			<a href="http://bit.ly/2eyLccA" alt="The Safe Zone Project">
 				The Safe Zone Project</a> (a free online resource for LGBTQ awareness and allyship training workshops)
 		</li>
-		<li>
-			<a href="http://bit.ly/2eKSzZs" alt="hues">The hues Store</a> (merch supporting this site and my work)
-		</li>
 		<!-- <li>
+			<a href="http://bit.ly/2eKSzZs" alt="hues">The hues Store</a> (merch supporting this site and my work)
+		</li> -->
+		<li>
 			<a href="http://bit.ly/2dDlEtE" alt="The Sexualitree">
 				The Sexualitree</a> (a comprehensive sexuality model, curriculum, &amp; downloads)
-		</li> -->
+		</li>
 		<li>
 			<a href="http://bit.ly/1MAfukv" alt="I Heart the Singular They">
 				I <3 Singular They</a> (a love letter I wrote to a pronoun... yep. Oh, and I animated it!)
