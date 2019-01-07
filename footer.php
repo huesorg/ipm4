@@ -9,7 +9,6 @@
 
 		            <p style="margin:14px; line-height:1.6; color:rgba(255,255,255,.8);">
 		                It's Pronounced Metrosexual is gifted to you as part of <em style="font-family:georgia,serif;"><a style="text-decoration:none;" href="http://healthyunderstoodeducatedsafe.com" alt="hues Global Justice Collective"><span style="color:#f5a81c">h</span><span style="color:#e81d76">u</span><span style="color:#42b4e3">e</span><span style="color:#00a897">s</span></a></em>, a global justice collective of work created by Sam Killermann + Friends.</br> Support IPM by supporting other hues:
-
 		            </p>
 					<ul id="huesLogos">
 						<li>

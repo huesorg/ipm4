@@ -30,12 +30,9 @@ AD STYLES
 
 	ul {
 
-
 		li {
 
-
 			.newsButton {
-
 
 				span {
 					display:inline;
@@ -244,6 +241,23 @@ HOME PAGE
 	}
 }
 
+#home--intro--about .gradient-cool .connectorText{
+	top:50%;
+	left:0;
+}
+
+#usages--free {
+	margin-bottom:25vh;
+}
+
+#usages--uncopyrighted{
+	margin-bottom:25vh;
+	margin-top:25vh;
+}
+
+#usages--reader-funded{
+	margin-top:50vh;
+}
 /**********************
 ALL POSTS PAGE
 **********************/

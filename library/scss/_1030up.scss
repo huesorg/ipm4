@@ -38,8 +38,6 @@ LAYOUT & GRID STYLES
     }
 
 
-
-
 /*********************
 HEADER STYLES
 *********************/
@@ -186,7 +184,29 @@ NAVIGATION STYLES
 	}
 }
 
+/*********************
+HOME STYLES
+*********************/
 
+#home--intro--about {
+
+    .gradient-cool {
+        p {
+            position: relative;
+            margin-right:110px;
+            z-index: 1;
+        }
+    }
+    .self-portrait {
+        display:block;
+        position:absolute;
+        bottom:-3vw;
+        top:auto;
+        width:140px;
+        right:0;
+        z-index:0;
+    }
+}
 
 /**********************
 ACTIVITIES AND CLASSES PAGE STYLES

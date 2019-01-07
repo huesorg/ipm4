@@ -726,6 +726,22 @@ POSTS & CONTENT STYLES
 	}
 }
 
+#endOfTransmission {
+	font-size:.8em;
+
+	.gifted-to-you-by {
+		font-family:$theme-font;
+		display:block;
+		font-size:1.2em;
+
+		.cls-1 {
+			display:block;
+			position:absolute;
+			left:-1em;
+		}
+	}
+}
+
 #stickyPostTitle {
 	position: fixed;
 	height:40px;
@@ -1801,20 +1817,19 @@ HOME PAGE
 	display:inline-block;
 	padding:3px 10px;
 	line-height:1.2;
-	margin:1vw auto 3vw;
+	margin:0 auto;
 	border-radius:1px;
 	transform: rotate(-5deg);
+	position:absolute;
+	z-index:500;
+	left:50%;
+	top:-.5em;
+	transform:translateX(-50%) rotate(-5deg);
 }
 
 #home--hero {
 	position:relative;
-	.connectorText {
-		position:absolute;
-		z-index:500;
-		left:50%;
-		top:-10px;
-		transform:translateX(-50%) rotate(-5deg);
-	}
+
 
 	.loopCard {
 
@@ -1839,107 +1854,72 @@ HOME PAGE
 	padding-top:4vw;
 
 	> .grid {
-		position:relative;
 
 		> .grid-cell {
-			padding:0 0 3vw;
+			padding:1vw 0 4vw;
 			align-self: stretch;
-
-			h2 {
-				color:#fff;
-				font-size:calc(22px + 1.6vw);
-				padding:0 2vw;
-			}
-
-			p {
-				padding:2vw;
-				border-radius:10px;
-				background:rgba(255,255,255,.85);
-				margin:2vw 4vw 0;
-				@extend .shadow-high;
-			}
+			position:relative;
 		}
+	}
+
+	h2 {
+		color:#fff;
+		font-size:calc(22px + 1.6vw);
+		padding:0 2vw;
+	}
+
+	p {
+		padding:2vw;
+		border-radius:10px;
+		background:rgba(255,255,255,.85);
+		margin:2vw 4vw 0;
+		@extend .shadow-high;
 	}
 }
 
 #home--intro{
 	h1 {
-		margin:0 3vw 0;
+		margin:0 auto 2vw;
 		padding:0;
 		line-height:1;
-	}
-
-	#home--intro--resource-show {
-		.connectorText {
-			position:absolute;
-			transform: rotate(5deg);
-		}
-	}
-	#home--intro--sam {
-		position:relative;
-
-		.grid-cell {
-			padding:2vw 0 0;
-			max-width:800px;
-			align-self:center;
-		}
-		h2 {
-			margin:1em auto .83em;
-
-			span {
-				font-size:.6em;
-				position:absolute;
-				margin-left:7px;
-			}
-		}
-		p {
-			margin-bottom:5vw;
-		}
-
-		img {
-			max-width:140px;
-			height:auto;
-			align-self:center;
-		}
-
-		.connectorText {
-			position:absolute;
-			top:-1.5vw;
-			left:44%;
-			transform: rotate(-10deg);
-		}
-	}
-
-	#home--intro--usages {
-		padding:1vw 3vw 3vw;
-
-		.connectorText {
-			height:auto;
-			position:absolute;
-			left:25%;
-			top:-20px;
-			transform: rotate(4deg);
-		}
-
-		.grid-cell {
-			padding:0;
-		}
-		p {
-			margin:1vw;
-		}
+		max-width:66%;
 	}
 }
 
 .home {
 
 	.fundedByPatreon {
-		margin:4vw 4vw 0;
+		margin:2vw 4vw 4vw;
 
 		font-size:1.4em;
+	}
+
+}
+
+#home--intro--about {
+	.self-portrait {
+		display:none;
+	}
+}
+
+#home--intro--usages {
+	padding:1vw 3vw 0;
+	position: relative;
+
+	h2 {
+		color:black;
+	}
+
+	.grid-cell {
+		padding:0;
+	}
+	p {
+		margin:1vw;
 	}
 }
 
 #home--content {
+	position:relative;
 
 	#main.grid .grid-cell {
 		padding-top:40px;

@@ -127,46 +127,6 @@ function bones_register_sidebars() {
     	)
     );
 
-/************* CIRCLE SHARE *********************/
-
-function circleShare() {
-
-	  $shareExcerpt = get_the_excerpt();
-	  $tags = array("<p>", "</p>");
-	  $shareExcerpt = urlencode(html_entity_decode(str_replace($tags, "", $shareExcerpt)));
-
-	  $uncodedThumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-	  $shareThumb = urlencode(html_entity_decode($uncodedThumb[0]));?>
-
-	<ul class="circleShare">
-		<li>
-			<a id="fb" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_title());?>" target="_blank" alt="Share on Facebook">
-				<i class="fa fa-facebook"></i>
-			</a>
-		</li>
-		<li>
-			<a id="tw" href="https://twitter.com/share?text=<?php echo urlencode(get_the_title());?>&url=<?php echo urlencode(the_permalink());?>&via=ActuallyMetro" target="_blank" alt="Share on Twitter">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-		<li>
-			<a id="tu" href="http://www.tumblr.com/share/link?url=<?php echo urlencode(get_the_title());?>&name=<?php echo urlencode(get_the_title());?>&description=<?php echo $shareExcerpt?>" target="_blank" alt="Share on Tumblr">
-				<i class="fa fa-tumblr"></i>
-			</a>
-		</li>
-		<li>
-			<a id="go" href="https://plus.google.com/share?url=<?php echo urlencode(the_permalink());?>" alt="Share on Google Plus" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">
-				<i class="fa fa-google-plus"></i>
-			</a>
-		</li>
-		<li>
-			<a target="_blank" id="pi" href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode(the_permalink());?>&media=<?php echo $shareThumb?>&description=<?php echo $shareExcerpt?>">
-					<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	</ul>
-<?php
-}
 
 //Page Slug Body Class
 function add_slug_body_class( $classes ) {
@@ -177,6 +137,23 @@ function add_slug_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+/************* ACF OPTIONS PAGE *********************/
+
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+		'page_title' 	=> 'Patronage',
+		'menu_title'	=> 'Patronage',
+		'menu_slug' 	=> 'patronage',
+		'capability'	=> 'edit_posts',
+	));
+
+}
+
+/************* PATREON STUFF *********************/
+
 
 function getPatreonAsk() {?>
     <div class="fundedByPatreon">
