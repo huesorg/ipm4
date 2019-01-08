@@ -170,42 +170,6 @@ function getFollowIPMSingle(){?>
 
 add_action('bones_hook_post_footer','getFollowIPMSingle');
 
-function getYARPP() {?>
-	<div id="relatedFooter">
-		<h2>To Read Next</h2>
-		<div class="yarpp-related">
-
-		<?php $readnextquery = new WP_Query(
-			array(
-				'posts_per_page' => 7,
-				'offset' => 0,
-			    'post__not_in' => array (get_the_ID()),
-				'orderby' => 'post_date',
-				'order' => 'DESC',
-			)
-		); ?>
-
-		<ul >
-			<?php while($readnextquery->have_posts()) : $readnextquery->the_post();?>
-			<li class="shadowbox loopCard">
-				<a href="<?php the_permalink() ?>" rel="bookmark">
-					<div class="loopImage featuredImage">
-						<?php the_post_thumbnail('thumbnail');?>
-					</div>
-					<div class="loopText">
-						<h4 class="loopTitle"><?php the_title(); ?></h4>
-					</div>
-				</a>
-			</li>
-			<?php endwhile; wp_reset_postdata(); ?>
-		</ul>
-	</div>
-
-
-	</div><?php
-}
-
-add_action('bones_hook_post_footer','getYARPP');
 
 /* Books in Sidebar */
 

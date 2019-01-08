@@ -121,6 +121,7 @@
 					<img alt="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 					<span>Close</span>
 				</a>
+				<?php get_search_form(); ?>
 				<?php ipm_main_menu(); ?>
 
 			</nav>

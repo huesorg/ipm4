@@ -90,8 +90,11 @@ LAYOUT & GRID STYLES
 		grid-area:singlefooter;
 	}
 
-.page-template-page-full-width #content {
-	display:block;
+.page-template-page-full-width,
+.error404{
+	#content {
+		display:block;
+	}
 }
 
 /*********************
@@ -462,7 +465,8 @@ SIDEBARS & ASIDES
 	display:flex;
 	flex-direction:column;
 	justify-content: space-evenly;
-	padding-bottom:330px !important; /* for post carousel */
+	padding-bottom:4vw; /* for post carousel */
+	padding-top:600px;
 }
 
 .sidebar {

@@ -1,39 +1,30 @@
 <?php get_header(); ?>
+<header class="article-header">
+	<h1 class="page-title">4(Oh no!)4 Error 😧</h1>
 
-			<div id="content">
 
-				<div id="inner-content" class="wrap ">
+</header> <!-- end article header -->
 
-					<div id="main" role="main">
+<div id="content">
 
-						<article id="post-not-found" class="hentry">
+	<main id="main" role="main">
 
-							<header class="article-header">
+		<article id="post-not-found" class="hentry">
 
-								<h1>4(oh no!)4 Error <i class="fa fa-frown-o"></i> </h1>
+			<section class="entry-content">
 
-							</header> <!-- end article header -->
+				<p><strong>That thing you were looking for isn't this thing.</strong></p>
+				<p>I have failed you. Or you might have failed you. In any case, there was some definite failure here. Perhaps searching will land you where you want to go. Or you can just <a href="https://itspronouncedmetrosexual.com" title="Go Home">start fresh at the homepage</a>.</p>
+				<p><div class="inpageSearch"><?php get_search_form(); ?></div></p>
 
-							<section class="entry-content sixcol first">
+				<p><blockquote>I'm sorry I ruined your lives, and crammed eleven cookies into the VCR.</blockquote></p>
 
-								<p><strong>That thing you were looking for isn't this thing.</strong></p>
-								<p>I have failed you. Or you might have failed you. In any case, there was some definite failure here. Perhaps searching will land you where you want to go. Or you can just <a href="http://itspronouncedmetrosexual.com" alt="Go Home">start fresh at the homepage</a>. I'm sorry for cramming.</p>
-								<p><blockquote>I'm sorry I ruined your lives, and crammed eleven cookies into the VCR.</blockquote></p>
+			</section> <!-- end article section -->
 
-							</section> <!-- end article section -->
+		</article> <!-- end article -->
 
-							<section class="mobileHide search sixcol last">
+	</main> <!-- end #main -->
 
-									<p><div class="inpageSearch"><?php get_search_form(); ?></div></p>
-
-							</section> <!-- end search section -->
-
-						</article> <!-- end article -->
-
-					</div> <!-- end #main -->
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+</div> <!-- end #content -->
 
 <?php get_footer(); ?>

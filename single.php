@@ -105,7 +105,6 @@
 
 			</article> <!-- end article -->
 
-
 		<div id="stickyPostTitle" class="mobileHide unactiveSticky">
 
 			<ul id="stickyTitle">
@@ -122,16 +121,48 @@
 	</main> <!-- end #main -->
 	<?php endwhile; else : ?>
 	<article id="post-not-found" class="hentry grid-cell">
-			<header class="page-header">
-				<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-			</header>
-			<section class="entry-content">
-				<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-			</section>
+		<header class="page-header">
+			<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+		</header>
+		<section class="entry-content">
+			<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+		</section>
 	</article>
 	<?php endif; ?>
 	<?php get_sidebar(); ?>
 	<div id="singlefooter">
+		<div id="relatedFooter">
+			<h2>To Read Next</h2>
+			<div class="yarpp-related">
+
+			<?php $readnextquery = new WP_Query(
+				array(
+					'posts_per_page' => 7,
+					'offset' => 0,
+					'post__not_in' => array (get_the_ID()),
+					'orderby' => 'post_date',
+					'order' => 'DESC',
+				)
+			); ?>
+
+			<ul >
+				<?php while($readnextquery->have_posts()) : $readnextquery->the_post();?>
+				<li class="shadowbox loopCard">
+					<a href="<?php the_permalink() ?>" rel="bookmark">
+						<div class="loopImage featuredImage">
+							<?php the_post_thumbnail('thumbnail');?>
+						</div>
+						<div class="loopText">
+							<h4 class="loopTitle"><?php the_title(); ?></h4>
+						</div>
+					</a>
+				</li>
+				<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
+		</div>
+
+
+		</div>
 		<div class="footerPatreon">
 			<?php getPatreonAsk();?>
 		</div>
