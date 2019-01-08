@@ -154,7 +154,6 @@ if( function_exists('acf_add_options_page') ) {
 
 /************* PATREON STUFF *********************/
 
-
 function getPatreonAsk() {?>
     <div class="fundedByPatreon">
         <div class="grid grid--fit">
@@ -186,6 +185,29 @@ function getPatreonAsk() {?>
         </div>
     </div><!--/fundedbypatreon--><?php
 }
+
+/**
+ * ALGOLIA
+ * Don't index pages where the robot index option
+ * in the Yoast SEO plugin is set to noindex.
+ *
+ * @param bool    $should_index
+ * @param WP_Post $post
+ *
+ * @return bool
+ */
+
+function filter_post( $should_index, WP_Post $post )
+{
+    if ( false === $should_index ) {
+        return false;
+    }
+
+    return get_post_meta($post->ID, '_yoast_wpseo_meta-robots-noindex', true) == 1 ? false : true;
+}
+
+// Hook into Algolia to manipulate the post that should be indexed.
+add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
 
 /************* ADS SHORTCODE *********************/
 

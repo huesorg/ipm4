@@ -74,17 +74,17 @@ Template Name: Homepage
 			<div class="gradient-warm grid-cell">
 				<span class="connectorText">is a</span>
 				<h2>Free Online Resource</h2>
-				<p>Educating millions of readers on themes of <a class="yellow" href="http://itspronouncedmetrosexual.com/category/gender-2/" title="Posts about Gender">gender</a>, <a class="purple" href="http://itspronouncedmetrosexual.com/category/sexuality-2/" title="Posts about Sexuality">sexuality</a>, &amp; <a class="blue" href="http://itspronouncedmetrosexual.com/category/socialjustice" title="Posts about Social Justice">social justice</a>, the <a href="http://itspronouncedmetrosexual.com/articles-books" title="Articles and Books">articles</a>, <a href="http://itspronouncedmetrosexual.com/edugraphics-printables" title="Articles and Books">edugraphics</a>, and other resources you'll find here are all <a href="http://itspronouncedmetrosexual.com/uncopyright" title="Uncopyright Statement">uncopyrighted</a> &mdash; yours to use to do good however you see fit. <a title="About IPM" href="https://itspronouncedmetrosexual.com/about">Read more about It's Pronounced Metrosexual.</a></p>
+				<p>Educating millions of readers on themes of <a class="yellow" href="https://itspronouncedmetrosexual.com/category/gender-2/" title="Posts about Gender">gender</a>, <a class="purple" href="https://itspronouncedmetrosexual.com/category/sexuality-2/" title="Posts about Sexuality">sexuality</a>, &amp; <a class="blue" href="https://itspronouncedmetrosexual.com/category/socialjustice" title="Posts about Social Justice">social justice</a>, the <a href="https://itspronouncedmetrosexual.com/articles-books" title="Articles and Books">articles</a>, <a href="https://itspronouncedmetrosexual.com/edugraphics-printables" title="Edugraphics">edugraphics</a>, and other resources you'll find here are all <a href="https://itspronouncedmetrosexual.com/uncopyright" title="Uncopyright Statement">uncopyrighted</a> &mdash; yours to use to do good however you see fit. <a title="About IPM" href="https://itspronouncedmetrosexual.com/about">Read more about IPM</a></p>
 			</div>
 			<!-- <div class="gradient-cool grid-cell disabled">
 				<h2>Social Justice Comedy Show (Closed)</h2>
-				<p>Performed at hundreds of colleges, universities, and high schools around North America, IPM's <a href="http://itspronouncedmetrosexual.com/campus-programs" title="Campus Programs">campus programs</a> use humor and storytelling to introduce audiences to themes of gender and social justice.</p>
+				<p>Performed at hundreds of colleges, universities, and high schools around North America, IPM's <a href="https://itspronouncedmetrosexual.com/campus-programs" title="Campus Programs">campus programs</a> use humor and storytelling to introduce audiences to themes of gender and social justice.</p>
 			</div> -->
 			<div class="grid-cell gradient-cool">
 				<span class="connectorText">by</span>
 				<h2>Sam Killermann</h2>
 				<p>
-					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong>&nbsp; &nbsp;<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="http://bit.ly/bemyboss">Be My Boss.</a></strong>
+					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong> <strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 
 				<img class="self-portrait" src="<?php echo get_template_directory_uri(); ?>/library/images/hi-im-sam-bottom-shadow.png" alt="Sam Killermann Self Portrait">
@@ -96,7 +96,7 @@ Template Name: Homepage
 				<h2>Sam Killermann <span>(that's me!)</span></h2>
 				<p>
 					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <br/><strong><a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more about moi.</a></strong>&nbsp; &nbsp;
-					<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="http://bit.ly/bemyboss">Be My Boss.</a></strong>
+					<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 			</div>
 		</div> -->
@@ -111,13 +111,13 @@ Template Name: Homepage
 			<div id="usages--uncopyrighted" class="grid-cell grid--center">
 				<h2>Uncopyrighted!</h2>
 				<p>
-					Yep, that means exactly you think it means. Everything here is <em>yours</em> to use, and you don't need to ask permission. I uncopyrighted everything <a href="http://itspronouncedmetrosexual.com/2013/11/uncopyright/" alt="Uncopyright Announcement">back in 2013</a>, and reflected on the decision (happily) <a href="http://itspronouncedmetrosexual.com/2014/12/uncopyright-reflection/" alt="Uncopyright Reflection">in 2014</a>.
+					Yep, that means exactly you think it means. Everything here is <em>yours</em> to use, and you don't need to ask permission. I uncopyrighted everything <a href="https://itspronouncedmetrosexual.com/2013/11/uncopyright/" alt="Uncopyright Announcement">back in 2013</a>, and reflected on the decision (happily) <a href="https://itspronouncedmetrosexual.com/2014/12/uncopyright-reflection/" alt="Uncopyright Reflection">in 2014</a>.
 				</p>
 			</div>
 			<div id="usages--reader-funded" class="grid-cell grid--bottom">
 				<h2>Reader-funded!</h2>
 				<p>
-					Your access is guaranteed by a small group of generous humans who give monthly to help me <a href="https://www.patreon.com/itspronouncedmetrosexual" title="IPM Patreon">afford hosting &amp; overhead costs for the site</a>, and another group of people who <a href="https://www.patreon.com/killermann" title="Sam Killermann Patreon">employ me to create everything</a> -- keeping this whole operation running &mdash; independent &amp; free of advertising.
+					Your access is guaranteed by a small group of generous humans who give monthly to help me <a href="https://www.patreon.com/itspronouncedmetrosexual" title="IPM Patreon">afford hosting &amp; overhead costs for the site</a>, and another group of people who <a href="https://www.patreon.com/killermann" title="Sam Killermann Patreon">employ me to create everything</a> &mdash; keeping this whole operation running,  independent &amp; free of advertising.
 				</p>
 			</div>
 		</div><!--/grid-->
@@ -133,7 +133,7 @@ Template Name: Homepage
 				<h2>News &amp; Noteworthy</h2>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(' entry-content'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(' entry-content'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 					<section class="" itemprop="articleBody">
 						<?php the_content(); ?>
