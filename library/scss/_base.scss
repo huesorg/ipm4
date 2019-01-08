@@ -3430,18 +3430,20 @@ SEARCH STYLES
 	}
 
 
-#algolia-search-box input {
-	border-color:#eb366e;
-}
-
-#algolia-search-box .search-icon {
-	fill:#eb366e;
-}
 
 #ais-wrapper {
 	width:960px;
 	max-width:92%;
 	margin:4vw auto;
+
+	#algolia-search-box input {
+		border-color:#eb366e !important;
+	}
+
+	#algolia-search-box .search-icon {
+		fill:#eb366e !important;
+	}
+
 
 	#ais-facets {
 		display:none;
