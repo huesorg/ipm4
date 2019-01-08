@@ -30,7 +30,7 @@ function getSnapshot() {?>
 	<h4>About the Author</h4>
 	<img src="<?php echo get_template_directory_uri();?>/library/images/sam-killermann-2016-headshot.jpg" alt="Sam Killermann Headshot"/>
 	<p>
-		Hi! I'm <a href="http://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who creates for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
+		Hi! I'm <a href="http://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who is employed by <a href="https://bemyboss.es" title="Be Sam Killermann's Boss(es)">a collective of bosses</a> to create for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
 	</p>
 	<ul>
 		<li>
