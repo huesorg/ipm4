@@ -3425,6 +3425,7 @@ SEARCH STYLES
 		border-radius:6px;
 		color:#000;
 		font-family:$sans-serif;
+		box-sizing: border-box;
 		@extend .shadow;
 	}
 
