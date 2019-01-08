@@ -3429,40 +3429,35 @@ SEARCH STYLES
 		@extend .shadow;
 	}
 
-.wp-sls-search-modal__container {
-	position:relative;
-	border-radius:1em;
-	padding:6vw;
-	background:#fff;
-	@include shadow-high();
 
-	.screen-reader-text {
-		visibility: hidden;
-		text-indent:-9999px;
-		width:0px;
-		height:0px;
-		display:block;
-		overflow:hidden;
-	}
-
-	.wp-sls-search-modal__header {
-		margin:0;
-		a {
-			position:absolute;
-			top:10px;
-			right:10px;
-			display:block;
-			width:1.5em;
-			height:1.5em;
-			line-height:1.5;
-			text-align:center;
-			text-decoration:none;
-			background:#efefef;
-			border-radius:100px;
-		}
-	}
+#algolia-search-box input {
+	border-color:#eb366e;
 }
 
+#algolia-search-box .search-icon {
+	fill:#eb366e;
+}
+.ais-wrapper {
+	width:960px;
+	max-width:92%;
+	margin:4vw auto;
+
+	.ais-facets {
+		display:none;
+	}
+
+	.ais-hits--item {
+		border-radius:10px;
+		background:#fff;
+		padding:2vw;
+		@include shadow-high();
+	}
+
+	.suggestion-post-content, .excerpt {
+		font-family:$sans-serif;
+		text-align:left;
+	}
+}
 /*********************
 TESTIMONIAL STYLES
 *********************/
