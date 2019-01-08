@@ -84,7 +84,7 @@ Template Name: Homepage
 				<span class="connectorText">by</span>
 				<h2>Sam Killermann</h2>
 				<p>
-					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong>&nbsp; &nbsp;<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bemyboss.es">Be My Boss.</a></strong>
+					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong>&nbsp; &nbsp;<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="http://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 
 				<img class="self-portrait" src="<?php echo get_template_directory_uri(); ?>/library/images/hi-im-sam-bottom-shadow.png" alt="Sam Killermann Self Portrait">
@@ -96,7 +96,7 @@ Template Name: Homepage
 				<h2>Sam Killermann <span>(that's me!)</span></h2>
 				<p>
 					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <br/><strong><a title="About Sam Killermann" href="https://itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more about moi.</a></strong>&nbsp; &nbsp;
-					<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bemyboss.es">Be My Boss.</a></strong>
+					<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="http://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 			</div>
 		</div> -->
