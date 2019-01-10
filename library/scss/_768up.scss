@@ -11,7 +11,7 @@ GENERAL STYLES
 
 .desktopHide {display:none !important;}
 
-.mobileHide {display:block;}
+.mobileHide {display:block !important;}
 
 .stickthissomewhere { position: sticky; top:4vw;}
 
@@ -220,10 +220,6 @@ HOME PAGE
 #home--hero {
 	margin:4vw;
 
-	.connectorText {
-		top:-30px;
-		transform:translateX(-50%) rotate(-5deg);
-	}
 	.loopTitle h3, .loopTitle h4 {
 		padding:0;
 		text-align:left !important;

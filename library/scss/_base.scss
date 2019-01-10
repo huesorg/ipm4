@@ -27,7 +27,7 @@ body {
 }
 
 .mobileHide {
-	display:none;
+	display:none !important;
 }
 
 .hide {
@@ -520,12 +520,12 @@ HEADER STYLES
 
 	#s {
 		text-align:center;
-		width:calc(100% - 1vw);
+		width:96% !important;
 		display:block;
 		padding:.5rem;
-		margin:.5vw auto;
+		margin:2%;
 		text-decoration:none;
-		display:block;
+		display:block !important;
 	}
 }
 #mask {
@@ -656,15 +656,21 @@ POSTS & CONTENT STYLES
 		padding:7px;
 		border-radius:10px;
 
-		#subscribeFeedburner{
-			@extend .gradient-grey;
-			@extend .shadow;
-			border-radius:7px;
-			padding:3vw;
+	}
 
-			h3 {
-				margin:0;
-			}
+	#subscribeFeedburner{
+		@extend .gradient-grey;
+		@extend .shadow;
+		border-radius:7px;
+		padding:4vw;
+
+		h3 {
+			margin: 0 auto 20px;
+		}
+
+		p {
+			margin:20px auto 0;
+			font-size:.8em;
 		}
 	}
 
@@ -1829,16 +1835,21 @@ HOME PAGE
 	display:inline-block;
 	padding:3px 10px;
 	line-height:1.2;
+	font-size:.8rem;
 	margin:0 auto;
 	border-radius:1px;
 	transform: rotate(-5deg);
 	position:absolute;
 	z-index:500;
 	left:50%;
-	top:-.5em;
+	top:-.5rem;
 	transform:translateX(-50%) rotate(-5deg);
 }
 
+#home--hero, #home--intro, #home--content {
+	margin-bottom:40px;
+
+}
 #home--hero {
 	position:relative;
 
@@ -1846,9 +1857,15 @@ HOME PAGE
 		max-width:1440px;
 		margin:0 auto;
 
+		h3, h4 {
+			text-align:left;
+			padding:0;
+		}
+
 		h4 {
 			margin:.5em 0;
 		}
+
 		.loopContent {
 			padding:0 4vw 4vw;
 
@@ -1857,6 +1874,8 @@ HOME PAGE
 				text-align:center;
 				display:inline-block;
 				margin:2em 2em 0;
+				font-family:$sans-serif;
+				font-weight:bold;
 			}
 		}
 	}
@@ -1975,15 +1994,13 @@ HOME PAGE
 			margin-top:1vw;
 		}
 
-
-		.connectorText {
-			top:-1vw;
-			margin:0 auto;
-			position:absolute;
-			background:lighten($accent-color,20%);
-		}
-
 	}
+
+	.connectorText {
+		top:-2em;
+		background:lighten($accent-color,20%);
+	}
+
 
 	.shadowbox {
 		margin:0;

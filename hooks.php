@@ -150,7 +150,6 @@ function getFollowIPMSingle(){?>
 		<div class="grid grid--justifyCenter small-grid--fit grid--full">
 			<div id="subscribeFeedburner" class="grid-cell">
 				<h3>Get New Posts Delivered to Your Email Inbox</h3>
-				<p class="description">Totally free, totally automagic (delivered by <a href="http://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and you will only get an email when there's a new article, edugraphic, or blog post (no other announcements). Only the freshest.</p>
 
 				<form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow">
 					<div class="grid inputGrid">
@@ -160,6 +159,8 @@ function getFollowIPMSingle(){?>
 						<button type="submit" value="Subscribe" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Feedburner-Single-Footer'});">Want.</button>
 					</div>
 				</form>
+
+				<p class="description">Totally free, totally automagic (delivered by <a href="http://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and <strong>you will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
 
 			</div>
 

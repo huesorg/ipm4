@@ -6,8 +6,6 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 	<div id="stickyPostTitle" class="unactiveSticky">
-
-
 		<ul id="stickyTitle" class="grid grid--center grid--justifyCenter grid--fit">
 			<li class="grid-cell">Jump to</li>
 			<li class="grid-cell">
@@ -128,7 +126,7 @@ Template Name: Homepage
 	<div id="home--content" class="grid grid--full medium-grid--fit">
 		<div id="main" class="grid grid--center grid--justifyCenter grid-cell gradient-grey" role="main">
 			<div class="grid-cell grid-cell--autoSize">
-				<span class="connectorText">Welcome to my corner of the internet!</span>
+				<span class="connectorText mobileHide">Welcome to my corner of the internet!</span>
 
 				<h2>News &amp; Noteworthy</h2>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
