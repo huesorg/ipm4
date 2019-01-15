@@ -18,14 +18,21 @@ Template Name: Articles & Books
 			<section class="" itemprop="articleBody">
 				<?php the_content(); ?>
 			</section> <!-- end article section -->
-			<a class="button" href="#recentUpdates">Jump to the Latest &darr;</a>
+			<p>
+				<a class="button" href="#recentUpdates">Jump to the Latest &darr;</a>
+			</p>
 
 		</article> <!-- end article -->
 
 		<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
-		<div id="popular">
-			<h3 class="pageSubhead">Greatest of All Time (G.O.A.T.s)</h3>
+		<section id="popular">
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🐐 Greatest of All Time (G.O.A.T.s)</h3>
+				<span>
+					Shared over <strong class="count">500,000</strong> times
+				</span>
+			</div>
 			<div class="flickable-posts-wrap">
 				<?php $goatQuery = new WP_Query(
 					array(
@@ -49,7 +56,12 @@ Template Name: Articles & Books
 					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</div><!--/flickable-posts-wrap-->
-			<h3 class="pageSubhead">Greatest Hits</h3>
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🏆 Greatest Hits</h3>
+				<span>
+					Shared over <strong class="count">100,000</strong> times
+				</span>
+			</div>
 			<div class="flickable-posts-wrap">
 				<?php $greatestHitsQuery = new WP_Query(
 					array(
@@ -73,17 +85,22 @@ Template Name: Articles & Books
 					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</div><!--/flickable-posts-wrap-->
-			<h3 class="pageSubhead">Rising Stars</h3>
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🏅 Bona Fide Hits</h3>
+				<span>
+					Approaching <strong class="count">100,000</strong> social media shares
+				</span>
+			</div>
 			<div class="flickable-posts-wrap">
-				<?php $risingStarQuery = new WP_Query(
+				<?php $bonaFideHitsQuery = new WP_Query(
 					array(
 						'posts_per_page' => -1,
-						'tag' => 'rising-star',
+						'tag' => 'bona-fide-hit',
 					)
 				); ?>
 
 				<ul class="flickable-posts">
-					<?php while($risingStarQuery->have_posts()) : $risingStarQuery->the_post();?>
+					<?php while($bonaFideHitsQuery->have_posts()) : $bonaFideHitsQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
 						<a href="<?php the_permalink() ?>" rel="bookmark">
 							<div class="loopImage featuredImage">
@@ -97,13 +114,17 @@ Template Name: Articles & Books
 					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</div><!--/flickable-posts-wrap-->
-		</div>
+			<div class="text-center bigpad">
+				<a class="button" title="All Popular Posts" href="https://itspronouncedmetrosexual.com/popular">View All Popular Posts &rarr;</a>
+			</div>
+
+		</section><!--/popular-->
 
 		<?php getPatreonAsk();?>
 
-		<div id="recentUpdates">
+		<section id="recentUpdates">
 
-			<h3 class="pageSubhead">Recent Articles</h3>
+			<h3 class="pageSubhead">The Latest</h3>
 
 			<?php $articlesBooksQuery = new WP_Query(
 				array(
@@ -127,7 +148,7 @@ Template Name: Articles & Books
 
 			endwhile; wp_reset_postdata(); ?>
 
-		</div><!--/recentUpdates-->
+		</section><!--/recentUpdates-->
 		<a href="http://itspronouncedmetrosexual.com/all-articles/" class="button button-wide" alt="All Articles">View All Articles</a>
 	</div><!--/main-->
 

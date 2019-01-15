@@ -12,15 +12,13 @@ LAYOUT & GRID STYLES
 *********************/
 
 #content {
-    padding:0 3vw;
-    grid-template-columns: 1fr 33.3333%;
 
     .sidebar {
         padding:0 3vw;
     }
 
     &.halfsies {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:50% 50%;
     }
 }
 .single #content {
@@ -28,7 +26,8 @@ LAYOUT & GRID STYLES
         "meta main sidebar"
         "singlefooter singlefooter singlefooter"
     ;
-    grid-template-columns: 240px 1fr 240px;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap:0;
 }
 
 
