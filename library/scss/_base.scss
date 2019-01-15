@@ -3279,18 +3279,17 @@ SIDEBARS & ASIDES
 }
 
 .flickable-posts-wrap {
-	z-index:100;
-	box-sizing:content-box;
-	overflow-x:scroll;
+	width:100%;
 
 	.flickable-posts {
 		margin:0 auto;
 		padding:10px 25px 30px;
 		display:flex;
-		flex-wrap:nowrap;
-		flex-direction:row;
-		scroll-snap-type:x mandatory;
-
+		box-sizing:content-box;
+		overflow-x:auto;
+		-webkit-overflow-scrolling:touch;
+		-ms-scroll-snap-type: mandatory;
+    	scroll-snap-type: mandatory;
 
 		.flickable-post {
 			width:220px;
@@ -3302,7 +3301,7 @@ SIDEBARS & ASIDES
 			justify-content: flex-start;
 			align-items:stretch;
 			font-size:16px;
-			scroll-snap-align: center;
+			scroll-snap-align: start;
 			box-shadow:none;
 
 			a {
