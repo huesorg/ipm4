@@ -54,7 +54,7 @@
 						<span>Menu</span>
 					</a>
 					<div id="logo">
-						<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow">
+						<a id="logo" title="IPM" href="<?php echo home_url(); ?>" rel="nofollow">
 							<img alt="It's Pronounced Metrosexual" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-logo.svg"/  onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Logo'});">
 						</a>
 						<!-- <a id="beta" href="<?php echo home_url(); ?>/beta" alt="IPM is currently in Beta">
@@ -77,41 +77,41 @@
 								</a>
 							</li> -->
 							<li id="articles">
-								<a href="<?php echo home_url(); ?>/articles-books" title="Articles and Books" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Articles-Books'});">
+								<a href="<?php echo home_url(); ?>/articles-books" title="Articles &amp; Books" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Articles-Books'});">
 									<strong>Articles</strong>
 									<span><span class="amp">&amp;</span>&nbsp;Books</span>
 								</a>
 							</li>
 							<li id="edugraphics">
-								<a href="<?php echo home_url(); ?>/edugraphics-printables" title="Edugraphics and Printables" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Edugraphics-Printables'});">
+								<a href="<?php echo home_url(); ?>/edugraphics-printables" title="Edugraphics &amp; Printables" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Edugraphics-Printables'});">
 									<strong>Edugraphics</strong>
 									<span><span class="amp">&amp;</span>&nbsp;Printables</span>
 								</a>
 							</li>
 							<li id="activities">
-								<a href="<?php echo home_url(); ?>/activities-classes" title="Activities and Classes" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Activities-Classes'});">
+								<a href="<?php echo home_url(); ?>/activities-classes" title="Activities &amp; Classes" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Activities-Classes'});">
 									<div id="NewClassesFlag" class="newsFlag hide">New</div>
 									<strong>Activities</strong>
 									<span><span class="amp">&amp;</span>&nbsp;Classes</span>
 								</a>
 							</li>
 							<li id="videos">
-								<a href="<?php echo home_url(); ?>/videos-podcasts" title="Videos and Podcasts" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Videos-Podcasts'});">
+								<a href="<?php echo home_url(); ?>/videos-podcasts" title="Videos &amp; Podcasts" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Videos-Podcasts'});">
 									<div id="NewPodcastFlag" class="newsFlag hide">New</div>
 									<strong>Videos</strong>
 									<span><span class="amp">&amp;</span>&nbsp;Pods</span>
 								</a>
 							</li>
 							<li id="donate">
-								<a href="<?php echo home_url(); ?>/donate" title="Donate & Support IPM" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Donate'});">
+								<a href="<?php echo home_url(); ?>/donate" title="Donate &amp; Support IPM" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Donate'});">
 									<strong>Donate</strong>
 								</a>
 							</li>
 						</ul>
 					</nav>
-					<a class="supportNavToggle" href="#" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Support-Nav'});">
+					<a class="supportNavToggle" title="Support Sam Killermann &amp; IPM" href="#" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Help Out'});">
 						<img alt="Support It's Pronounced Metrosexual" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-support.svg"/>
-						<span>Support Me</span>
+						<span>Help Out</span>
 					</a>
 				</div>
 			</header> <!-- end header -->

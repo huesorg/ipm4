@@ -18,58 +18,86 @@ Template Name: Articles & Books
 			<section class="" itemprop="articleBody">
 				<?php the_content(); ?>
 			</section> <!-- end article section -->
+			<a class="button" href="#recentUpdates">Jump to the Latest &darr;</a>
 
 		</article> <!-- end article -->
 
 		<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
+		<div id="popular">
+			<h3 class="pageSubhead">Greatest of All Time (G.O.A.T.s)</h3>
+			<div class="flickable-posts-wrap">
+				<?php $goatQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'greatest-of-all-time',
+					)
+				); ?>
 
-		<div id="popularByCat">
-			<h3 class="pageSubhead">Most Popular Articles</h3>
-			<div class="grid grid--flexCells grid--guttersLg grid--full small-grid--fit">
-				<div class="grid-cell">
-					<div class="card all-time">
-						<span class="title">All-Time Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card edugraphics">
-						<span class="title"><a class="green" href="<?php echo home_url(); ?>/category/edugraphics">Edugraphics</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='70'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card opEd">
-						<span class="title"><a class="orange" alt="All Op-Ed" href="<?php echo home_url(); ?>/category/op-ed">Opinion Editorial</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&stats_comments=0&cat='67'&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-			</div>
+				<ul class="flickable-posts">
+					<?php while($goatQuery->have_posts()) : $goatQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+			<h3 class="pageSubhead">Greatest Hits</h3>
+			<div class="flickable-posts-wrap">
+				<?php $greatestHitsQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'greatest-hits',
+					)
+				); ?>
 
-			<div class="grid grid--flexCells grid--guttersLg small-grid--fit">
-				<div class="grid-cell">
-					<div class="card socialJustice">
-						<span class="title"><a class="blue" alt="All Social Justice" href="<?php echo home_url(); ?>/category/socialjustice">Social Justice</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='27'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
+				<ul class="flickable-posts">
+					<?php while($greatestHitsQuery->have_posts()) : $greatestHitsQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+			<h3 class="pageSubhead">Rising Stars</h3>
+			<div class="flickable-posts-wrap">
+				<?php $risingStarQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'rising-star',
+					)
+				); ?>
 
-				<div class="grid-cell">
-					<div class="card gender">
-						<span class="title"><a class="yellow" alt="All Gender" href="<?php echo home_url(); ?>/category/gender-2">Gender</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='96'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card sexuality">
-						<span class="title"><a class="purple" alt="All Sexuality" href="<?php echo home_url(); ?>/category/sexuality-2">Sexuality</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='82'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-			</div><!--/grid-->
-
-		</div><!--/popularByCat-->
+				<ul class="flickable-posts">
+					<?php while($risingStarQuery->have_posts()) : $risingStarQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+		</div>
 
 		<?php getPatreonAsk();?>
 

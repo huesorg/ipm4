@@ -12,6 +12,8 @@ sidebars, comments, ect.
 
 require_once('loops.php'); // Where all the loopCard functions are stored
 require_once('hooks.php'); // Where all the custom hooks are registered and stored
+require_once('template-tags.php'); // Where all the custom hooks are registered and stored
+
 
 /*
 1. library/bones.php
@@ -150,40 +152,6 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 	));
 
-}
-
-/************* PATREON STUFF *********************/
-
-function getPatreonAsk() {?>
-    <div class="fundedByPatreon">
-        <div class="grid grid--fit">
-            <p class="grid-cell">
-                <strong><?php
-                    if( is_single() ){
-                        echo '"';
-                        echo the_title();
-                        echo '"';
-                    } else {echo 'IPM';}
-                ?> is reader &amp; patron funded, 100% free and uncopyrighted.</strong>
-                <span>Join or donate to help support social justice media.</span>
-            </p>
-
-            <div class="funding--buttons grid-cell">
-                <a class="button" href="https://www.itspronouncedmetrosexual.com/support/" target="_blank" title="Support It's Pronounced Metrosexual" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Support the Site'});">
-                    <div>🖥 Support the Site</div>
-                </a>
-                <a class="button" href="https://www.itspronouncedmetrosexual.com/support/author" title="Support the Author" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Support the Author'});">
-                    <div>👨‍💻 Support the Author</div>
-                </a>
-                <!-- <a class="button" href="http://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize'});">
-                    <div>🤗 Become a Member</div>
-                </a> -->
-                <!-- <a class="button" href="http://itspronouncedmetrosexual.com/donate/" alt="Donate" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Donate'});">
-                    <div>💳 Donate</div>
-                </a> -->
-            </div>
-        </div>
-    </div><!--/fundedbypatreon--><?php
 }
 
 /**
