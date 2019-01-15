@@ -3283,9 +3283,8 @@ SIDEBARS & ASIDES
 		display:flex;
 		flex-wrap:nowrap;
 		flex-direction:row;
-		scroll-snap-points-x: repeat(210px);
-		-ms-scroll-snap-type: mandatory;
-		scroll-snap-type: mandatory;
+		scroll-snap-type:x mandatory;
+
 
 		.flickable-post {
 			width:220px;
@@ -3297,7 +3296,7 @@ SIDEBARS & ASIDES
 			justify-content: flex-start;
 			align-items:stretch;
 			font-size:16px;
-			scroll-snap-align: start;
+			scroll-snap-align: center;
 			box-shadow:none;
 
 			a {
