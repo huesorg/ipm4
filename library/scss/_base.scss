@@ -2324,6 +2324,12 @@ POPULAR PAGE
 	#popular {
 		margin:6vw -3vw;
 
+		p {
+			margin:1em auto;
+			width:720px;
+			max-width:90%;
+		}
+
 		.flickable-post.badge {
 			box-shadow:none !important;
 			align-items:center;

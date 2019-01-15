@@ -265,9 +265,9 @@ Template Name: Popular Posts
 					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</div><!--/flickable-posts-wrap-->
-			<div class="shareBrag" id="Honorably-Unmentioned">
+			<div class="shareBrag bigpad" id="Honorably-Unmentioned">
 				<h2>💩 Honorably Unmentioned</h2>
-				<p style="max-width:720px; margin:1em auto;">
+				<p>
 					The posts <strong class="count">that don't have 500 Shares</strong> (and maybe never will) don't get a fancy badge, and aren't listed here. <a href="https://itspronouncedmetrosexual.com/all-articles">But you can find them by their inauspiciousness</a> (none of the tags mentioned above) and &mdash; if you find one worth voting for &mdash; have your say on social media, planting a seed that others might help grow.
 				</p>
 			</div>
