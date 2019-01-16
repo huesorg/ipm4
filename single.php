@@ -131,7 +131,7 @@
 	<?php endif; ?>
 	<?php get_sidebar(); ?>
 	<div id="singlefooter">
-		<div id="relatedFooter">
+		<div id="relatedFooter" class="text-center">
 			<h2>To Read Next</h2>
 			<div class="flickable-posts-wrap">
 				<?php $readnextquery = new WP_Query(
