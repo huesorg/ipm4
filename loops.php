@@ -42,7 +42,7 @@ function loopTeaser() {?>
 			<div class="grid-cell loopText grid-cell--center">
 				<div class="byline">
 					<p>
-						By <a href="https://itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a> 
+						By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a> 
 						on <?php the_date(); ?>. <span class="updated">Last updated <?php the_modified_date(); ?></span>
 					</p>
 				</div>

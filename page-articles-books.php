@@ -115,7 +115,7 @@ Template Name: Articles & Books
 				</ul>
 			</div><!--/flickable-posts-wrap-->
 			<div class="text-center bigpad">
-				<a class="button" title="All Popular Posts" href="https://itspronouncedmetrosexual.com/popular">View All Popular Posts &rarr;</a>
+				<a class="button" title="All Popular Posts" href="htps://www.itspronouncedmetrosexual.com/popular">View All Popular Posts &rarr;</a>
 			</div>
 
 		</section><!--/popular-->

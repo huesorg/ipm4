@@ -53,7 +53,7 @@
 
 		<div class="byline desktopHide">
 			<p>
-				By <a href="https://itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
+				By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
 				on <?php the_date(); ?> in <?php the_category(' / ') ?> tagged
 				<?php the_tags('',', ',''); ?>. <span class="updated">Updated <?php the_modified_date(); ?></span>
 			</p>
@@ -69,7 +69,7 @@
 	<aside id="articleStuff" role="complementary">
 		<div class="mobileHide byline">
 			<p>
-				By <a href="https://itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
+				By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
 				on <?php echo get_the_date(); ?> in <?php the_category(' / ') ?> tagged
 				<?php the_tags('',', ',''); ?>. <p><strong class="updated pink">Updated <?php the_modified_date('m/d/Y'); ?></strong></p>
 			</p>
