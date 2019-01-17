@@ -8,9 +8,9 @@ Template Name: Programs Page
 
 			<div id="content" class="programsPage">
 				<address class="closed">
-					<p><strong><a href="http://itspronouncedmetrosexual.com/about-sam-killermann/" title="About Sam Killermann">Sam</a> here. Sorry to be the bearer of bad news, but I'm "closing" the campus programs aspect of IPM.</strong> There are lots of reasons for this decision, but the short version is I couldn't do it <a href="http://itspronouncedmetrosexual.com/2018/02/announcement-im-no-longer-affiliated-talent-agency-manager/" title="No longer with a manager">without my manager</a> slash <a href="https://www.youtube.com/watch?v=MqBNSMbEzI0" title="Supercut of I'm Getting too old for this">I'm gettin' too old for this</a>. For now, I'm leaving this page up to help spread the word about this change, and also as a time capsule of sorts.</p>
+					<p><strong><a href="https://www.itspronouncedmetrosexual.com/about-sam-killermann/" title="About Sam Killermann">Sam</a> here. Sorry to be the bearer of bad news, but I'm "closing" the campus programs aspect of IPM.</strong> There are lots of reasons for this decision, but the short version is I couldn't do it <a href="https://www.itspronouncedmetrosexual.com/2018/02/announcement-im-no-longer-affiliated-talent-agency-manager/" title="No longer with a manager">without my manager</a> slash <a href="https://www.youtube.com/watch?v=MqBNSMbEzI0" title="Supercut of I'm Getting too old for this">I'm gettin' too old for this</a>. For now, I'm leaving this page up to help spread the word about this change, and also as a time capsule of sorts.</p>
 					<p><strong>Caveat</strong>: If you've already booked a program with me, or through my former manager, I'll definitely perform it. But I'm not accepting any new gigs (from the moment you're reading this notice until indefinitely). </p>
-					<p>This site was formerly funded entirely by my campus programs. <strong>I'm hoping to be able to sustain it by the end of the year with <a href="https://patreon.com/ItsPronouncedMetrosexual" title="IPM Patreon">patronage</a> &amp; reader <a href="http://itspronouncedmetrosexual.com/donate/" title="Donate to IPM">donations</a></strong>. Fingers crossed. </p>
+					<p>This site was formerly funded entirely by my campus programs. <strong>I'm hoping to be able to sustain it by the end of the year with <a href="https://patreon.com/ItsPronouncedMetrosexual" title="IPM Patreon">patronage</a> &amp; reader <a href="https://www.itspronouncedmetrosexual.com/donate/" title="Donate to IPM">donations</a></strong>. Fingers crossed. </p>
 					<p><3 sK</p>
 				</address>
 				<div id="inner-content" class="wrap clearfix">
@@ -23,7 +23,7 @@ Template Name: Programs Page
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class('programsIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('programsIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 							<a class="disabled button button-wide" onClick="ga('send', 'event', { eventCategory: 'Speaking', eventAction: 'button_click', eventLabel: 'Campus Programs Intro'});"  alt="Sam Killermann Speaking Form">Jump to Programs Request Form 👉</a>
 
 						<section class="entry-content clearfix" itemprop="articleBody">
@@ -106,18 +106,18 @@ Template Name: Programs Page
 
 			<section id="contactSection">
 
-				<article id="programsContact" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+				<article id="programsContact" role="article" itemscope itemtype="https://schema.org/BlogPosting">
 					<h2>Bring Sam to Your Campus or Org</h2>
 
 					<section class="featuredImage">
-						<img src="http://itspronouncedmetrosexual.com/wp-content/uploads/2018/01/sam-killermann-stage-utcog.jpg" alt="Sam Killermann Understanding the Complexities of Gender Stage">
+						<img src="https://www.itspronouncedmetrosexual.com/wp-content/uploads/2018/01/sam-killermann-stage-utcog.jpg" alt="Sam Killermann Understanding the Complexities of Gender Stage">
 
 					</section>
 
 					<section class="entry-content clearfix" itemprop="articleBody">
 
 						<p><strong>Please only use this form if you're a staff member, administrator, or student leader who is looking to bring Sam in to perform/speak.</strong></p>
-						<p>For general contact, or other ways to say "Hi!", please <a href="http://itspronouncedmetrosexual.com/contact/" alt="General Contact">go here</a> instead.</p>
+						<p>For general contact, or other ways to say "Hi!", please <a href="https://www.itspronouncedmetrosexual.com/contact/" alt="General Contact">go here</a> instead.</p>
 						<p>Still here? Great! Click the button below and fill out to the best of your ability (put an N/A in if a question doesn't apply), and I'll be in touch soon.</p>
 						<p>
 							<a class="disabled button button-wide button-large" onClick="ga('send', 'event', { eventCategory: 'Speaking', eventAction: 'button_click', eventLabel: 'Campus Programs Footer'});"  alt="Sam Killermann Speaking Form">Inquire about Booking Sam 👍</a>
@@ -153,7 +153,7 @@ Template Name: Programs Page
 									<label for="OptionOther">Other Speaking/Performing (Explain Below)</label>
 								</div>
 							</p>
-							<input style="display: none;" name="_subject" type="hidden" value="IPM Programs Contact" /><input style="display: none;" name="_next" type="hidden" value="http://itspronouncedmetrosexual.com/program-contact-success" />
+							<input style="display: none;" name="_subject" type="hidden" value="IPM Programs Contact" /><input style="display: none;" name="_next" type="hidden" value="https://www.itspronouncedmetrosexual.com/program-contact-success" />
 							<input type="hidden" name="_cc" value="sam@itspronouncedmetrosexual.com, cmapa@novlmgmt.com" />
 							<input style="display: none;" name="_gotcha" type="text" />
 							<p id="message" class="inputWrap">

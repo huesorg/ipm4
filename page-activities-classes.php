@@ -35,14 +35,14 @@ Template Name: Activities & Classes
 		</p>
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><a href="http://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Class!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
+				<h3 class="loopTitle"><a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Class!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
 				<p>
 					This class is co-facilitated by Meg Bolger &amp; me (<a href="https://itspronouncedmetrosexual/about-sam-killermann" title="About Sam Killermann">Sam Killermann</a>), and is an introduction to LGBTQ+ identities &amp; inclusion, gender, and sexuality &mdash; at your own pace, online. Including: vocab, privilege, Genderbread, and scenarios.
 				</p>
-				<a class="button" href="http://bit.ly/2o0IoXj" title="Start Now" target="_blank">Start Now</a> <a href="http://bit.ly/2MpXkg4" title="Learn More" target="_blank">Learn More</a>
+				<a class="button" href="https://bit.ly/2o0IoXj" title="Start Now" target="_blank">Start Now</a> <a href="https://bit.ly/2MpXkg4" title="Learn More" target="_blank">Learn More</a>
 			</div>
 			<div class="loopImage">
-				<a href="http://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone (LGBTQ+) Training">
+				<a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone (LGBTQ+) Training">
 					<img src="<?php echo get_template_directory_uri(); ?>/library/images/szp-online-courses-featured-image.jpg" alt="Person learning on computer"/>
 				</a>
 			</div>
@@ -52,7 +52,7 @@ Template Name: Activities & Classes
 		<section id="top">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 				<section itemprop="articleBody">
 					<?php the_content(); ?>
@@ -137,13 +137,13 @@ Template Name: Activities & Classes
 				View all Small Group Activities
 				<i class="fa fa-share"></i>
 			</a>
-			<a class="button button-wide" href="http://thesafezoneproject.com/activities/type/reflective/?utm_source=ipm&utm_medium=activities-classes" title="Reflective">
+			<a class="button button-wide" href="https://thesafezoneproject.com/activities/type/reflective/?utm_source=ipm&utm_medium=activities-classes" title="Reflective">
 				View all Reflective Activities
 				<i class="fa fa-share"></i>
 			</a>
 			<div id="submitActivity">
 				<h3>Submit an activity!</h3>
-				<address>Have an activity you’ve created based on one of the articles or graphics here on the site? Want to share your ingenuity with the community? Awesome. <3 You. Use the <a href="http://itspronouncedmetrosexual.com/contact" title="Contact Me">contact form</a>, or just send it via email to sam@itspronouncedmetrosexual.com with the subject “IPM Activity.”</address>
+				<address>Have an activity you’ve created based on one of the articles or graphics here on the site? Want to share your ingenuity with the community? Awesome. <3 You. Use the <a href="https://www.itspronouncedmetrosexual.com/contact" title="Contact Me">contact form</a>, or just send it via email to sam@itspronouncedmetrosexual.com with the subject “IPM Activity.”</address>
 			</div>
 
 		</section>

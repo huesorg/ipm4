@@ -11,14 +11,14 @@ and change things if they are concentrated
 in their own file.
 
 Developed by: Eddie Machado
-URL: http://themble.com/bones/
+URL: https://themble.com/bones/
 */
 
 
 // let's create the function for the custom type
 function custom_post_example() { 
 	// creating (registering) the custom type 
-	register_post_type( 'custom_type', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+	register_post_type( 'custom_type', /* (https://codex.wordpress.org/Function_Reference/register_post_type) */
 	 	// let's now add all the options for this post type
 		array('labels' => array(
 			'name' => __('Custom Types', 'bonestheme'), /* This is the Title of the Group */
@@ -64,7 +64,7 @@ function custom_post_example() {
 	
 	/*
 	for more information on taxonomies, go here:
-	http://codex.wordpress.org/Function_Reference/register_taxonomy
+	https://codex.wordpress.org/Function_Reference/register_taxonomy
 	*/
 	
 	// now let's add custom categories (these act like categories)

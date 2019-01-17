@@ -11,13 +11,13 @@ Template Name: Full-Width Page (No Sidebars)
 
 </header> <!-- end article header -->
 
-<div id="content">
+<div id="content" class="no-sidebar">
 
-	<div id="main" role="main">
+	<main id="main" role="main">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 			<section class="featuredImage">
 				<?php the_post_thumbnail('full'); ?>
@@ -50,7 +50,7 @@ Template Name: Full-Width Page (No Sidebars)
 
 		<?php endif; ?>
 
-	</div> <!-- end #main -->
+	</main> <!-- end #main -->
 
 </div> <!-- end #content -->
 

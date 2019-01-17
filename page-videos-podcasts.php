@@ -16,7 +16,7 @@ Template Name: Videos & Podcasts
 	<main id="main" role="main">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class('subtitle'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class('subtitle'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 			<section class="entry-content" itemprop="articleBody">
 				<?php the_content(); ?>
@@ -62,13 +62,13 @@ Template Name: Videos & Podcasts
 			<div class="loopText">
 				<h3 class="loopTitle"><span class="flag new-flag">NEW!</span> The Heretic Podcast: Social Justice, Minus Dogma (with <a href="https://hereticpodcast.com/about/about-the-team/about-the-host/" title="About the Host">Sam Killermann</a>)</h3>
 				<p>
-					<a href="http://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">Heretic</a> is about the social justice movement and the unwritten rules that underpin (and may undermine) it. It's an extension of the articles I've been posting here in the <a href="http://itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Series">Social Justice Dogma Series</a>, featuring interviews that dig into different tenets.
+					<a href="https://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">Heretic</a> is about the social justice movement and the unwritten rules that underpin (and may undermine) it. It's an extension of the articles I've been posting here in the <a href="https://www.itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Series">Social Justice Dogma Series</a>, featuring interviews that dig into different tenets.
 				</p>
 				<iframe src="https://anchor.fm/heretic/embed" frameborder="0" height="102" width="100%" scrolling="yes"></iframe>
 
 			</div>
 			<div class="loopImage">
-				<a href="http://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">
+				<a href="https://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">
 					<img src="https://hereticpodcast.com/wp-content/uploads/2018/09/Heretic-Podcast-Facebook-Image-2018.png" alt="The Heretic Podcast: Social Justice Minus Dogma"/>
 				</a>
 			</div>

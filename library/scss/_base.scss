@@ -276,7 +276,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	line-height:1.2;
 	/*
 	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
+	https://css-tricks.com/watch-your-font-weight/
 	*/
 
 	/* removing text decoration from all headline links */
@@ -2084,7 +2084,7 @@ HOME PAGE
 				}
 
 				.zero {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
 					background: rgb(222,124,43); /* Old browsers */
 					background: -moz-linear-gradient(left, rgba(222,124,43,1) 0%, rgba(221,77,0,1) 1%, #efefef 1%, #efefef 1%); /* FF3.6-15 */
 					background: -webkit-linear-gradient(left, rgba(222,124,43,1) 0%,rgba(221,77,0,1) 1%,#efefef 1%,#efefef 1%); /* Chrome10-25,Safari5.1-6 */
@@ -2093,7 +2093,7 @@ HOME PAGE
 				}
 
 				.low {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
 					background: rgb(222,124,43); /* Old browsers */
 					background: -moz-linear-gradient(left, rgba(222,124,43,1) 0%, rgba(221,77,0,1) 33.33%, #efefef 33.33%, #efefef 33.33%); /* FF3.6-15 */
 					background: -webkit-linear-gradient(left, rgba(222,124,43,1) 0%,rgba(221,77,0,1) 33.33%,#efefef 33.33%,#efefef 33.33%); /* Chrome10-25,Safari5.1-6 */
@@ -2102,7 +2102,7 @@ HOME PAGE
 				}
 
 				.medium {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
 					background: rgb(222,124,43); /* Old browsers */
 					background: -moz-linear-gradient(left, rgba(222,124,43,1) 0%, rgba(221,77,0,1) 66.66%, #efefef 66.66%, #efefef 66.66%); /* FF3.6-15 */
 					background: -webkit-linear-gradient(left, rgba(222,124,43,1) 0%,rgba(221,77,0,1) 66.66%,#efefef 66.66%,#efefef 66.66%); /* Chrome10-25,Safari5.1-6 */
@@ -2111,7 +2111,7 @@ HOME PAGE
 				}
 
 				.ninety-nine {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
+					/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#de7c2b+0,dd4d00+84,ffffff+84,ffffff+84 */
 					background: rgb(222,124,43); /* Old browsers */
 					background: -moz-linear-gradient(left, rgba(222,124,43,1) 0%, rgba(221,77,0,1) 99%, #efefef 99%, #efefef 99%); /* FF3.6-15 */
 					background: -webkit-linear-gradient(left, rgba(222,124,43,1) 0%,rgba(221,77,0,1) 99%,#efefef 99%,#efefef 99%); /* Chrome10-25,Safari5.1-6 */
@@ -3266,13 +3266,13 @@ SIDEBARS & ASIDES
 				@include shadow;
 
 				-webkit-filter: grayscale(100%);
-				filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+				filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 			    filter: gray; /* IE6-9 */
 			}
 		}
 
 		&:hover a img {
-			 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+			 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
     		-webkit-filter: grayscale(0%);
 		}
 	}
@@ -3406,8 +3406,11 @@ SIDEBARS & ASIDES
 CATEGORIES AND ARCHIVES
 *********************/
 
+.archive-header {
+	padding:20px 3vw;
+}
 .catIntro {
-	margin:3vw 5vw;
+	margin:3vw;
 
 	h4 {
 		margin:0 0 8px;
@@ -3415,6 +3418,11 @@ CATEGORIES AND ARCHIVES
 	ul li {
 		margin-bottom:12px;
 		font-size:.8em;
+	}
+
+	p {
+		max-width:720px;
+		margin:0 auto 1.5em;
 	}
 }
 

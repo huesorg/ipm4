@@ -8,7 +8,7 @@
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 			<section class="featuredImage">
 				<?php the_post_thumbnail('full'); ?>
 			</section>

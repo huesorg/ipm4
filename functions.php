@@ -182,13 +182,13 @@ add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
 function heyHeyLook(){
     $heyHeyLookContent = '
 	<div class="heyHeyLook alignright">
-		<a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">
-		<img src="http://itspronouncedmetrosexual.com/wp-content/themes/ipmtheme/library/images/a-guide-to-gender-2nd-edition-sam-killermann-600.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+		<a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+		<img src="https://www.itspronouncedmetrosexual.com/wp-content/themes/ipmtheme/library/images/a-guide-to-gender-2nd-edition-sam-killermann-600.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
 		</a>
-        <h3><a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">My New(-ish) Book!</a></h3>
-        <small>Get the 2nd Edition of my first book <em><a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">A Guide to Gender</a></em>: it is fully revised, expanded, and shinier than ever!</small></br>
+        <h3><a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">My New(-ish) Book!</a></h3>
+        <small>Get the 2nd Edition of my first book <em><a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">A Guide to Gender</a></em>: it is fully revised, expanded, and shinier than ever!</small></br>
         <small>
-            <strong><a href="http://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a></strong> | <strong><a href="http://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a></strong> | <strong><a href="http://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">Pay-What-You-Want/Can .PDF</a></strong>
+            <strong><a href="https://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a></strong> | <strong><a href="https://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a></strong> | <strong><a href="https://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">Pay-What-You-Want/Can .PDF</a></strong>
         </small>
 	</div>';
     return $heyHeyLookContent;

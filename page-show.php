@@ -19,7 +19,7 @@ Template Name: The Show
 						<div id="youtubeShow" class="">
 							<div class="youtubeWrap bigYoutube eightcol first">
 								<div class="youtube">
-									<iframe src="http://www.youtube.com/embed/t4JdYgxnciI" width="560" height="315" frameborder="0"></iframe>
+									<iframe src="https://www.youtube.com/embed/t4JdYgxnciI" width="560" height="315" frameborder="0"></iframe>
 								</div>
 							</div>
 
@@ -38,7 +38,7 @@ Template Name: The Show
 
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+								<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 									<section class="" itemprop="articleBody">
 										<?php the_content(); ?>
@@ -68,7 +68,7 @@ Template Name: The Show
 
 							<p>Hear what <strong>Marc West, as Director of Student Life and Involvement</strong> at Baldwin Wallace College had to say:</p>
 							<div class="youtube">
-								<iframe src="http://www.youtube.com/embed/jUVJH4BPmQc" height="344" width="556" frameborder="0"></iframe>
+								<iframe src="https://www.youtube.com/embed/jUVJH4BPmQc" height="344" width="556" frameborder="0"></iframe>
 							</div>
 
 							<blockquote>It’s Pronounced Metrosexual is a great way to start talking about issues of diversity and inequality.</blockquote>

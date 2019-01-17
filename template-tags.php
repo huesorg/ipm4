@@ -8,22 +8,22 @@ function getSnapshot() {?>
 	<h4>About the Author</h4>
 	<img src="<?php echo get_template_directory_uri();?>/library/images/sam-killermann-2016-headshot.jpg" alt="Sam Killermann Headshot"/>
 	<p>
-		Hi! I'm <a href="http://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who is employed by <a href="http://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">a collective of bosses</a> to create for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
+		Hi! I'm <a href="https://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who is employed by <a href="https://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">a collective of bosses</a> to create for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
 	</p>
 	<ul>
 		<li>
-			<a href="http://bit.ly/2eyLccA" alt="The Safe Zone Project">
+			<a href="https://bit.ly/2eyLccA" alt="The Safe Zone Project">
 				The Safe Zone Project</a> (a free online resource for LGBTQ awareness and allyship training workshops)
 		</li>
 		<!-- <li>
-			<a href="http://bit.ly/2eKSzZs" alt="hues">The hues Store</a> (merch supporting this site and my work)
+			<a href="https://bit.ly/2eKSzZs" alt="hues">The hues Store</a> (merch supporting this site and my work)
 		</li> -->
 		<li>
-			<a href="http://bit.ly/2dDlEtE" alt="The Sexualitree">
+			<a href="https://bit.ly/2dDlEtE" alt="The Sexualitree">
 				The Sexualitree</a> (a comprehensive sexuality model, curriculum, &amp; downloads)
 		</li>
 		<li>
-			<a href="http://bit.ly/1MAfukv" alt="I Heart the Singular They">
+			<a href="https://bit.ly/1MAfukv" alt="I Heart the Singular They">
 				I <3 Singular They</a> (a love letter I wrote to a pronoun... yep. Oh, and I animated it!)
 		</li>
 	</ul>
@@ -57,10 +57,10 @@ function getPatreonAsk() {?>
                 <a class="button" href="https://www.itspronouncedmetrosexual.com/support/author" title="Support the Author" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Support the Author'});">
                     <div>👨‍💻 Support the Author</div>
                 </a>
-                <!-- <a class="button" href="http://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize'});">
+                <!-- <a class="button" href="https://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize'});">
                     <div>🤗 Become a Member</div>
                 </a> -->
-                <!-- <a class="button" href="http://itspronouncedmetrosexual.com/donate/" alt="Donate" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Donate'});">
+                <!-- <a class="button" href="https://www.itspronouncedmetrosexual.com/donate/" alt="Donate" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Donate'});">
                     <div>💳 Donate</div>
                 </a> -->
             </div>
@@ -109,7 +109,7 @@ function getShortieIntro() {
 		?>
 		<div class="catSplaining">
 			<p>
-				<strong>This is a <a href="http://itspronouncedmetrosexual.com/category/shorties/" alt="Shorties!">Shorty</a>,</strong> where my goal is to convey an idea in 300 or fewer words. I used <?php  echo word_count();?>, so I <?php echo shorty_score();?>
+				<strong>This is a <a href="https://www.itspronouncedmetrosexual.com/category/shorties/" alt="Shorties!">Shorty</a>,</strong> where my goal is to convey an idea in 300 or fewer words. I used <?php  echo word_count();?>, so I <?php echo shorty_score();?>
 			</p>
 		</div>
 	<?php }
@@ -130,9 +130,9 @@ function getEndOfTransmission() {
 
 	<div id="endOfTransmission">
 		<p>
-			<span class="gifted-to-you-by"><a href="https://itspronouncedmetrosexual.com/about/about-sam-killermann" title="About Sam Killermann" target="_blank"><svg id="heart-sK" alt="heart sK" style="width:auto;height:1.2em;margin-top:-.1em;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.83 66.6"><defs><style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}.cls-1{stroke:#eb366e;}.cls-2{stroke:#000;}</style></defs><title>heart sK</title><path id="heart" class="cls-1" d="M22,36.39S20.5,26.67,11.64,23.5s-12.6,3.94-3,16.8S23.61,63.9,23.2,54.23,22.48,20.75,34.14,9.61C43.25.9,51.06,5.09,50.45,17.53c-.76,15.4-20.05,37.6-20.05,37.6"/><path id="sK" class="cls-2" d="M63,36.06a15.16,15.16,0,0,0-11-5.5C44,30.15,37.8,37,54.4,49.41s-19,22.07-11.93,4.84C46.05,45.53,58.78,34.86,64.77,24,71.94,11,74.91-2.56,73.24,5.35c-3.07,14.52-3.71,54.27-3.13,51.17,4.08-21.92,33.81-52.2,31-50.35S69.39,35.07,74.91,33.64,129,21.09,130.83,24.16"/></svg></a>
-			<strong>+ <a href="http://bit.ly/2MkVIkN" target="_blank" title="My Bosses on Patreon">My <?php the_field('author_patron_count', 'option')?> Bosses.</a></strong></span>
-			Pay part of my salary to fund more work like this: <a href="http://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">Be My Boss</a>.
+			<span class="gifted-to-you-by"><a href="https://itspronouncedmetrosexual.com/about/about-sam-killermann" title="About Sam Killermann" target="_blank"><svg id="heart-sK" alt="heart sK" style="width:auto;height:1.2em;margin-top:-.1em;"xmlns="https://www.w3.org/2000/svg" viewBox="0 0 133.83 66.6"><defs><style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}.cls-1{stroke:#eb366e;}.cls-2{stroke:#000;}</style></defs><title>heart sK</title><path id="heart" class="cls-1" d="M22,36.39S20.5,26.67,11.64,23.5s-12.6,3.94-3,16.8S23.61,63.9,23.2,54.23,22.48,20.75,34.14,9.61C43.25.9,51.06,5.09,50.45,17.53c-.76,15.4-20.05,37.6-20.05,37.6"/><path id="sK" class="cls-2" d="M63,36.06a15.16,15.16,0,0,0-11-5.5C44,30.15,37.8,37,54.4,49.41s-19,22.07-11.93,4.84C46.05,45.53,58.78,34.86,64.77,24,71.94,11,74.91-2.56,73.24,5.35c-3.07,14.52-3.71,54.27-3.13,51.17,4.08-21.92,33.81-52.2,31-50.35S69.39,35.07,74.91,33.64,129,21.09,130.83,24.16"/></svg></a>
+			<strong>+ <a href="https://bit.ly/2MkVIkN" target="_blank" title="My Bosses on Patreon">My <?php the_field('author_patron_count', 'option')?> Bosses.</a></strong></span>
+			Pay part of my salary to fund more work like this: <a href="https://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">Be My Boss</a>.
 		</p>
 	</div>
 
@@ -147,7 +147,7 @@ function getSJDFooter() {
 
 	<div id="socialJusticeDogmaFooter" class="grid grid--center grid--justifyCenter">
 		<p class="grid-cell">
-			This post is part of the <strong><a href="http://itspronouncedmetrosexual.com/tag/social-justice-dogma/" alt="Social Justice Dogma Series">Social Justice Dogma Series</a></strong>. The Social Justice Dogma, as defined in the <a href="http://itspronouncedmetrosexual.com/2017/12/introduction-social-justice-dogma/" alt="Introduction to Social Justice Dogma">first article</a> in this series, is <strong>"The set of beliefs, stances, and acceptable actions laid down by the authorities within the social justice movement that we hold as incontrovertibly true."</strong>
+			This post is part of the <strong><a href="https://www.itspronouncedmetrosexual.com/tag/social-justice-dogma/" alt="Social Justice Dogma Series">Social Justice Dogma Series</a></strong>. The Social Justice Dogma, as defined in the <a href="https://www.itspronouncedmetrosexual.com/2017/12/introduction-social-justice-dogma/" alt="Introduction to Social Justice Dogma">first article</a> in this series, is <strong>"The set of beliefs, stances, and acceptable actions laid down by the authorities within the social justice movement that we hold as incontrovertibly true."</strong>
 		</p>
 	</div>
 
@@ -172,7 +172,7 @@ function getFollowIPMSingle(){?>
 					</div>
 				</form>
 
-				<p class="description">Totally free, totally automagic (delivered by <a href="http://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and <strong>you will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
+				<p class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and <strong>you will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
 
 			</div>
 
@@ -191,23 +191,23 @@ function getSidebarBooks() {?>
 	<div class="sidebarBook">
 
 		<h4>Would you like to better understand gender?</h4>
-		<a href="http://amzn.to/2li0YWS" alt="A Guide to Gender (2nd Edition) on Amazon">
+		<a href="https://amzn.to/2li0YWS" alt="A Guide to Gender (2nd Edition) on Amazon">
 			<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg" alt="A Guide to Gender (2nd Edition)"/>
 		</a>
 		<p>
-			Great! I wrote a book for you! It's called <em><a href="http://guidetogender.com" alt="Website">A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</a></em>. It's just like this website, but instead of being made out of code, it's made out of murdered trees.
-			<br/><span class="sidebarBook__get"><a class="button accent-button" href="http://amzn.to/2li0YWS" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="http://guidetogender.com/get" alt="Guide to Gender E-Book">E-Book</a></span>
+			Great! I wrote a book for you! It's called <em><a href="https://guidetogender.com" alt="Website">A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</a></em>. It's just like this website, but instead of being made out of code, it's made out of murdered trees.
+			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2li0YWS" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://guidetogender.com/get" alt="Guide to Gender E-Book">E-Book</a></span>
 		</p>
 	</div>
 
 	<div class="sidebarBook">
 		<h4>Or would you like to learn about facilitation?</h4>
-		<a href="http://amzn.to/2dDFVuJ" alt="Unlocking the Magic of Facilitation on Amazon">
+		<a href="https://amzn.to/2dDFVuJ" alt="Unlocking the Magic of Facilitation on Amazon">
 			<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-unlocking-the-magic-of-facilitation.jpg" alt="Unlocking the Magic of Facilitation"/>
 		</a>
 		<p>
-			Then you'll appreciate this book I co-authored it with Meg Bolger. It's called <em><a href="http://facilitationmagic.com" alt="Unlocking the Magic of Facilitation Website">Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't know</a></em>. It's the HOW where this website is the WHAT.
-			<br/><span class="sidebarBook__get"><a class="button accent-button" href="http://amzn.to/2dDFVuJ" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://gum.co/utmof" alt="Unlocking the Magic of Facilitation E-Book">E-Book</a></span>
+			Then you'll appreciate this book I co-authored it with Meg Bolger. It's called <em><a href="https://facilitationmagic.com" alt="Unlocking the Magic of Facilitation Website">Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't know</a></em>. It's the HOW where this website is the WHAT.
+			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2dDFVuJ" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://gum.co/utmof" alt="Unlocking the Magic of Facilitation E-Book">E-Book</a></span>
 		</p>
 	</div>
 
@@ -223,7 +223,7 @@ function getSubscribeOptions() {?>
 	<div class="grid grid--justifyCenter small-grid--fit grid--full">
 		<div id="subscribeFeedburner" class="grid-cell">
 			<h3>1. Get New Posts Delivered to Your Email Inbox</h3>
-			<div class="description">Totally free, totally automagic (delivered by <a href="http://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and you will only get an email when there's a new article, edugraphic, or blog post (no other announcements).</div>
+			<div class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and you will only get an email when there's a new article, edugraphic, or blog post (no other announcements).</div>
 
 			<!-- <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow">
 				<div class="grid inputGrid">
@@ -244,7 +244,7 @@ function getSubscribeOptions() {?>
 			<div class="grid-cell grid-cell--center">
 				<h3>2. General IPM Email List</h3>
 				<div class="description">I write a couple emails a year with new articles &amp; edugraphics, updates about the site, new resources, and plans for the future.</div>
-				<a target="_blank" href="http://eepurl.com/df71xH" alt="Join General Mailing List" class="button button-wide" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'General Mailing List'});">Join General Mailing List</a>
+				<a target="_blank" href="https://eepurl.com/df71xH" alt="Join General Mailing List" class="button button-wide" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'General Mailing List'});">Join General Mailing List</a>
 			</div>
 			<div class="fomo">FOMO Level:
 				<div class="level low">Low</div>
@@ -253,19 +253,19 @@ function getSubscribeOptions() {?>
 	</div>
 	<div class="grid grid--justifyCenter small-grid--fit grid--full">
 		<div id="subscribe--facebook" class="grid grid--justifyCenter grid--center grid-cell">
-			<a class="grid-cell grid-cell--center" target="_blank" href="http://facebook.com/metrosam" alt="IPM Facebook Page" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Facebook'});">3. Facebook</a>
+			<a class="grid-cell grid-cell--center" target="_blank" href="https://facebook.com/metrosam" alt="IPM Facebook Page" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Facebook'});">3. Facebook</a>
 			<div class="fomo">FOMO Level:
 				<div class="level ninety-nine">99.99%</div>
 			</div>
 		</div>
 		<div id="subscribe--twitter" class="grid grid--justifyCenter grid--center grid-cell">
-			<a class="grid-cell grid-cell--center" href="http://twitter.com/actuallymetro" target="_blank" alt="IPM Twitter" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Twitter'});">4. Twitter</a>
+			<a class="grid-cell grid-cell--center" href="https://twitter.com/actuallymetro" target="_blank" alt="IPM Twitter" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Twitter'});">4. Twitter</a>
 			<div class="fomo">FOMO Level:
 				<div class="level medium">Medium</div>
 			</div>
 		</div>
 		<div id="subscribe--tumblr" class="grid grid--justifyCenter grid--center grid-cell">
-			<a class="grid-cell grid-cell--center" target="_blank" href="http://actuallymetro.tumblr.com" alt="IPM Tumblr" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Tumblr'});">5. Tumblr</a>
+			<a class="grid-cell grid-cell--center" target="_blank" href="https://actuallymetro.tumblr.com" alt="IPM Tumblr" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Tumblr'});">5. Tumblr</a>
 			<div class="fomo">FOMO Level:
 				<div class="level medium">Medium</div>
 			</div>
@@ -280,7 +280,7 @@ function getSubscribeOptions() {?>
 
 function getSidebarCampusPrograms() {?>
 	<div id="campusProgramsSidebar">
-		<a href="http://itspronouncedmetrosexual.com/campus-programs" alt="Campus Programs">
+		<a href="https://www.itspronouncedmetrosexual.com/campus-programs" alt="Campus Programs">
 			<img src="<?php echo get_template_directory_uri(); ?>/library/images/sidebar-campus-programs.png" alt="Campus Programs"/>
 			<span>100% of the profits from Sam's campus programs &amp; social justice comedy shows help support this site, keep the lights on, &amp; enable everything to be given away free.</span>
 			<button class="button">Learn More</button>

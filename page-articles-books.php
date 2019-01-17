@@ -13,7 +13,7 @@ Template Name: Articles & Books
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 			<section class="" itemprop="articleBody">
 				<?php the_content(); ?>
@@ -149,7 +149,7 @@ Template Name: Articles & Books
 			endwhile; wp_reset_postdata(); ?>
 
 		</section><!--/recentUpdates-->
-		<a href="http://itspronouncedmetrosexual.com/all-articles/" class="button button-wide" alt="All Articles">View All Articles</a>
+		<a href="https://www.itspronouncedmetrosexual.com/all-articles/" class="button button-wide" alt="All Articles">View All Articles</a>
 	</div><!--/main-->
 
 	<div id="myBooks" role="complementary">
@@ -158,21 +158,21 @@ Template Name: Articles & Books
 
 			<!--GUIDE TO GENDER -->
 			<div class="bookCard">
-				<a href="http://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
+				<a href="https://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
 					<img alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg"/>
 					<h4>A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</h4>
 					<p>
-						<em><a href="http://guidetogender.com" alt="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
+						<em><a href="https://guidetogender.com" alt="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
 					</p>
 				</a>
 				<ul>
 					<li>
-						<a class="button" alt="Get A Guide to Gender" href="http://guidetogender.com">
+						<a class="button" alt="Get A Guide to Gender" href="https://guidetogender.com">
 							Book Website
 						</a>
 					</li>
 					<li>
-						<a class="button accent-button" alt="Buy A Guide to Gender on Amazon" href="http://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
+						<a class="button accent-button" alt="Buy A Guide to Gender on Amazon" href="https://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
 							Amazon
 						</a>
 					</li>
@@ -203,21 +203,21 @@ Template Name: Articles & Books
 
 			<!--UTMOF-->
 			<div class="bookCard">
-				<a href="http://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
+				<a href="https://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
 					<img alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-unlocking-the-magic-of-facilitation.jpg"/>
 					<h4>Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know</h4>
 					<p>
-						<em><a href="http://facilitationmagic.com" alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know"><strong>Unlocking the Magic of Facilitation</strong></a></em> is the book we wrote to help you help others understand everything on this site. It's for facilitators of all stripes, educators, and trainers, and is the perfect complement to <i>A Guide to Gender</i>. It's the "HOW?" where the rest of this site is the "WHAT?" and "WHY?"
+						<em><a href="https://facilitationmagic.com" alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know"><strong>Unlocking the Magic of Facilitation</strong></a></em> is the book we wrote to help you help others understand everything on this site. It's for facilitators of all stripes, educators, and trainers, and is the perfect complement to <i>A Guide to Gender</i>. It's the "HOW?" where the rest of this site is the "WHAT?" and "WHY?"
 					</p>
 				</a>
 				<ul>
 					<li>
-						<a class="button" alt="Get Unlocking the Magic of Facilitation" href="http://facilitationmagic.com">
+						<a class="button" alt="Get Unlocking the Magic of Facilitation" href="https://facilitationmagic.com">
 							Book Website
 						</a>
 					</li>
 					<li>
-						<a class="button accent-button" alt="Buy Unlocking the Magic of Facilitation on Amazon" href="http://bit.ly/UtMoFaz">
+						<a class="button accent-button" alt="Buy Unlocking the Magic of Facilitation on Amazon" href="https://bit.ly/UtMoFaz">
 							Amazon
 						</a>
 					</li>

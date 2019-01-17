@@ -131,7 +131,7 @@
 					<img alt="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 					<span>Close</span>
 				</a>
-				<p>Hi! I'm <a href="http://itspronouncedmetrosexual.com/about/about-sam-killermann/" title="Learn about Sam Killermann">Sam Killermann</a>. I write, doodle, code, and fund this site... all by lonesome &mdash; at least, that <em>was</em> true, up until I started asking for help with <a href="https://itspronouncedmetrosexual.com/2018/09/the-state-of-this-site-or-funding-online-work-in-2018-an-infographic/" title="Funding this Site">funding the site 2018</a>, and people started <a href="http://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">employing me to create things in 2019</a>. <strong>If you dig what I'm doing here, I could really use the help:</strong></p>
+				<p>Hi! I'm <a href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann/" title="Learn about Sam Killermann">Sam Killermann</a>. I write, doodle, code, and fund this site... all by lonesome &mdash; at least, that <em>was</em> true, up until I started asking for help with <a href="https://itspronouncedmetrosexual.com/2018/09/the-state-of-this-site-or-funding-online-work-in-2018-an-infographic/" title="Funding this Site">funding the site 2018</a>, and people started <a href="https://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">employing me to create things in 2019</a>. <strong>If you dig what I'm doing here, I could really use the help:</strong></p>
 				<?php ipm_support_menu(); ?>
 			</nav>
 			<div id="mask"></div>
@@ -144,17 +144,17 @@
 				</button>
 				<ul>
 					<li>
-						<a id="becomePatron" href="http://bit.ly/2pfQrTl" target="_blank" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Become Patron'});">
+						<a id="becomePatron" href="https://bit.ly/2pfQrTl" target="_blank" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Become Patron'});">
 							<span>Become a</span> Patron 🤗
 						</a>
 					</li>
 					<li>
-						<a id="oneTimeDonation" href="http://bit.ly/2DtqMK1" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: '1 Time Donation'});">
+						<a id="oneTimeDonation" href="https://bit.ly/2DtqMK1" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: '1 Time Donation'});">
 							<span>Make a</span> 1-time Donation
 						</a>
 					</li>
 					<li>
-						<a id="readMore" href="http://bit.ly/2BWhEjl" class="hideIpmNews newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Read More'});">
+						<a id="readMore" href="https://bit.ly/2BWhEjl" class="hideIpmNews newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Read More'});">
 							Read more.
 						</a>
 					</li>

@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
         $("#supportNav").removeClass("is-visible");
     });
 
-    // Simple Accordion Lists http://uniondesign.ca/simple-accordion-without-jquery-ui/
+    // Simple Accordion Lists https://uniondesign.ca/simple-accordion-without-jquery-ui/
 
     $('.accordion').find('.accordion-toggle').click(function(){
 

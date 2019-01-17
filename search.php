@@ -32,7 +32,7 @@
 						<header class="article-header">
 						</header>
 						<section class="entry-content">
-							<p><strong>Sorry! No results.</strong> Use the search bar to try another search, or just head <a href="http://itspronouncedmetrosexual.com">home</a> and browse from there.</p>
+							<p><strong>Sorry! No results.</strong> Use the search bar to try another search, or just head <a href="https://www.itspronouncedmetrosexual.com">home</a> and browse from there.</p>
 						</section>
 						<footer class="article-footer">
 						</footer>

@@ -5,7 +5,7 @@
 
 </header> <!-- end article header -->
 
-<div id="content">
+<div id="content" class="no-sidebar">
 
 	<main id="main" role="main">
 
