@@ -63,7 +63,7 @@ Template Name: Popular Posts
 
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="Box full of awards with a goat on it." src="<?php echo get_template_directory_uri(); ?>/library/images/badge-goat.svg"/>
+						<img alt="Box full of awards with a goat on it." src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-goat.png"/>
 					</li>
 					<?php while($goatQuery->have_posts()) : $goatQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -94,7 +94,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="Trophy with a thumbs up at the top" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-greatest-hits.svg"/>
+						<img alt="Trophy with a thumbs up at the top" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-greatest-hits.png"/>
 					</li>
 					<?php while($greatestHitsQuery->have_posts()) : $greatestHitsQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -125,7 +125,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="A Gold-plated Record" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-bona-fide-hit.svg"/>
+						<img alt="A Gold-plated Record" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-bona-fide-hit.png"/>
 					</li>
 					<?php while($bonaFideHitsQuery->have_posts()) : $bonaFideHitsQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -156,7 +156,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="A Shooting Star" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-rising-star.svg"/>
+						<img alt="A Shooting Star" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-rising-star.png"/>
 					</li>
 					<?php while($risingStarQuery->have_posts()) : $risingStarQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -187,7 +187,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="A Shooting Star" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-sensation.svg"/>
+						<img alt="A Shooting Star" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-sensation.png"/>
 					</li>
 					<?php while($sensationsQuery->have_posts()) : $sensationsQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -218,7 +218,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="A bunch of balloons with thumbs ups on them" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-crowd-pleaser.svg"/>
+						<img alt="A bunch of balloons with thumbs ups on them" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-crowd-pleaser.png"/>
 					</li>
 					<?php while($crowdpleasersQuery->have_posts()) : $crowdpleasersQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
@@ -249,7 +249,7 @@ Template Name: Popular Posts
 				); ?>
 				<ul class="flickable-posts">
 					<li class="flickable-post badge">
-						<img alt="A potted plant starting to grow" src="<?php echo get_template_directory_uri(); ?>/library/images/badge-seedling.svg"/>
+						<img alt="A potted plant starting to grow" src="<?php echo get_template_directory_uri(); ?>/library/images/badges/badge-seedling.png"/>
 					</li>
 					<?php while($seedlingsQuery->have_posts()) : $seedlingsQuery->the_post();?>
 					<li class="flickable-post shadowbox loopCard">
