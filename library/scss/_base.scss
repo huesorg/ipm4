@@ -1223,44 +1223,72 @@ ul.circleShare {
 
 		} /* end .wp-caption */
 
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-
 
 .heyHeyLook {
-	max-width:300px;
-	width:40%;
-	float:right;
-	display:inline-block;
-	margin:1em 0 1em 1em;
-	opacity:.9;
+	margin:3em -3vw;
+	padding:3vw 0 0 3vw;
+	font-size:calc(.75rem + .2vw);
 	font-family:$sans-serif;
+	background:lighten($accent-color, 33%);
+	color:darken($accent-color, 35%);
+	display:flex;
+	position:relative;
+	justify-content: space-between;
 
-	&:hover, &:active, &:focus {
-		opacity:1;
+	p {
+		max-width:50%;
+		line-height:1.2;
+		margin:0 0 60px;
+		align-self:flex-start;
+		position:relative;
+		z-index: 2;
+		font-weight:bold;
+	}
+
+	.button {
+		margin:20px 20px 20px 0;
+		padding:1em 1.5em;
+		border-radius:20px;
+		align-self:flex-end;
+		font-size:1.2em;
+		letter-spacing:.05em;
+		font-family:$sans-serif;
+		box-shadow:0px 3px 0px 0px $accent-color;
+		position: relative;
+		z-index: 3;
+
+		&:hover, &:active {
+			box-shadow:0px 0px 0px 3px $accent-color;
+		}
+	}
+
+	&:after {
+		position:absolute;
+		z-index:1;
+		bottom:0;
+		left:3vw;
+		height:60px;
+		width:230px;
+		display:block;
+		content:'';
+		background-image:url('../images/icons-sj-sex-gender.png');
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position: center;
+		margin-bottom:-15px;
+
+		svg {
+			height:60px;
+			margin-right:10px;
+			width:auto;
+			stroke:none;
+			color:lighten($accent-color, 10%);
+
+			path {
+				fill:currentColor;
+				stroke:none;
+			}
+		}
 	}
 
 	img {
