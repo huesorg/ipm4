@@ -1232,6 +1232,7 @@ ul.circleShare {
 	font-size:calc(.75rem + .2vw);
 	font-family:$sans-serif;
 	background:lighten($accent-color, 35%);
+	background:linear-gradient(to bottom right, lighten($accent-color, 40%), lighten($accent-color, 30%));
 	color:darken($accent-color, 30%);
 	display:flex;
 	position:relative;
