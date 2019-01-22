@@ -182,9 +182,9 @@ add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
 function heyHeyLook(){
     $heyHeyLookContent = '
 	<aside class="heyHeyLook">
-		<p>New Social Justice, Gender, &amp; Sexuality Resources <strong>most Wednesdays</strong> 💌 </p>
+		<p><strong>Most Wednesdays 💌</strong> I publish new Social Justice, Gender, &amp; Sexuality Resources &xrarr;</p>
         <a class="button" title="Join my mailing list" href="http://bit.ly/2MmE28c" target="_blank">
-            Join the List.
+            Get the Email.
         </a>
 	</aside>';
     return $heyHeyLookContent;

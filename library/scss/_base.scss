@@ -666,11 +666,13 @@ POSTS & CONTENT STYLES
 		padding:4vw;
 
 		h3 {
-			margin-bottom:calc(20px + 1.5vw);
+			margin:0;
+			margin-bottom:calc(12px + 1.5vw);
 		}
 
 		p {
-			margin-top:calc(20px + 1.5vw);
+			margin:0;
+			margin-top:calc(12px + 1.5vw);
 			font-size:.8em;
 		}
 	}
@@ -913,7 +915,7 @@ ul.circleShare {
 	#stickyShare {display:none;}
 
 	#stickyPostTitle {
-		dispay:none;
+		display:none;
 	}
 
 	.single .entry-content > p:first-of-type, .page .entry-content > p:first-of-type, p.introParagraph{
@@ -1229,21 +1231,25 @@ ul.circleShare {
 	padding:3vw 0 0 3vw;
 	font-size:calc(.75rem + .2vw);
 	font-family:$sans-serif;
-	background:lighten($accent-color, 33%);
-	color:darken($accent-color, 35%);
+	background:lighten($accent-color, 35%);
+	color:darken($accent-color, 30%);
 	display:flex;
 	position:relative;
 	justify-content: space-between;
 
 	p {
-		max-width:55%;
-		line-height:1.15;
-		margin:0 0 60px;
+		max-width:50%;
+		line-height:1.2;
+		margin:0;
+		margin-bottom:calc(55px + 2vh);
 		align-self:flex-start;
 		position:relative;
 		z-index: 2;
-		font-weight:bold;
 		hyphens: none;
+	}
+
+	strong {
+		display:block;
 	}
 
 	.button {
@@ -1251,16 +1257,15 @@ ul.circleShare {
 		padding:.8em 1.1em;
 		border-radius:20px;
 		align-self:flex-end;
-		font-size:1.2em;
-		letter-spacing:.05em;
 		font-weight:500;
 		font-family:$sans-serif;
-		box-shadow:0px 3px 0px 0px $accent-color;
+		box-shadow:0px 4px 0px 0px $accent-color;
 		position: relative;
 		z-index: 3;
+		transition: all .2s;
 
-		&:hover, &:active {
-			box-shadow:0px 0px 0px 3px $accent-color;
+		&:hover, &:focus {
+			box-shadow:0px 0px 0px 4px $accent-color;
 		}
 	}
 
@@ -1270,7 +1275,7 @@ ul.circleShare {
 		bottom:0;
 		left:3vw;
 		height:60px;
-		width:230px;
+		width:190px;
 		display:block;
 		content:'';
 		background-image:url('../images/icons-sj-sex-gender.png');
