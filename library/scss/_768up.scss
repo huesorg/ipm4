@@ -207,13 +207,21 @@ SINGLE STYLES
 }
 
 .heyHeyLook {
-	border-radius:6px 6px 26px 6px;
 
-	&:after {
-		left:50%;
-		transform:translate(-50%, 0);
+	&.wednesdayEmail {
+		border-radius:6px 6px 26px 6px;
+
+		&:after {
+			left:50%;
+			transform:translate(-50%, 0);
+		}
+	}
+
+	&.g2g2 {
+		border-radius:26px;
 	}
 }
+
 /**********************
 HOME PAGE
 **********************/

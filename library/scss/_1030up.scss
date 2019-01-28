@@ -217,3 +217,44 @@ ACTIVITIES AND CLASSES PAGE STYLES
 		flex-basis:500px;
     }
 }
+
+/**********************
+SHORTCODE STYLES
+**********************/
+.heyHeyLook {
+
+    &.g2g2 {
+        float:left;
+        max-width:240px;
+        margin:3vw 3vw 3vw -120px;
+        flex-direction: column;
+        padding:10px;
+        font-size:16px;
+
+        .image {
+            padding-bottom:0;
+        }
+
+        p {
+            padding:20px;
+
+            a {
+                display:block;
+                text-align:center;
+                padding:0;
+                margin:.75em 0 0;
+            }
+        }
+    }
+}
+
+/*********************
+GLOSSARY TERMINOLOGY LGBTQ POST
+*********************/
+
+.entry-content {
+
+	.term {
+		margin-left:-2vw;
+	}
+}

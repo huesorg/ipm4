@@ -179,18 +179,38 @@ add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
 
 /************* ADS SHORTCODE *********************/
 
+
+
 function heyHeyLook(){
-    $heyHeyLookContent = '
-	<aside class="heyHeyLook">
-		<p><strong>Most Wednesdays 💌</strong> I publish new Social Justice, Gender, &amp; Sexuality Resources &xrarr;</p>
-        <a class="button" title="Join my mailing list" href="http://bit.ly/2MmE28c" target="_blank">
-            Get the Email.
-        </a>
-	</aside>';
+
+    if ( has_tag( 'guide-to-gender') ) {
+        $heyHeyLookContent = '
+        <aside class="heyHeyLook g2g2">
+            <a class="image" href="https://bit.ly/2m4IAFr" title="A Guide to Gender 2nd Edition by Sam Killermann">
+            <img src="'. get_template_directory_uri() .'/library/images/a-guide-to-gender-2nd-edition-sam-killermann-200.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+            </a>
+            <div class="aside--text">
+                <p><strong>The post you\'re reading right now</strong> is included in my book, <em>A Guide to Gender</em>. You can get the 2nd Edition now (and read the expanded version of this post):<br/>
+                    <a href="https://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a> <a href="https://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a> <a href="https://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">.PDF (pay-what-you-want/can) </a>
+                </p>
+            </div>
+        </aside>';
+    }
+
+    else {
+        $heyHeyLookContent = '
+    	<aside class="heyHeyLook wednesdayEmail">
+    		<p><strong>Most Wednesdays 💌</strong> I publish new Social Justice, Gender, &amp; Sexuality Resources &xrarr;</p>
+            <a class="button" title="Join my mailing list" href="http://bit.ly/2MmE28c" target="_blank">
+                Get the Email.
+            </a>
+    	</aside>';
+    }
     return $heyHeyLookContent;
 }
 
 add_shortcode('adsmall', 'heyHeyLook');
+
 
 /* OLD CTAs
 

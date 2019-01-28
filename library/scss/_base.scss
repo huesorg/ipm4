@@ -1228,103 +1228,125 @@ ul.circleShare {
 
 .heyHeyLook {
 	margin:3em -3vw;
-	padding:3vw 0 0 3vw;
 	font-size:calc(.75rem + .2vw);
 	font-family:$sans-serif;
-	background:lighten($accent-color, 35%);
-	background:linear-gradient(to bottom right, lighten($accent-color, 40%), lighten($accent-color, 30%));
-	color:darken($accent-color, 30%);
 	display:flex;
 	position:relative;
 	justify-content: space-between;
 
-	p {
-		max-width:50%;
-		line-height:1.2;
-		margin:0;
-		margin-bottom:calc(55px + 2vh);
-		align-self:flex-start;
-		position:relative;
-		z-index: 2;
-		hyphens: none;
-	}
+	&.wednesdayEmail {
+		padding:3vw 0 0 3vw;
+		background:lighten($accent-color, 35%);
+		background:linear-gradient(to bottom right, lighten($accent-color, 40%), lighten($accent-color, 30%));
+		color:darken($accent-color, 30%);
 
-	strong {
-		display:block;
-	}
-
-	.button {
-		margin:20px 20px 20px 0;
-		padding:.8em 1.1em;
-		border-radius:20px;
-		align-self:flex-end;
-		font-weight:500;
-		font-family:$sans-serif;
-		box-shadow:0px 4px 0px 0px $accent-color;
-		position: relative;
-		z-index: 3;
-		transition: all .2s;
-
-		&:hover, &:focus {
-			box-shadow:0px 0px 0px 4px $accent-color;
-		}
-	}
-
-	&:after {
-		position:absolute;
-		z-index:1;
-		bottom:0;
-		left:3vw;
-		height:60px;
-		width:190px;
-		display:block;
-		content:'';
-		background-image:url('../images/icons-sj-sex-gender.png');
-		background-repeat:no-repeat;
-		background-size:contain;
-		background-position: center;
-		margin-bottom:-15px;
-
-		svg {
+		&:after {
+			position:absolute;
+			z-index:1;
+			bottom:0;
+			left:3vw;
 			height:60px;
-			margin-right:10px;
-			width:auto;
-			stroke:none;
-			color:lighten($accent-color, 10%);
+			width:190px;
+			display:block;
+			content:'';
+			background-image:url('../images/icons-sj-sex-gender.png');
+			background-repeat:no-repeat;
+			background-size:contain;
+			background-position: center;
+			margin-bottom:-15px;
+		}
 
-			path {
-				fill:currentColor;
-				stroke:none;
+		p {
+			max-width:50%;
+			line-height:1.2;
+			margin:0;
+			margin-bottom:calc(55px + 2vh);
+			align-self:flex-start;
+			position:relative;
+			z-index: 2;
+			hyphens: none;
+		}
+
+		strong {
+			display:block;
+		}
+
+		.button {
+			margin:20px 20px 20px 0;
+			padding:.8em 1.1em;
+			border-radius:20px;
+			align-self:flex-end;
+			font-weight:500;
+			font-family:$sans-serif;
+			box-shadow:0px 4px 0px 0px $accent-color;
+			position: relative;
+			z-index: 3;
+			transition: all .2s;
+
+			&:hover, &:focus {
+				box-shadow:0px 0px 0px 4px $accent-color;
 			}
 		}
 	}
 
-	img {
-		margin:0;
-		-webkit-border-radius: 20px 0 0 20px;
-		border-radius: 20px 0 0 20px;
-	}
+	&.g2g2 {
+		align-items: center;
+		@extend .shadow-high;
+		padding-right:20px;
 
-	h3 {
-		text-align:center;
-		font-size:24px;
-		padding:0px 1em;
-		margin:0 auto .7em;
-		font-family:$theme-font;
+		.image {
+			width:180px;
+			display:block;
+			padding:15px 0 10px;
 
-		a:hover {
-			text-decoration:underline;
+			img {
+				max-width:180px !important;
+				margin:0;
+			}
 		}
+
+		p {
+			margin:0;
+			padding:20px 0;
+
+			a {
+				display:inline-block;
+				padding:.7em 1em .7em 0;
+				line-height:1.2;
+			}
+		}
+
 	}
 
-	small {
+}
+
+
+/*********************
+GLOSSARY TERMINOLOGY LGBTQ POST
+*********************/
+
+.entry-content {
+
+	.term {
+		float:left;
+		font-weight:bold;
+		margin:0 .5em 0 0;
 		display:inline-block;
-		line-height:1.3em;
-		padding:0px 1em .5em;
+		font-family:$alt-font;
+	}
 
-		a:hover {
-			text-decoration:underline;
-		}
+	.Bold-Italic {
+		font-weight:bold;
+		font-style:italic;
+	}
+
+	.Taxonomy {
+		font-style:italic;
+		opacity:.7;
+	}
+
+	.Numerals {
+		font-weight:bold;
 	}
 }
 

@@ -143,9 +143,9 @@ TYPOGRAPHY
 }
 
 $sans-serif:        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$serif:             Minion Pro, Minion, "Minion Pro", "Minion", "Times New Roman", Times New Roman, "Times", Times, serif;
+$serif:             "Bodoni","Times New Roman", Times New Roman, "Times", Times, serif;
 $theme-font: 		'JustTheWayYouAreRegular', $sans-serif;
-$alt-font: 		    "Futura", $serif;
+$alt-font: 		    "Futura", $sans-serif;
 
 
 /*
