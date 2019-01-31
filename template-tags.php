@@ -179,9 +179,9 @@ function getFollowIPMSingle(){?>
 
 					<div class="mc-field-group">
 						<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
-						<div><input type="submit" value="Sign Me Up." name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">👍</button>
 					</div>
-					<div id="mailchimp-excited">
+					<!-- <div id="mailchimp-excited">
 						<ul>
 							<li><strong>Excited about new... </strong></li>
 							<li><input type="checkbox" value="1" name="group[10421][1]" id="mce-group[10421]-10421-0"><label for="mce-group[10421]-10421-0">Articles</label></li>
@@ -192,7 +192,7 @@ function getFollowIPMSingle(){?>
 							<li><input type="checkbox" value="32" name="group[10421][32]" id="mce-group[10421]-10421-5"><label for="mce-group[10421]-10421-5">Online Courses</label></li>
 							<li><input type="checkbox" value="64" name="group[10421][64]" id="mce-group[10421]-10421-6"><label for="mce-group[10421]-10421-6">Activities / Lesson Plans</label></li>
 						</ul>
-					</div><!--/excited-about-->
+					</div>-->
 
 
 					<div id="mce-responses" class="clear">

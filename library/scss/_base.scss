@@ -2715,6 +2715,7 @@ ARTICLES AND BOOKS PAGE
 
 	.mc-field-group {
 		display:flex;
+		align-items: center;
 	}
 
 	#mailchimp-excited {
@@ -2735,20 +2736,27 @@ ARTICLES AND BOOKS PAGE
 		}
 	}
 
-	input[type=email] {
+	input[type=email], button {
 		flex:1;
-		width:100%;
 		border-radius:10px;
-		margin-bottom:calc(12px + 1.5vw);
-		margin-right:7px;
+		margin:0;
 		font-family:$sans-serif;
 		padding:0 20px;
 		line-height:2.4;
 		border:none;
-		background:#fff;
-
 		@include shadow;
+	}
 
+	input[type="email"]{
+		background:#fff;
+		margin-right:7px;
+	}
+
+	button {
+		padding:0;
+		width:75px;
+		max-width:75px;
+		min-width:75px;
 	}
 
 }
