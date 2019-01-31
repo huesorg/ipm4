@@ -203,7 +203,7 @@ function getFollowIPMSingle(){?>
 
 				</form>
 
-				<p class="description">Totally free (for you), never spammy, and totally automagic (delivered by <a href="http://eepurl.com/di45Q1" alt="IPM Feedburner">Mailchimp</a> -- view <a target="_blank" href="https://us6.campaign-archive.com/home/?u=baa3ac0aa5ef20a1189b13625&id=4c17540fc5" title="Archive of Emails">the archive</a> to see what to expect). <strong>You will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
+				<p class="description">Totally free (for you), never spammy, and totally automagic (delivered by <a href="http://eepurl.com/di45Q1" alt="IPM Feedburner">Mailchimp</a> &mdash; view <a target="_blank" href="https://us6.campaign-archive.com/home/?u=baa3ac0aa5ef20a1189b13625&id=4c17540fc5" title="Archive of Emails">the archive</a> to see what to expect). <strong>You will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
 
 				<!--End mc_embed_signup-->
 
