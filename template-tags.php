@@ -178,8 +178,8 @@ function getFollowIPMSingle(){?>
 				<form action="https://itspronouncedmetrosexual.us6.list-manage.com/subscribe/post?u=baa3ac0aa5ef20a1189b13625&amp;id=4c17540fc5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
 					<div class="mc-field-group">
-						<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
-						<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">👍</button>
+						<input type="email" value="" aria-label="Email Address" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
+						<button type="submit" aria-label="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">👍</button>
 					</div>
 					<!-- <div id="mailchimp-excited">
 						<ul>
