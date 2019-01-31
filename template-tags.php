@@ -160,10 +160,10 @@ add_action('bones_hook_post_footer','getSJDFooter');
 function getFollowIPMSingle(){?>
 	<div id="followIPM" class="shadow">
 		<div class="grid grid--justifyCenter small-grid--fit grid--full">
-			<div id="subscribeFeedburner" class="grid-cell">
+			<div id="subscribeFeedburner" class="grid-cell mailchimp">
 				<h3>Get New Posts Delivered to Your Email Inbox</h3>
 
-				<form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow">
+				<!-- <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow">
 					<div class="grid inputGrid">
 						<input class="grid-cell" placeholder="your@email.com" name="email" type="text" />
 						<input name="uri" type="hidden" value="ItsPronouncedMetrosexual" />
@@ -172,7 +172,40 @@ function getFollowIPMSingle(){?>
 					</div>
 				</form>
 
-				<p class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and <strong>you will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
+				<p class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and <strong>you will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p> -->
+
+				<!-- Begin Mailchimp Signup Form -->
+				<form action="https://itspronouncedmetrosexual.us6.list-manage.com/subscribe/post?u=baa3ac0aa5ef20a1189b13625&amp;id=4c17540fc5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+					<div class="mc-field-group">
+						<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
+						<div><input type="submit" value="Sign Me Up." name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+					<div id="mailchimp-excited">
+						<ul>
+							<li><strong>Excited about new... </strong></li>
+							<li><input type="checkbox" value="1" name="group[10421][1]" id="mce-group[10421]-10421-0"><label for="mce-group[10421]-10421-0">Articles</label></li>
+							<li><input type="checkbox" value="2" name="group[10421][2]" id="mce-group[10421]-10421-1"><label for="mce-group[10421]-10421-1">Books</label></li>
+							<li><input type="checkbox" value="4" name="group[10421][4]" id="mce-group[10421]-10421-2"><label for="mce-group[10421]-10421-2">Edugraphics</label></li>
+							<li><input type="checkbox" value="8" name="group[10421][8]" id="mce-group[10421]-10421-3"><label for="mce-group[10421]-10421-3">Videos</label></li>
+							<li><input type="checkbox" value="16" name="group[10421][16]" id="mce-group[10421]-10421-4"><label for="mce-group[10421]-10421-4">Podcasts</label></li>
+							<li><input type="checkbox" value="32" name="group[10421][32]" id="mce-group[10421]-10421-5"><label for="mce-group[10421]-10421-5">Online Courses</label></li>
+							<li><input type="checkbox" value="64" name="group[10421][64]" id="mce-group[10421]-10421-6"><label for="mce-group[10421]-10421-6">Activities / Lesson Plans</label></li>
+						</ul>
+					</div><!--/excited-about-->
+
+
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_baa3ac0aa5ef20a1189b13625_4c17540fc5" tabindex="-1" value=""></div>
+
+				</form>
+
+				<p class="description">Totally free (for you), never spammy, and totally automagic (delivered by <a href="http://eepurl.com/di45Q1" alt="IPM Feedburner">Mailchimp</a> -- view <a target="_blank" href="https://us6.campaign-archive.com/home/?u=baa3ac0aa5ef20a1189b13625&id=4c17540fc5" title="Archive of Emails">the archive</a> to see what to expect). <strong>You will only get an email when there's a new article, edugraphic, or blog post</strong> (no other announcements). Only the freshest.</p>
+
+				<!--End mc_embed_signup-->
 
 			</div>
 
@@ -225,16 +258,9 @@ function getSubscribeOptions() {?>
 			<h3>1. Get New Posts Delivered to Your Email Inbox</h3>
 			<div class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and you will only get an email when there's a new article, edugraphic, or blog post (no other announcements).</div>
 
-			<!-- <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow">
-				<div class="grid inputGrid">
-					<input class="grid-cell" placeholder="your@email.com" name="email" type="text" />
-					<input name="uri" type="hidden" value="ItsPronouncedMetrosexual" />
-					<input name="loc" type="hidden" value="en_US" />
-					<button type="submit" value="Subscribe">Want.</button>
-				</div>
-			</form> -->
+			<!-- <a class="button button-wide" href="https://feedburner.google.com/fb/a/mailverify?uri=ItsPronouncedMetrosexual" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Feedburner'});">Get New Posts via Email</a> -->
 
-			<a class="button button-wide" href="https://feedburner.google.com/fb/a/mailverify?uri=ItsPronouncedMetrosexual" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Feedburner'});">Get New Posts via Email</a>
+			<a class="button button-wide" href="http://eepurl.com/di45Q1" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Subscriptions', eventAction: 'button_click', eventLabel: 'Feedburner'});">Get New Posts via Email</a>
 
 			<div class="fomo">FOMO Level:
 				<div class="level zero">1%</div>
