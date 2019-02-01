@@ -136,33 +136,48 @@
 			</nav>
 			<div id="mask"></div>
 
-			<!-- <div id="ipmNews" class="hide">
-				<h3>🆘 I need your help! ⛑</h3>
-				<p>If you appreciate what I'm doing here, please become a patron (starting at $1) so we can afford hosting that will prevent the site from going down.</p>
-				<button id="closeIpmNews" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'X-out News'});">
+			<div id="ipmNews" class="hide">
+				<button id="closeIpmNews" title="Close Question" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'X-out Question'});">
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
-				<ul>
-					<li>
-						<a id="becomePatron" href="https://bit.ly/2pfQrTl" target="_blank" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Become Patron'});">
-							<span>Become a</span> Patron 🤗
-						</a>
-					</li>
-					<li>
-						<a id="oneTimeDonation" href="https://bit.ly/2DtqMK1" class="newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: '1 Time Donation'});">
-							<span>Make a</span> 1-time Donation
-						</a>
-					</li>
-					<li>
-						<a id="readMore" href="https://bit.ly/2BWhEjl" class="hideIpmNews newsButton" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Read More'});">
-							Read more.
-						</a>
-					</li>
-					<li>
-						<a href="#" id="noThanks" class="hideIpmNews newsButton"
-						onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'No Thanks'});">
-							No, thanks.
-						</a>
-					</li>
-				</ul>
-			</div>-->
+				<div id="MOOC-question">
+					<h3>Quick Question:</h3>
+					<p>Would you participate in an open online course/community about <strong>Social Justice, Minus Dogma</strong> with me?</p>
+
+					<ul>
+						<li>
+							<a id="yesMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'Yes'});">
+								<span>👍 Yes,</span> I would
+							</a>
+						</li>
+						<li>
+							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'No'});">
+								<span>👎 No,</span> I wouldn't
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="yesMOOC-email" class="hide mailchimp">
+					<h3>Good to know!</h3>
+					<p>Would you like an email if I create the course/community?</p>
+					<form action="https://itspronouncedmetrosexual.us20.list-manage.com/subscribe/post?u=2c47c23edde65a6e045cbe108&amp;id=d6f2aace37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+						<div class="mc-field-group">
+							<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
+							<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">👍</button>
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c47c23edde65a6e045cbe108_d6f2aace37" tabindex="-1" value=""></div>
+					</form>
+				</div>
+
+				<div id="noMOOC-response" class="hide">
+					<h3>Thanks for your input!</h3>
+					<p>And sorry to interrupt your reading experience. This message will auto-hide in the future.</p>
+				</div>
+				<p>(<a href="https://itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Articles">read about Social Justice Dogma here</a>)</p>
+			</div>

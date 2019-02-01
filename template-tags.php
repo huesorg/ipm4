@@ -254,7 +254,7 @@ function getSubscribeOptions() {?>
 	<h2>Too Many Ways to Subscribe:</h2>
 	<span>Choose the 1 (or 5) that seems the most like what you're looking for.</span>
 	<div class="grid grid--justifyCenter small-grid--fit grid--full">
-		<div id="subscribeFeedburner" class="grid-cell">
+		<div class="grid-cell">
 			<h3>1. Get New Posts Delivered to Your Email Inbox</h3>
 			<div class="description">Totally free, totally automagic (delivered by <a href="https://feeds.feedburner.com/ItsPronouncedMetrosexual" alt="IPM Feedburner">Feedburner</a>), never spammy, and you will only get an email when there's a new article, edugraphic, or blog post (no other announcements).</div>
 

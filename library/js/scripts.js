@@ -21,18 +21,31 @@ jQuery(document).ready(function($) {
 
     // FIRST TIME POPUP
 
-    // $(function() {
-    //     var shown= localStorage.getItem('isshow');
-    //
-    //     if(shown !="t"){
-    //         $('#ipmNews').removeClass("hide");
-    //     }
-    //
-    //     $(".hideIpmNews").click(function(){
-    //         localStorage.setItem('isshow', 't');
-    //         $("#ipmNews").toggleClass("hide");
-    //     });
-    // });
+    $(function() {
+        var shownMOOC= localStorage.getItem('isshowMOOC');
+
+        if(shownMOOC !="t"){
+            $('#ipmNews').removeClass("hide");
+        }
+
+        $(".hideIpmNews").click(function(){
+            localStorage.setItem('isshowMOOC', 't');
+            $("#ipmNews").toggleClass("hide");
+        });
+
+        $("#yesMOOC").click(function(){
+            localStorage.setItem('isshowMOOC', 't');
+            $("#yesMOOC-email").toggleClass("hide");
+            $("#MOOC-question").toggleClass("hide");
+        });
+
+        $("#noMOOC").click(function(){
+            localStorage.setItem('isshowMOOC', 't');
+            $("#noMOOC-response").toggleClass("hide");
+            $("#MOOC-question").toggleClass("hide");
+        })
+
+    });
 
     // NEW ITEMS MENU FLAGS
 
