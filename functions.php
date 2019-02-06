@@ -151,7 +151,6 @@ add_filter( 'body_class', 'add_slug_body_class' );
 
 /************* ACF OPTIONS PAGE *********************/
 
-
 if( function_exists('acf_add_options_page') ) {
 
     acf_add_options_page(array(
@@ -186,8 +185,58 @@ function filter_post( $should_index, WP_Post $post )
 // Hook into Algolia to manipulate the post that should be indexed.
 add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
 
-/************* ADS SHORTCODE *********************/
 
+/*------------------------------------*\
+	Lazy Load All the Images
+\*------------------------------------*/
+
+/**
+ * Use Lozad (lazy loading) for images within the posts
+ */
+
+add_filter('the_content', function ($content) {
+
+	// Bail on amp
+	if (function_exists( 'is_amp_endpoint' ) && is_amp_endpoint()) {
+		return $content;
+	}
+	//-- Change src/srcset to data attributes.
+	$content = preg_replace("/<img(.*?)(src=|srcset=)(.*?)>/i", '<img$1data-$2$3>', $content);
+
+	//-- Add .lazy-load class to each image that already has a class.
+	$content = preg_replace('/<img(.*?)class=\"(.*?)\"(.*?)>/i', '<img$1class="$2 lazy-load"$3>', $content);
+
+	//-- Add .lazy-load class to each image that doesn't already have a class.
+	$content = preg_replace('/<img((?:(?!class=).)*?)>/i', '<img class="lazy-load"$1>', $content);
+
+	return $content;
+});
+
+/**
+* Use Lozad (lazy loading) for attachments/featured images
+*/
+add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
+	// Bail on admin
+	if (is_admin()) {
+	 	return $attr;
+	}
+
+	// Bail on amp
+	if (function_exists( 'is_amp_endpoint' ) && is_amp_endpoint()) {
+		return $attr;
+	}
+
+	$attr['data-src'] = $attr['src'];
+	$attr['data-src-set'] = $attr['src-set'];
+	$attr['class'] .= ' lazy-load';
+	unset($attr['src']);
+	unset($attr['src-set']);
+
+	return $attr;
+}, 10, 2);
+
+
+/************* ADS SHORTCODE *********************/
 
 
 function heyHeyLook(){
