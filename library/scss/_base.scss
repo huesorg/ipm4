@@ -1359,16 +1359,6 @@ BLOG AND LOOP STYLES
 	}
 }
 
-
-.lazy-load {
-    transition: opacity .15s;
-    opacity: 0;
-}
-
-.lazy-load.is-loaded {
-    opacity: 1;
-}
-
 .snapshot, .authorSnapshot{
 	text-align:left;
 	border:2px solid #f1f1f1;
