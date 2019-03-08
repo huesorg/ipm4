@@ -137,30 +137,30 @@
 			<div id="mask"></div>
 
 			<div id="ipmNews" class="hide">
-				<button id="closeIpmNews" title="Close Question" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'X-out Question'});">
+				<button id="closeIpmNews" title="Close Question" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'X-out Question'});">
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
-					<h3>Quick Question:</h3>
-					<p>Would you participate in an open online course/community about <strong>Social Justice, Minus Dogma</strong> with me?</p>
+					<h3>Over 1,000 of you asked, so...</h3>
+					<p>I'm currently working on creating an online course/community about <strong>Social Justice, Minus Dogma</strong>. You want an invite when it's open?</p>
 
 					<ul>
 						<li>
-							<a id="yesMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'Yes'});">
-								<span>👍 Yes,</span> I would
+							<a id="yesMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'Yes'});">
+								<span>👍 Yes,</span> please
 							</a>
 						</li>
 						<li>
-							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD MOOC Poll', eventAction: 'button_click', eventLabel: 'No'});">
-								<span>👎 No,</span> I wouldn't
+							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'No'});">
+								<span>👎 No,</span> thanks
 							</a>
 						</li>
 					</ul>
 				</div>
 
 				<div id="yesMOOC-email" class="hide mailchimp">
-					<h3>Good to know!</h3>
-					<p>Would you like an email if I create the course/community?</p>
+					<h3>Great! Drop your email address below 👇</h3>
+					<p>I'm looking forward to learning with you!</p>
 					<form action="https://itspronouncedmetrosexual.us20.list-manage.com/subscribe/post?u=2c47c23edde65a6e045cbe108&amp;id=d6f2aace37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
 						<div class="mc-field-group">
@@ -176,8 +176,8 @@
 				</div>
 
 				<div id="noMOOC-response" class="hide">
-					<h3>Thanks for your input!</h3>
-					<p>And sorry to interrupt your reading experience. This message will auto-hide in the future.</p>
+					<h3>No prob. Sorry to interrupt!</h3>
+					<p>This message should auto-hide in the future, and you can click the <strong>X</strong> to hide it now.</p>
 				</div>
 				<p>(<a href="https://itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Articles">read about Social Justice Dogma here</a>)</p>
 			</div>
