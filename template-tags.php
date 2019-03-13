@@ -224,23 +224,34 @@ function getSidebarBooks() {?>
 	<div class="sidebarBook">
 
 		<h4>Would you like to better understand gender?</h4>
-		<a href="https://amzn.to/2li0YWS" alt="A Guide to Gender (2nd Edition) on Amazon">
+		<a href="https://amzn.to/2li0YWS" title="A Guide to Gender (2nd Edition) on Amazon">
 			<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg" alt="A Guide to Gender (2nd Edition)"/>
 		</a>
 		<p>
-			Great! I wrote a book for you! It's called <em><a href="https://guidetogender.com" alt="Website">A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</a></em>. It's just like this website, but instead of being made out of code, it's made out of murdered trees.
-			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2li0YWS" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://guidetogender.com/get" alt="Guide to Gender E-Book">E-Book</a></span>
+			Great! I wrote a book for you! It's called <em><a href="https://guidetogender.com" title="Guide to Gender Website">A Guide to Gender: The Social Justice Advocate's Handbook</a></em>. It's just like this website, but instead of being made out of code, it's made out of murdered trees.
+			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2li0YWS" title="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://guidetogender.com/get" title="Guide to Gender E-Book">E-Book</a></span>
 		</p>
 	</div>
 
 	<div class="sidebarBook">
 		<h4>Or would you like to learn about facilitation?</h4>
-		<a href="https://amzn.to/2dDFVuJ" alt="Unlocking the Magic of Facilitation on Amazon">
+		<a href="https://amzn.to/2dDFVuJ" title="Unlocking the Magic of Facilitation on Amazon">
 			<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-unlocking-the-magic-of-facilitation.jpg" alt="Unlocking the Magic of Facilitation"/>
 		</a>
 		<p>
-			Then you'll appreciate this book I co-authored it with Meg Bolger. It's called <em><a href="https://facilitationmagic.com" alt="Unlocking the Magic of Facilitation Website">Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't know</a></em>. It's the HOW where this website is the WHAT.
-			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2dDFVuJ" alt="Guide to Gender Paperback">Paperback</a> | <a class="button accent-button" href="https://gum.co/utmof" alt="Unlocking the Magic of Facilitation E-Book">E-Book</a></span>
+			Then you'll appreciate this book I co-authored it with Meg Bolger. It's called <em><a href="https://facilitationmagic.com" title="Unlocking the Magic of Facilitation Website">Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't know</a></em>. It's the HOW where this website is the WHAT.
+			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://amzn.to/2dDFVuJ" title="Unlocking the Magic of Facilitation Paperback">Paperback</a> | <a class="button accent-button" href="https://gum.co/utmof" title="Unlocking the Magic of Facilitation E-Book">E-Book</a></span>
+		</p>
+	</div>
+
+	<div class="sidebarBook">
+		<h4>Or maybe you just need an LGBTQ+ vocab primer?</h4>
+		<a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">
+			<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-defining-lgbtq-sam-killermann.jpg" alt="Defining LGBTQ+: A Guide to Gender & Sexuality Terminology by Sam Killermann"/>
+		</a>
+		<p>
+			I hear ya. This stuff can be confusing. Here's a solid place to start: <a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">Defining LGBTQ+: A Guide to Gender &amp; Sexuality Terminology</a>. Think of this as an elaborately annotated glossary turned into an e-book &mdash; because that's what it is.
+			<br/><span class="sidebarBook__get"><a class="button accent-button" href="https://gum.co/defininglgbtq?wanted=true" title="">Get the E-Book</a></span>
 		</p>
 	</div>
 

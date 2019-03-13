@@ -19,7 +19,8 @@ Template Name: Articles & Books
 				<?php the_content(); ?>
 			</section> <!-- end article section -->
 			<p>
-				<a class="button" href="#recentUpdates">Jump to the Latest &darr;</a>
+				<a class="mobileHide" href="#recentUpdates">Jump to the Articles &darr;</a>
+				<a class="desktopHide" href="#myBooks">Jump to my Books &darr;</a>
 			</p>
 
 		</article> <!-- end article -->
@@ -156,23 +157,45 @@ Template Name: Articles & Books
 
 		<h3 class="pageSubhead">My Books</h3>
 
-			<!--GUIDE TO GENDER -->
 			<div class="bookCard">
-				<a href="https://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
-					<img alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg"/>
-					<h4>A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</h4>
+				<a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">
+					<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-defining-lgbtq-sam-killermann.jpg" alt="Defining LGBTQ+: A Guide to Gender & Sexuality Terminology by Sam Killermann"/>
+					<h4>Defining LGBTQ+: A Guide to Gender &amp; Sexuality Terminology</h4>
 					<p>
-						<em><a href="https://guidetogender.com" alt="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
+						<em><strong><a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">Defining LGBTQ+</a></strong></em> is an elaborately annotated and expanded glossary turned into an e-book. It's great for getting your mind around the language of gender &amp; sexuality, and has helpful rules and foundational principles sprinkled throughout to complement the terms.
 					</p>
 				</a>
 				<ul>
 					<li>
-						<a class="button" alt="Get A Guide to Gender" href="https://guidetogender.com">
+						<a class="button" title="Get Defining LGBTQ+ by Sam Killermann" href="https://gum.co/defininglgbtq?wanted=true">
+							Get the E-Book
+						</a>
+					</li>
+					<li>
+						<a class="button accent-button" title="Learn more about Defining LGBTQ+" href="https://www.itspronouncedmetrosexual.com/2019/02/defining-lgbtq-guide-to-gender-sexuality-terminology/">
+							Learn More
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--GUIDE TO GENDER -->
+			<div class="bookCard">
+				<a href="https://amzn.to/2hx0gba" title="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
+					<img alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg"/>
+					<h4>A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</h4>
+					<p>
+						<em><a href="https://guidetogender.com" title="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
+					</p>
+				</a>
+				<ul>
+					<li>
+						<a class="button" title="Get A Guide to Gender" href="https://guidetogender.com">
 							Book Website
 						</a>
 					</li>
 					<li>
-						<a class="button accent-button" alt="Buy A Guide to Gender on Amazon" href="https://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
+						<a class="button accent-button" title="Buy A Guide to Gender on Amazon" href="https://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
 							Amazon
 						</a>
 					</li>
@@ -187,7 +210,7 @@ Template Name: Articles & Books
 
 				<div class="mc-field-group">
 					<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
-					<button type="submit" name="subscribe" id="mc-embedded-subscribe">
+					<button class="button" type="submit" name="subscribe" id="mc-embedded-subscribe">
 				    	Want.
 				    </button>
 				</div>
@@ -223,6 +246,8 @@ Template Name: Articles & Books
 					</li>
 				</ul>
 			</div><!--/bookcard-->
+
+			<script src="https://gumroad.com/js/gumroad.js"></script>
 
 			<!-- <div class="bookCard preorder ">
 				<div class="comingSoon">Coming Soon</div>
