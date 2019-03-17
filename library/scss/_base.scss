@@ -848,16 +848,6 @@ POSTS & CONTENT STYLES
 	margin:0 auto;
 }
 
-address {
-	background:lighten($accent-color,25%);
-	padding:20px;
-	border:2px dashed lighten($accent-color,15%);
-	font-family:$sans-serif;
-	font-size:.8em;
-
-	@include rounded(10px);
-}
-
 ul.circleShare {
 	margin:0;
 	display:none;
@@ -1186,13 +1176,80 @@ ul.circleShare {
 				height: auto;
 			}
 
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
+		} /* end .entry-content */
+
+		.entry-content pre, pre,
+		.entry-content address, address {
+			font-family:$sans-serif;
+			font-style: normal;
+			font-size:.8em;
+			padding: 20px;
+			position:relative;
+			line-height: 1.3;
+			z-index: 2;
+			background: rgba(255,255,255,.85);
+			border: 10px solid white;
+			background: lighten($pink, 20%); /* Old browsers */
+			background: -moz-linear-gradient(-15deg, lighten($pink, 33%) 0%, lighten($orange, 35%) 50%, lighten($yellow, 35%) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-15deg, lighten($pink, 33%) 0%, lighten($orange, 35%) 50%, lighten($yellow, 35%) 100%); /* Chrome10-35,Safari5.1-6 */
+			background: linear-gradient(165deg, lighten($pink, 33%) 0%, lighten($orange, 35%) 50%, lighten($yellow, 35%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af6ee2', endColorstr='#73c535',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			@include rounded(20px);
+
+			a {
+				text-decoration:none;
+				border-bottom: 2px $pink solid;
 			}
 
-		} /* end .entry-content */
+			&:after {
+				content: "HEY";
+				font-weight: 700;
+				letter-spacing: .1em;
+				top: -.8rem;
+				border-radius: 4px;
+				left: calc( 20px - .4rem);
+				background: white;
+				padding: 0 .4rem;
+				font-size: .6rem;
+				line-height: 1;
+				position: absolute;
+				z-index: 1;
+				font-family: $theme-font;
+				font-weight: bold;
+				color: $pink;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: -10px;
+				top: -10px;
+				right: -10px;
+				bottom: -10px;
+				z-index: -1;
+				border: 2px solid $pink;
+				border-radius: 13px;
+			}
+
+			&:nth-of-type(2) {
+				&:after {
+					content: "HOWDY";
+				}
+			}
+
+			&:nth-of-type(3) {
+				&:after {
+					content: "ME AGAIN";
+				}
+			}
+
+		}
+
+		.entry-content > pre:first-child,
+		.entry-content > address:first-child {
+			margin-top: 2em;
+		}
 
 		.wp-caption {
 			max-width: 100%;
