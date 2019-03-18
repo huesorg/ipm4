@@ -290,10 +290,9 @@ add_shortcode('adsmall', 'heyHeyLook');
 
 // Search Form
 function bones_wpsearch($form) {
-	$form = '<div class="searchContainer"><form role="search" method="get" class="searchform" action="' . home_url( '/' ) . '" >
+	$form = '<div class="searchContainer"><form role="search" method="get" class="searchform" >
 	<label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
 	<input type="search" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search','bonestheme').'" />
-	<button type="submit" class="searchsubmit"><span>Search</span></button>
 	</form></div>';
 	return $form;
 } // don't remove this bracket!
