@@ -141,7 +141,7 @@
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
-					<h3>Over 1,000 of you asked, so...</h3>
+					<h3>Over 1,000 of you requested it, so...</h3>
 					<p>I'm currently working on creating an online course/community about <strong>Social Justice, Minus Dogma</strong>. You want an invite when it's open?</p>
 
 					<ul>
