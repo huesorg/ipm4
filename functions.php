@@ -50,7 +50,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
-/************* ADD FEATURED IMAGE TO RSS *************/
+/************* ADD FEATURED IMAGE TO RSS *************
 
 function rss_post_thumbnail($content) {
 global $post;
