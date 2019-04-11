@@ -50,12 +50,12 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
-/************* ADD FEATURED IMAGE TO RSS *************
+/************* ADD FEATURED IMAGE TO RSS *************/
 
 function rss_post_thumbnail($content) {
 global $post;
 if(has_post_thumbnail($post->ID)) {
-    $content = $content = '<p>' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'max-width:100%; height:auto; margin:0 auto;' ) ) . '</p>' . $content;
+    $content = $content = '<p>' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'max-width:100%; height:auto; margin:1.5em auto;' ) ) . '</p>' . $content;
     }
     return $content;
 }
