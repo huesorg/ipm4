@@ -59,7 +59,7 @@ if(has_post_thumbnail($post->ID)) {
     }
     return $content;
 }
-add_filter('the_excerpt_rss', 'rss_post_thumbnail');
+// add_filter('the_excerpt_rss', 'rss_post_thumbnail');
 add_filter('the_content_feed', 'rss_post_thumbnail');
 
 /************* ENABLE HTML IN CATEGORY DESCRIPTIONS ********************/
