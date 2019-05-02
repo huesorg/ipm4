@@ -52,15 +52,15 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 
 /************* ADD FEATURED IMAGE TO RSS *************/
 
-function rss_post_thumbnail($content) {
-global $post;
-if(has_post_thumbnail($post->ID)) {
-    $content = $content = '<p>' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'max-width:100%; height:auto; margin:1.5em auto;' ) ) . '</p>' . $content;
-    }
-    return $content;
-}
-
-add_filter('the_content_feed', 'rss_post_thumbnail');
+// function rss_post_thumbnail($content) {
+// global $post;
+// if(has_post_thumbnail($post->ID)) {
+//     $content = $content = '<p>' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'max-width:100%; height:auto; margin:1.5em auto;' ) ) . '</p>' . $content;
+//     }
+//     return $content;
+// }
+//
+// add_filter('the_content_feed', 'rss_post_thumbnail');
 
 /************* ENABLE HTML IN CATEGORY DESCRIPTIONS ********************/
 
