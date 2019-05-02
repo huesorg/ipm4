@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Activities & Classes
+Template Name: Activities & Courses
 */
 ?>
 <?php get_header(); ?>
@@ -11,7 +11,7 @@ Template Name: Activities & Classes
 			<a href="#Activities" title="Jump to Activities Section">Activities</a>
 		</li>
 		<li class="grid-cell">
-			<a href="#Classes" title="Jump to Classes Section">Classes</a>
+			<a href="#Courses" title="Jump to Courses Section">Classes</a>
 		</li>
 		<li class="grid-cell">
 			<a href="#MailingList" title="Jump to Get Alerts">Get Alerts</a>
@@ -28,16 +28,13 @@ Template Name: Activities & Classes
 
 </header> <!-- end article header -->
 
-<div id="content">
+<div id="content" class="halfsies">
 	<aside id="TheHotness" class="featuredClass sidebar" role="complementary">
-		<p class="mobileHide">
-			Wut. No way. That class you all kept asking me to create? 😘 👇
-		</p>
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Class!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
+				<h3 class="loopTitle"><a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Course!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
 				<p>
-					This class is co-facilitated by Meg Bolger &amp; me (<a href="htps://www.itspronouncedmetrosexual/about-sam-killermann" title="About Sam Killermann">Sam Killermann</a>), and is an introduction to LGBTQ+ identities &amp; inclusion, gender, and sexuality &mdash; at your own pace, online. Including: vocab, privilege, Genderbread, and scenarios.
+					This class is co-facilitated by Meg Bolger &amp; me (<a href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann/" title="About Sam Killermann">Sam Killermann</a>), and is an introduction to LGBTQ+ identities &amp; inclusion, gender, and sexuality &mdash; at your own pace, online. Including: vocab, privilege, Genderbread, and scenarios.
 				</p>
 				<a class="button" href="https://bit.ly/2o0IoXj" title="Start Now" target="_blank">Start Now</a> <a href="https://bit.ly/2MpXkg4" title="Learn More" target="_blank">Learn More</a>
 			</div>
@@ -147,8 +144,8 @@ Template Name: Activities & Classes
 			</div>
 
 		</section>
-		<section id="Classes">
-			<h2>Classes &amp; Trainings</h2>
+		<section id="Courses">
+			<h2>Courses &amp; Trainings</h2>
 			<div class="pageIntro">
 				<p class="introParagraph">Maybe you're looking for something a little more involved than an activity. Allow me to present Classes: what happens when you put a bunch of activities in a sequence.</p>
 				<p>I've had a back-and-forth relationship with online classes for years now, and I've finally landed on a forth that I think I'll be sticking with. As of July 2018, we started creating and hosting <a href="https://thesafezoneproject.com/resources/courses/?utm_source=ipm&utm_medium=activities-classes" title="online courses at the safe zone project">online courses at The Safe Zone Project</a>.
@@ -167,9 +164,9 @@ Template Name: Activities & Classes
 		</section>
 		<section id="MailingList" class="classesMailingList">
 			<!-- Begin MailChimp Signup Form -->
-			<h2>Want an alert when I add a new class?</h2>
+			<h2>Want an alert when I add a new course?</h2>
 			<p>Click the big ol button below, give me a good email to reach out to, and make sure the "Activities &amp; Classes" box is checked. After that, we should be all set, and I'll make sure to email you every once in a while with class updates.</p>
-			<p><a class="button accent-button button-wide" href="htps://www.itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new class" target="_blank">Get New Class Alerts</a></p>
+			<p><a class="button accent-button button-wide" href="htps://www.itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new course" target="_blank">Get New Course Alerts</a></p>
 		</section><!--/classesMailingList-->
 	</main><!--/main-->
 </div><!--/content-->

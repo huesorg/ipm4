@@ -60,7 +60,7 @@ Template Name: Videos & Podcasts
 		<h2>Listen to my Social Justice Podcast</h2>
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><span class="flag new-flag">NEW!</span> The Heretic Podcast: Social Justice, Minus Dogma (with <a href="https://hereticpodcast.com/about/about-the-team/about-the-host/" title="About the Host">Sam Killermann</a>)</h3>
+				<h3 class="loopTitle">The Heretic Podcast: Social Justice, Minus Dogma (with <a href="https://hereticpodcast.com/about/about-the-team/about-the-host/" title="About the Host">Sam Killermann</a>)</h3>
 				<p>
 					<a href="https://hereticpodcast.com" title="The Heretic Podcast: Social Justice Minus Dogma">Heretic</a> is about the social justice movement and the unwritten rules that underpin (and may undermine) it. It's an extension of the articles I've been posting here in the <a href="https://www.itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Series">Social Justice Dogma Series</a>, featuring interviews that dig into different tenets.
 				</p>

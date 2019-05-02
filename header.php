@@ -89,10 +89,10 @@
 								</a>
 							</li>
 							<li id="activities">
-								<a href="<?php echo home_url(); ?>/activities-classes" title="Activities &amp; Classes" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'Activities-Classes'});">
+								<a href="<?php echo home_url(); ?>/activities-courses" title="Activities &amp; Classes" onClick="ga('send', 'event', { eventCategory: 'Navigation', eventAction: 'button_click', eventLabel: 'activities-courses'});">
 									<div id="NewClassesFlag" class="newsFlag hide">New</div>
 									<strong>Activities</strong>
-									<span><span class="amp">&amp;</span>&nbsp;Classes</span>
+									<span><span class="amp">&amp;</span>&nbsp;Courses</span>
 								</a>
 							</li>
 							<li id="videos">

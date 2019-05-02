@@ -436,15 +436,11 @@ PROGRAM PAGE STYLES
 ACTIVITIES AND CLASSES PAGE STYLES
 **********************/
 
-.page-template-page-activities-classes {
+.page-template-page-activities-courses {
 
-	#classes {
-		padding:0 0 0 2%;
-	}
-
-	aside#TheHotness {
-		flex-basis:50%;
-		order:2;
+	#TheHotness {
+		padding: 0;
+		font-size: 14px;
 
 		article {
 			position:sticky !important;
@@ -452,12 +448,12 @@ ACTIVITIES AND CLASSES PAGE STYLES
 		}
 
 		.vidcard {
+			max-width: 420px;
 
 			h3 {
 				font-size:1.3em;
 			}
 			.flag {background:$green;opacity:1;}
-			.loopText {padding:7px 15px 7px;}
 		}
 	}
 }

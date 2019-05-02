@@ -121,7 +121,7 @@ HEADER STYLES
                     right:0;
                     display:inline-block;
                     border-radius:100px;
-                    background:black;
+                    color:black;
                 }
 
                 #CampusProgramsFlag {
@@ -133,33 +133,37 @@ HEADER STYLES
                     transform:rotate(-12deg) translate(-50%,-50%);
                 }
 
-                &:nth-child(1) a {border-color: $pink;}
-                &:nth-child(2) a {border-color: $orange;}
-                &:nth-child(3) a {border-color: $yellow;}
-                &:nth-child(4) a {border-color:$green;}
-                &:nth-child(5) a {border-color:$blue;}
 
-                &:nth-child(1) a:hover {color: $pink;}
-                &:nth-child(2) a:hover {color: $orange;}
-                &:nth-child(3) a:hover {color: $yellow;}
-                &:nth-child(4) a:hover {color:$green;}
-                &:nth-child(5) a:hover {color:$blue;}
-                &:nth-child(6) a {color:$purple;}
+
+
             }
         }
+        #about a {border-color: $pink;}
+        #articles a {border-color: $orange; }
+        #edugraphics a {border-color: $yellow; .newsFlag {background: $yellow;} }
+        #activities a {border-color:$green; .newsFlag {background: $green;} }
+        #videos a {border-color:$blue; .newsFlag {background: $blue;} }
+
+        #about a:hover {color: $pink;}
+        #articles a:hover {color: $orange;}
+        #edugraphics a:hover {color: $yellow;}
+        #activities a:hover {color:$green;}
+        #videos a:hover {color:$blue;}
+        #donate a {color:$purple;}
     }
+
 
             .page-about #about a { color: $pink; }
             .page-template-page-edugraphics-printables #edugraphics a { color: $yellow; }
             .page-template-page-articles-books #articles a { color: $orange; }
-            .page-template-page-activities-classes #activities a { color: $green; }
+            .page-template-page-activities-courses #activities a { color: $green; }
             .page-template-page-videos-podcasts #videos a { color: $blue; }
 
 
             .page-template-page-articles-books #articles a,
             .page-about #about a,
             .page-template-page-edugraphics-printables #edugraphics a,
-            .page-template-page-activities-classes #activities a,
+            .page-template-page-activities-courses #activities a,
             .page-template-page-videos-podcasts #videos a{
                 background:#fff;
                 margin-bottom:-1px;
@@ -229,10 +233,10 @@ HOME STYLES
 ACTIVITIES AND CLASSES PAGE STYLES
 **********************/
 
-.page-template-page-activities-classes {
+.page-template-page-activities-courses {
 
-	aside#TheHotness {
-		flex-basis:500px;
+	#TheHotness {
+		font-size: .8em;
     }
 }
 
