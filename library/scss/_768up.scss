@@ -193,7 +193,7 @@ SINGLE STYLES
 		}
 	}
 
-	.authorSnapshot, .catSplaining, .byline {
+	.catSplaining, .byline {
 		font-size:13px;
 	}
 
@@ -206,6 +206,11 @@ SINGLE STYLES
     }
 }
 
+.authorSnapshot {
+	p, ul {
+		font-size: 1em;
+	}
+}
 .heyHeyLook {
 
 	&.wednesdayEmail {

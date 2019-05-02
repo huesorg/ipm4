@@ -53,9 +53,8 @@
 
 		<div class="byline desktopHide">
 			<p>
-				By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
-				on <?php the_date(); ?> in <?php the_category(' / ') ?> tagged
-				<?php the_tags('',', ',''); ?>. <span class="updated">Updated <?php the_modified_date(); ?></span>
+				By <a href="#About-the-Author">Sam Killermann</a>, in <?php the_category(' / ') ?>, tagged
+				<?php the_tags('',', ',''); ?>
 			</p>
 		</div>
 	</section>
@@ -69,9 +68,8 @@
 	<aside id="articleStuff" role="complementary">
 		<div class="mobileHide byline">
 			<p>
-				By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
-				on <?php echo get_the_date(); ?> in <?php the_category(' / ') ?> tagged
-				<?php the_tags('',', ',''); ?>. <p><strong class="updated pink">Updated <?php the_modified_date('m/d/Y'); ?></strong></p>
+				By <a href="#About-the-Author">Sam Killermann</a>, in <?php the_category(' / ') ?>, tagged
+				<?php the_tags('',', ',''); ?>
 			</p>
 		</div>
 
@@ -131,6 +129,46 @@
 	<?php endif; ?>
 	<?php get_sidebar(); ?>
 	<div id="singlefooter">
+
+		<div id="About-the-Author" class="authorSnapshot clearfix">
+			<h2>About the Author</h2>
+			<a href="https://www.itspronouncedmetrosexual.com/2012/12/reasons-people-believe-feminism-hates-men/" title="Hi! I'm a feminist!"><img class="snapshot-portrait" src="<?php echo get_template_directory_uri();?>/library/images/hi-im-sam-bottom-shadow.png" alt="Sam Killermann Self Portrait"/></a>
+			<p>
+				Hi! I'm <a href="https://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>. I created <a href="https://www.ItsPronouncedMetrosexual.com/about" title="About It's Pronounced Metrosexual">It's Pronounced Metrosexual</a> in 2011, write everything here, do the doodles, and I even coded the site itself. Generally speaking, I'm an activist, educator, and artist who is employed by <a href="https://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">a collective of bosses</a> to create for global justice.
+			</p>
+			<p>
+				If you appreciate what I'm doing here, I bet you'll dig these other projects I created:
+			</p>
+			<ul>
+				<li>
+					<div class="snapshot-icon">
+						🏳️‍🌈
+					</div>
+					<span>
+						<a href="https://bit.ly/2eyLccA" alt="The Safe Zone Project">
+						The Safe Zone Project</a> (a free online resource for LGBTQ+ trainings)
+					</span>
+				</li>
+				<li>
+					<div class="snapshot-icon">
+						🌳
+					</div>
+					<span>
+						<a href="https://bit.ly/2dDlEtE" alt="The Sexualitree">The Sexualitree</a> (a comprehensive sexuality model, curriculum, &amp; downloads)
+					</span>
+				</li>
+				<li>
+					<div class="snapshot-icon">
+						💜
+					</div>
+					<span>
+						<a href="https://bit.ly/1MAfukv" alt="I Heart the Singular They">I <3 Singular They</a> (an animated love letter to a pronoun... yep.)
+					</span>
+				</li>
+			</ul>
+		</div>
+
+
 		<div id="relatedFooter" class="text-center">
 			<h2>To Read Next</h2>
 			<div class="flickable-posts-wrap">

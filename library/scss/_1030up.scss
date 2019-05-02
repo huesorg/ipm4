@@ -89,20 +89,24 @@ HEADER STYLES
                 a {
                     text-decoration:none;
                     line-height:1;
-                    color:black;
+                    color:#454545;
                     display:flex;
                     flex-direction: column;
-                    padding:0 20px;
+                    padding:0 2vw;
                     font-size:.9rem;
                     justify-content: center;
                     align-items: stretch;
                     margin:10px;
+                    border-radius: 2px;
+                    border-bottom: 4px solid;
+                    transition: border .1s ease-out;
 
                     &:hover {
-                      animation-name: wiggle;
-                      animation-duration: 300ms;
-                      animation-iteration-count: 1;
-                      animation-timing-function: ease-in-out;
+                        border: none;
+                        animation-name: wiggle;
+                        animation-duration: 300ms;
+                        animation-iteration-count: 1;
+                        animation-timing-function: ease-in-out;
                     }
                 }
 
@@ -129,23 +133,37 @@ HEADER STYLES
                     transform:rotate(-12deg) translate(-50%,-50%);
                 }
 
-                &:nth-child(1) a {color: $pink;}
-                &:nth-child(2) a {color: $orange;}
-                &:nth-child(3) a {color: $yellow;}
-                &:nth-child(4) a {color:$green;}
-                &:nth-child(5) a {color:$blue;}
+                &:nth-child(1) a {border-color: $pink;}
+                &:nth-child(2) a {border-color: $orange;}
+                &:nth-child(3) a {border-color: $yellow;}
+                &:nth-child(4) a {border-color:$green;}
+                &:nth-child(5) a {border-color:$blue;}
+
+                &:nth-child(1) a:hover {color: $pink;}
+                &:nth-child(2) a:hover {color: $orange;}
+                &:nth-child(3) a:hover {color: $yellow;}
+                &:nth-child(4) a:hover {color:$green;}
+                &:nth-child(5) a:hover {color:$blue;}
                 &:nth-child(6) a {color:$purple;}
             }
         }
     }
 
-            .page-template-page-programs #campusprograms a,
+            .page-about #about a { color: $pink; }
+            .page-template-page-edugraphics-printables #edugraphics a { color: $yellow; }
+            .page-template-page-articles-books #articles a { color: $orange; }
+            .page-template-page-activities-classes #activities a { color: $green; }
+            .page-template-page-videos-podcasts #videos a { color: $blue; }
+
+
             .page-template-page-articles-books #articles a,
             .page-about #about a,
             .page-template-page-edugraphics-printables #edugraphics a,
             .page-template-page-activities-classes #activities a,
             .page-template-page-videos-podcasts #videos a{
-                background:#fefefe; margin-bottom:-1px;
+                background:#fff;
+                margin-bottom:-1px;
+                border-bottom: none;
                 -webkit-border-radius: 4px 4px 0 0;
                 border-radius: 4px 4px 0 0;
                 -webkit-box-shadow: 0 -10px 20px -10px rgba(0,0,0,.2);
@@ -178,7 +196,7 @@ NAVIGATION STYLES
 }
 
 .single {
-    .authorSnapshot, .catSplaining, .byline {
+    .catSplaining, .byline {
 		font-size:.8em;
 	}
 }

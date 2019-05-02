@@ -1,39 +1,5 @@
 <?php
 
-/* Snapshot */
-
-function getSnapshot() {?>
-
-<div class="authorSnapshot">
-	<h4>About the Author</h4>
-	<img src="<?php echo get_template_directory_uri();?>/library/images/sam-killermann-2016-headshot.jpg" alt="Sam Killermann Headshot"/>
-	<p>
-		Hi! I'm <a href="https://bit.ly/16fQZbg" target="_blank" alt="Sam Killermann">Sam Killermann</a>, an activist, educator, and artist who is employed by <a href="https://bit.ly/bemyboss" title="Be Sam Killermann's Boss(es)">a collective of bosses</a> to create for global justice. I write everything here, do the doodles, and even coded the site itself. Here are some other sites I've made that you might dig:
-	</p>
-	<ul>
-		<li>
-			<a href="https://bit.ly/2eyLccA" alt="The Safe Zone Project">
-				The Safe Zone Project</a> (a free online resource for LGBTQ awareness and allyship training workshops)
-		</li>
-		<!-- <li>
-			<a href="https://bit.ly/2eKSzZs" alt="hues">The hues Store</a> (merch supporting this site and my work)
-		</li> -->
-		<li>
-			<a href="https://bit.ly/2dDlEtE" alt="The Sexualitree">
-				The Sexualitree</a> (a comprehensive sexuality model, curriculum, &amp; downloads)
-		</li>
-		<li>
-			<a href="https://bit.ly/1MAfukv" alt="I Heart the Singular They">
-				I <3 Singular They</a> (a love letter I wrote to a pronoun... yep. Oh, and I animated it!)
-		</li>
-	</ul>
-</div>
-
-<?php }
-
-add_action('bones_hook_before_sidebar','getSnapshot');
-
-
 /************* PATREON STUFF *********************/
 
 function getPatreonAsk() {?>
@@ -312,6 +278,9 @@ function getSubscribeOptions() {?>
 	<span><strong>FOMO Level</strong> is the likelihood you'll miss out on new stuff using each subscription method.</span>
 	<?php
 }
+
+/* Snapshot */
+
 
 /* Sidebar Campus Programs Ad
 
