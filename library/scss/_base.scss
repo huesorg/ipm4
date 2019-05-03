@@ -1249,33 +1249,21 @@ ul.circleShare {
 			margin-top: 2em;
 		}
 
-		.wp-caption {
-			max-width: 100%;
-			border:1px dashed #ddd;
-			padding: 3px;
-			margin-bottom:1em;
+		.wp-block-image .aligncenter>figcaption, .wp-block-image .alignleft>figcaption, .wp-block-image .alignright>figcaption, .wp-block-image.is-resized>figcaption {
+			display: inline-block;
+			padding: 0 .5em;
+			line-height: 1.1;
+		}
 
-			/* images inside wp-caption */
+		.wp-block-image {
+			margin-bottom: 1.5em;
+
 			img {
-				max-width: 100%;
 				margin-bottom: 0;
-				display:block;
-				width: 100%;
-				@include rounded(17px);
-
+				max-width: 100%;
+				height: auto;
 			}
-
-			p.wp-caption-text {
-				font-size: 0.75em;
-				line-height:1.2;
-				margin: 8px 10px 4px;
-				text-align: center;
-				font-family:$sans-serif;
-				color:lighten($text-color,15%);
-			}
-
-		} /* end .wp-caption */
-
+		}
 
 .heyHeyLook {
 	margin:3em -3vw;
