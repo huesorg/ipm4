@@ -166,7 +166,7 @@ Template Name: Activities & Courses
 			<!-- Begin MailChimp Signup Form -->
 			<h2>Want an alert when I add a new course?</h2>
 			<p>Click the big ol button below, give me a good email to reach out to, and make sure the "Activities &amp; Classes" box is checked. After that, we should be all set, and I'll make sure to email you every once in a while with class updates.</p>
-			<p><a class="button accent-button button-wide" href="htps://www.itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new course" target="_blank">Get New Course Alerts</a></p>
+			<p><a class="button accent-button button-wide" href="https://www.itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new course" target="_blank">Get New Course Alerts</a></p>
 		</section><!--/classesMailingList-->
 	</main><!--/main-->
 </div><!--/content-->

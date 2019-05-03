@@ -53,7 +53,7 @@ Template Name: Homepage
 					</a>
 				</h3>
 				<h4><?php echo get_the_excerpt()?></h4>
-				<span class="byline">By <a href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a></span>
+				<span class="byline">By <a href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a></span>
 			</div>
 			<div class="loopContent entry-content">
 				<?php the_content('Keep reading...');?>
@@ -72,17 +72,17 @@ Template Name: Homepage
 			<div class="gradient-warm grid-cell">
 				<span class="connectorText">is a</span>
 				<h2>Free Online Resource</h2>
-				<p>Educating millions of readers on themes of <a class="yellow" href="htps://www.itspronouncedmetrosexual.com/category/gender-2/" title="Posts about Gender">gender</a>, <a class="purple" href="htps://www.itspronouncedmetrosexual.com/category/sexuality-2/" title="Posts about Sexuality">sexuality</a>, &amp; <a class="blue" href="htps://www.itspronouncedmetrosexual.com/category/socialjustice" title="Posts about Social Justice">social justice</a>, the <a href="htps://www.itspronouncedmetrosexual.com/articles-books" title="Articles and Books">articles</a>, <a href="htps://www.itspronouncedmetrosexual.com/edugraphics-printables" title="Edugraphics">edugraphics</a>, and other resources you'll find here are all <a href="htps://www.itspronouncedmetrosexual.com/uncopyright" title="Uncopyright Statement">uncopyrighted</a> &mdash; yours to use to do good however you see fit. <a title="About IPM" href="htps://www.itspronouncedmetrosexual.com/about">Read more about IPM</a></p>
+				<p>Educating millions of readers on themes of <a class="yellow" href="https://www.itspronouncedmetrosexual.com/category/gender-2/" title="Posts about Gender">gender</a>, <a class="purple" href="https://www.itspronouncedmetrosexual.com/category/sexuality-2/" title="Posts about Sexuality">sexuality</a>, &amp; <a class="blue" href="https://www.itspronouncedmetrosexual.com/category/socialjustice" title="Posts about Social Justice">social justice</a>, the <a href="https://www.itspronouncedmetrosexual.com/articles-books" title="Articles and Books">articles</a>, <a href="https://www.itspronouncedmetrosexual.com/edugraphics-printables" title="Edugraphics">edugraphics</a>, and other resources you'll find here are all <a href="https://www.itspronouncedmetrosexual.com/uncopyright" title="Uncopyright Statement">uncopyrighted</a> &mdash; yours to use to do good however you see fit. <a title="About IPM" href="https://www.itspronouncedmetrosexual.com/about">Read more about IPM</a></p>
 			</div>
 			<!-- <div class="gradient-cool grid-cell disabled">
 				<h2>Social Justice Comedy Show (Closed)</h2>
-				<p>Performed at hundreds of colleges, universities, and high schools around North America, IPM's <a href="htps://www.itspronouncedmetrosexual.com/campus-programs" title="Campus Programs">campus programs</a> use humor and storytelling to introduce audiences to themes of gender and social justice.</p>
+				<p>Performed at hundreds of colleges, universities, and high schools around North America, IPM's <a href="https://www.itspronouncedmetrosexual.com/campus-programs" title="Campus Programs">campus programs</a> use humor and storytelling to introduce audiences to themes of gender and social justice.</p>
 			</div> -->
 			<div class="grid-cell gradient-cool">
 				<span class="connectorText">by</span>
 				<h2>Sam Killermann</h2>
 				<p>
-					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong> <strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bit.ly/bemyboss">Be My Boss.</a></strong>
+					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <a title="About Sam Killermann" href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more.</a></strong> <strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 
 				<img class="self-portrait" src="<?php echo get_template_directory_uri(); ?>/library/images/hi-im-sam-bottom-shadow.png" alt="Sam Killermann Self Portrait">
@@ -93,7 +93,7 @@ Template Name: Homepage
 				<span class="connectorText">created by</span>
 				<h2>Sam Killermann <span>(that's me!)</span></h2>
 				<p>
-					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <br/><strong><a title="About Sam Killermann" href="htps://www.itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more about moi.</a></strong>&nbsp; &nbsp;
+					I'm a social justice advocate, gender &amp; sexuality educator, author, artist, and comedian. I created IPM back in 2011 as a combination of all those different parts of me. <br/><strong><a title="About Sam Killermann" href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann/">Read more about moi.</a></strong>&nbsp; &nbsp;
 					<strong><a title="Be Sam Killermann's Boss(es)" target="_blank" href="https://bit.ly/bemyboss">Be My Boss.</a></strong>
 				</p>
 			</div>
@@ -109,7 +109,7 @@ Template Name: Homepage
 			<div id="usages--uncopyrighted" class="grid-cell grid--center">
 				<h2>Uncopyrighted!</h2>
 				<p>
-					Yep, that means exactly you think it means. Everything here is <em>yours</em> to use, and you don't need to ask permission. I uncopyrighted everything <a href="htps://www.itspronouncedmetrosexual.com/2013/11/uncopyright/" alt="Uncopyright Announcement">back in 2013</a>, and reflected on the decision (happily) <a href="htps://www.itspronouncedmetrosexual.com/2014/12/uncopyright-reflection/" alt="Uncopyright Reflection">in 2014</a>.
+					Yep, that means exactly you think it means. Everything here is <em>yours</em> to use, and you don't need to ask permission. I uncopyrighted everything <a href="https://www.itspronouncedmetrosexual.com/2013/11/uncopyright/" alt="Uncopyright Announcement">back in 2013</a>, and reflected on the decision (happily) <a href="https://www.itspronouncedmetrosexual.com/2014/12/uncopyright-reflection/" alt="Uncopyright Reflection">in 2014</a>.
 				</p>
 			</div>
 			<div id="usages--reader-funded" class="grid-cell grid--bottom">
