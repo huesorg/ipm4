@@ -141,25 +141,27 @@
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
-					<h3>Over 1,000 of you requested it, so...</h3>
-					<p>I'm currently working on creating an online course/community about <strong>Social Justice, Minus Dogma</strong>. You want an invite when it's open?</p>
+					<h4>2,046 of you pre-registered,<br/> and now it's open for everyone:</h4>
+					<p>The <strong>Social Justice, Minus Dogma Online Course + Community</strong> launched this week. You can join now and get started learning and participating in the community immediately.</p>
 
 					<ul>
 						<li>
-							<a id="yesMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'Yes'});">
-								<span>👍 Yes,</span> please
+							<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Im In'});">
+								<span>👍 I'm in!</span>
 							</a>
 						</li>
 						<li>
-							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'No'});">
-								<span>👎 No,</span> thanks
+							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me'});">
+								<span>👎 Not</span> for me
 							</a>
 						</li>
 					</ul>
 				</div>
 
 				<div id="yesMOOC-email" class="hide mailchimp">
-					<h3>Great! Drop your email address below 👇</h3>
+					<h4>I'm excited to learn alongside you!</h4>
+					<p>This message will go away, and shouldn't pop back up again.</p>
+					<!-- <h3>Great! Drop your email address below 👇</h3>
 					<p>I'm looking forward to learning with you!</p>
 					<form action="https://itspronouncedmetrosexual.us20.list-manage.com/subscribe/post?u=2c47c23edde65a6e045cbe108&amp;id=d6f2aace37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
@@ -170,14 +172,14 @@
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						</div>
 					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c47c23edde65a6e045cbe108_d6f2aace37" tabindex="-1" value=""></div>
-					</form>
+					</form> -->
 				</div>
 
 				<div id="noMOOC-response" class="hide">
-					<h3>No prob. Sorry to interrupt!</h3>
+					<h4>No prob. Sorry to interrupt!</h4>
 					<p>This message should auto-hide in the future, and you can click the <strong>X</strong> to hide it now.</p>
 				</div>
-				<p>(<a href="https://itspronouncedmetrosexual.com/tag/social-justice-dogma/" title="Social Justice Dogma Articles">read about Social Justice Dogma here</a>)</p>
+				<p>(<a style="text-decoration-color: white" target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community">Read more about the Course + Community</a>)</p>
 			</div>

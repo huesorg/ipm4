@@ -4,7 +4,6 @@
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
-
     // Initialize lozad
 
     lozad(".lazy-load", {
@@ -47,12 +46,12 @@ jQuery(document).ready(function($) {
     $(function() {
         var shown= localStorage.getItem('isshow');
 
-        if(shown !="AUG2018NEWCLASS"){
+        if(shown !="JUN2019NEWCLASS"){
             $('#NewClassesFlag').removeClass("hide");
         }
 
         $("#activities").click(function(){
-            localStorage.setItem('isshow', 'AUG2018NEWCLASS');
+            localStorage.setItem('isshow', 'JUN2019NEWCLASS');
             $("#NewClassesFlag").addClass("hide");
         });
 

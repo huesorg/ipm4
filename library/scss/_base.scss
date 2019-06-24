@@ -2824,8 +2824,10 @@ ACTIVITIES AND CLASSES PAGE
 		}
 
 		h4 {
-			margin:0 0 10px;
+			margin:0 0 .75em;
 			line-height:1;
+			font-family: $sans-serif;
+			font-weight: 800;
 		}
 		p {
 			margin:0;
@@ -2877,6 +2879,10 @@ ACTIVITIES AND CLASSES PAGE
 
 	.IPMclass {
 		padding:40px;
+
+		& + .IPMclass {
+			margin-top: 1em;
+		}
 
 		&.no-classes {
 
