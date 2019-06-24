@@ -42,7 +42,7 @@ function loopTeaser() {?>
 			<div class="grid-cell loopText grid-cell--center">
 				<div class="byline">
 					<p>
-						By <?php the_author_posts_link(); ?>
+						By <a href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann" title="About the Author: Sam Killermann">Sam Killermann</a>
 						on <?php the_date(); ?>. <span class="updated">Last updated <?php the_modified_date(); ?></span>
 					</p>
 				</div>
@@ -93,7 +93,7 @@ function loopBlogged() {?>
 
 				<ul class="bloggedLinks">
 					<li>
-						<a class="download" href="<?php the_field('downloadable_pdf')?>" alt="PDF">
+						<a class="download" target="_blank" href="<?php the_field('downloadable_pdf')?>" title="Download .PDF">
 							.PDF
 						</a>
 					</li>

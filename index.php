@@ -1,19 +1,4 @@
-<?php
-
-global $wp_query;
-$modifications = array();
-if( !empty( $_GET['catname'] ) ) {
-	$modifications['category_name'] = $_GET['catname'];
-}
-
-$args = array_merge(
-	$wp_query->query_vars,
-	$modifications
-);
-
-query_posts( $args );
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <header class="article-header">
 
@@ -23,62 +8,10 @@ get_header(); ?>
 
 <div id="content">
 	<div id="sidebar" role="complementary">
-		<div class="post-filters">
-			<h3>Filter Posts</h3>
-			<form class="grid gradient-grey grid--justifyCenter grid--center">
-				<div class="grid-cell">
-					<label for="orderby">Order By</label>
-					<select id="orderby" name="orderby">
-						<?php
-							$orderby_options = array(
-								'post_date' => 'Date',
-								'post_title' => 'Title'
-							);
-							foreach( $orderby_options as $value => $label ) {
-								echo "<option ".selected( $_GET['orderby'], $value )." value='$value'>$label</option>";
-							}
-						?>
-					</select>
-				</div>
-				<div class="grid-cell">
-					<label for="orderby">Up or down?</label>
-					<select id="order" name="order">
-						<?php
-							$order_options = array(
-								'DESC' => 'Descending',
-								'ASC' => 'Ascending'
-							);
-							foreach( $order_options as $value => $label ) {
-								echo "<option ".selected( $_GET['order'], $value )." value='$value'>$label</option>";
-							}
-						?>
-					</select>
-				</div>
-				<div class="grid-cell">
-					<label for="catname">Category</label>
-					<select id="catname" name="catname">
-						<?php
-							$order_options = array(
-								'' => 'All',
-								'gender-2' => 'Gender',
-								'sexuality-2' => 'Sexuality',
-								'socialjustice' => 'Social Justice',
-								'edugraphics' => 'Edugraphics',
-								'op-ed' => 'Opinion Editorial'
-							);
-							foreach( $order_options as $value => $label ) {
-								echo "<option ".selected( $_GET['catname'], $value )." value='$value'>$label</option>";
-							}
-						?>
-					</select>
-				</div>
-				<div class="grid-cell">
-					<button class="button button-grey" type="submit">Go!</button>
-				</div>
-			</form>
-		</div><!--/post-filters-->
+		<div class="stickthissomewhere">
 
-		<?php getPatreonAsk();?>
+			<?php getPatreonAsk();?>
+		</div>
 	</div><!--/sidebar-->
 
 	<div id="main" role="main">

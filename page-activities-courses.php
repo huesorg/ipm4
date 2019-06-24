@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Activities & Classes
+Template Name: Activities & Courses
 */
 ?>
 <?php get_header(); ?>
@@ -11,7 +11,7 @@ Template Name: Activities & Classes
 			<a href="#Activities" title="Jump to Activities Section">Activities</a>
 		</li>
 		<li class="grid-cell">
-			<a href="#Classes" title="Jump to Classes Section">Classes</a>
+			<a href="#Courses" title="Jump to Courses Section">Classes</a>
 		</li>
 		<li class="grid-cell">
 			<a href="#MailingList" title="Jump to Get Alerts">Get Alerts</a>
@@ -28,35 +28,51 @@ Template Name: Activities & Classes
 
 </header> <!-- end article header -->
 
-<div id="content">
-	<aside id="TheHotness" class="featuredClass" role="complementary">
-		<p class="mobileHide">
-			Wut. No way. That class you all kept asking me to create? 😘 👇
-		</p>
+<div id="content" class="halfsies">
+	<aside id="TheHotness" class="featuredClass sidebar" role="complementary">
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><a href="http://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Class!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
+				<h3 class="loopTitle"><a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community"><span class="flag">New!</span> Social Justice, Minus Dogma Online Course + Community</a></h3>
 				<p>
-					This class is co-facilitated by Meg Bolger &amp; me (<a href="https://itspronouncedmetrosexual/about-sam-killermann" title="About Sam Killermann">Sam Killermann</a>), and is an introduction to LGBTQ+ identities &amp; inclusion, gender, and sexuality &mdash; at your own pace, online. Including: vocab, privilege, Genderbread, and scenarios.
+					Charting a path toward equity. It's 6 modules that are spread over 6 weeks (or go at your own pace), with a dedicated community for discussion and continuing education.
 				</p>
-				<a class="button" href="http://bit.ly/2o0IoXj" title="Start Now" target="_blank">Start Now</a> <a href="http://bit.ly/2MpXkg4" title="Learn More" target="_blank">Learn More</a>
+				<p style="font-size: .8em">
+					<strong>Fun Fact:</strong>It was created by Sam Killermann in response to the ask of over 15,000 IPM readers this past Spring, 2,046 of whom pre-registered.
+				</p>
+				<a class="button" href="http://bit.ly/2N7jftl" title="Join Now" target="_blank">Join Now</a> <a href="http://bit.ly/2xeaD9z" title="Learn More" target="_blank">Learn More</a>
 			</div>
 			<div class="loopImage">
-				<a href="http://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone (LGBTQ+) Training">
-					<img src="http://itspronouncedmetrosexual.com/wp-content/uploads/2018/08/szp-online-course-featured-image.jpg" alt="Person learning on computer"/>
+				<a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community">
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/sjmd-course-featured-image.jpg" alt="Three people pointing at computer"/>
 				</a>
 			</div>
+			<!-- <div class="loopText">
+				<h3 class="loopTitle"><a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone Training"><span class="flag">New Course!</span> Self-Guided Foundational Safe Zone (LGBTQ+) Training</a></h3>
+				<p>
+					This class is co-facilitated by Meg Bolger &amp; me (<a href="https://www.itspronouncedmetrosexual.com/about/about-sam-killermann/" title="About Sam Killermann">Sam Killermann</a>), and is an introduction to LGBTQ+ identities &amp; inclusion, gender, and sexuality &mdash; at your own pace, online. Including: vocab, privilege, Genderbread, and scenarios.
+				</p>
+				<a class="button" href="https://bit.ly/2o0IoXj" title="Start Now" target="_blank">Start Now</a> <a href="https://bit.ly/2MpXkg4" title="Learn More" target="_blank">Learn More</a>
+			</div>
+			<div class="loopImage">
+				<a href="https://bit.ly/2MpXkg4" title="Self-Guided Foundational Safe Zone (LGBTQ+) Training">
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/szp-online-courses-featured-image.jpg" alt="Person learning on computer"/>
+				</a>
+			</div> -->
 		</article>
 	</aside>
-	<div id="main" role="main">
+	<main id="main" role="main">
 		<section id="top">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 				<section itemprop="articleBody">
 					<?php the_content(); ?>
 				</section> <!-- end article section -->
+
+				<p>
+					<a href="#Courses">Jump to my Courses &darr;</a>
+				</p>
 
 			</article> <!-- end article -->
 
@@ -137,24 +153,30 @@ Template Name: Activities & Classes
 				View all Small Group Activities
 				<i class="fa fa-share"></i>
 			</a>
-			<a class="button button-wide" href="http://thesafezoneproject.com/activities/type/reflective/?utm_source=ipm&utm_medium=activities-classes" title="Reflective">
+			<a class="button button-wide" href="https://thesafezoneproject.com/activities/type/reflective/?utm_source=ipm&utm_medium=activities-classes" title="Reflective">
 				View all Reflective Activities
 				<i class="fa fa-share"></i>
 			</a>
 			<div id="submitActivity">
 				<h3>Submit an activity!</h3>
-				<address>Have an activity you’ve created based on one of the articles or graphics here on the site? Want to share your ingenuity with the community? Awesome. <3 You. Use the <a href="http://itspronouncedmetrosexual.com/contact" title="Contact Me">contact form</a>, or just send it via email to sam@itspronouncedmetrosexual.com with the subject “IPM Activity.”</address>
+				<address>Have an activity you’ve created based on one of the articles or graphics here on the site? Want to share your ingenuity with the community? Awesome. <3 You. Use the <a href="https://www.itspronouncedmetrosexual.com/contact" title="Contact Me">contact form</a>, or just send it via email to sam@itspronouncedmetrosexual.com with the subject “IPM Activity.”</address>
 			</div>
 
 		</section>
-		<section id="Classes">
-			<h2>Classes &amp; Trainings</h2>
+		<section id="Courses">
+			<h2>Courses &amp; Trainings</h2>
 			<div class="pageIntro">
-				<p class="introParagraph">Maybe you're looking for something a little more involved than an activity. Allow me to present Classes: what happens when you put a bunch of activities in a sequence.</p>
-				<p>I've had a back-and-forth relationship with online classes for years now, and I've finally landed on a forth that I think I'll be sticking with. As of July 2018, we started creating and hosting <a href="https://thesafezoneproject.com/resources/courses/?utm_source=ipm&utm_medium=activities-classes" title="online courses at the safe zone project">online courses at The Safe Zone Project</a>.
-				<p>If taking a class with me sounds like something you'd like to do, what we're offering at the SZP is your best bet. You can, of course, <a href="#MailingList">sign up below for alerts</a> in case this changes.</p>
+				<p class="introParagraph">Maybe you're looking for something a little more involved than an activity. Allow me to present Courses: what happens when you put a bunch of activities in a sequence.</p>
 
-				<p>Here's what's currently open for enrollment:</p>
+				<p>If taking a course with me sounds like something you'd like to do, here's what's currently open for enrollment:</p>
+				<article class="IPMclass">
+					<a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community">
+						<h4>Social Justice, Minus Dogma Online Course + Community</h4>
+						<p>
+							Charting a path toward equity, SJMD is 6 modules that are spread over 6 weeks (or go at your own pace), with a dedicated community for discussion and continuing education.
+						</p>
+					</a>
+				</article>
 				<article class="IPMclass">
 					<a href="https://thesafezoneproject.com/resources/courses/self-guided-foundational-safe-zone-training/?utm_source=ipm&utm_medium=activities-classes" title="Learn More about Self-Guided Safe Zone Training">
 						<h4>Self-Guided Foundational Safe Zone (LGBTQ+) Training</h4>
@@ -167,11 +189,11 @@ Template Name: Activities & Classes
 		</section>
 		<section id="MailingList" class="classesMailingList">
 			<!-- Begin MailChimp Signup Form -->
-			<h2>Want an alert when I add a new class?</h2>
+			<h2>Want an alert when I add a new course?</h2>
 			<p>Click the big ol button below, give me a good email to reach out to, and make sure the "Activities &amp; Classes" box is checked. After that, we should be all set, and I'll make sure to email you every once in a while with class updates.</p>
-			<p><a class="button accent-button button-wide" href="https://itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new class" target="_blank">Get New Class Alerts</a></p>
+			<p><a class="button accent-button button-wide" href="http://itspronouncedmetrosexual.us17.list-manage.com/subscribe?u=a0b762405771bc100c33afcd3&id=d6240df40a&group[4141][4]=true" title="Get Alerted when I open a new course" target="_blank">Get New Course Alerts</a></p>
 		</section><!--/classesMailingList-->
-	</div><!--/main-->
+	</main><!--/main-->
 </div><!--/content-->
 <div class="footerPatreon" style="margin-top:4vw;">
 	<?php getPatreonAsk();?>

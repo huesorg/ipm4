@@ -8,10 +8,39 @@ html {
 }
 
 /*********************
+LAYOUT & GRID STYLES
+*********************/
+
+#content {
+
+    .sidebar {
+        padding:0 3vw;
+    }
+
+    &.halfsies {
+        grid-template-columns:50% 50%;
+    }
+}
+.single #content {
+    grid-template-areas:
+        "meta main sidebar"
+        "singlefooter singlefooter singlefooter"
+    ;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap:0;
+}
+
+
+    #articleStuff {
+    	grid-area:meta;
+        padding:0 3vw 0 0;
+    }
+
+
+/*********************
 HEADER STYLES
 *********************/
 
-.header {
     #inner-header {
         #logo {
             a {
@@ -42,81 +71,103 @@ HEADER STYLES
                 text-align:center;
             }
         }
-
-
-        nav#siteSections {
-        	margin:0;
-            display:flex;
-        	align-self:stretch;
-
-        	ul {
-        		margin:0;
-        		padding:0;
-
-        		li {
-        			display:flex;
-        			align-items: stretch;
-
-        			a {
-        				text-decoration:none;
-        				line-height:1;
-                        color:black;
-        				display:flex;
-        				flex-direction: column;
-        				padding:0 20px;
-                        font-size:.9rem;
-        				justify-content: center;
-        				align-items: stretch;
-        				margin:10px;
-
-                        &:hover {
-                          animation-name: wiggle;
-                          animation-duration: 300ms;
-                          animation-iteration-count: 1;
-                          animation-timing-function: ease-in-out;
-                        }
-        			}
-
-                    &#donate {display:none;}
-
-                    .newsFlag {
-                        position:absolute;
-                        top:0;
-                        font-size:12px;
-                        font-weight:bold;
-                        padding:4px 6px;
-                        right:0;
-                        display:inline-block;
-                        border-radius:100px;
-                        background:black;
-                    }
-
-                    #CampusProgramsFlag {
-                        bottom:0;
-                        top:auto;
-                        left:50%;
-                        color:white;
-                        right:auto;
-                        transform:rotate(-12deg) translate(-50%,-50%);
-                    }
-
-        			&:nth-child(1) a {color: $pink;}
-        			&:nth-child(2) a {color: $orange;}
-        			&:nth-child(3) a {color: $yellow;}
-        			&:nth-child(4) a {color:$green;}
-        			&:nth-child(5) a {color:$blue;}
-        			&:nth-child(6) a {color:$purple;}
-        		}
-        	}
-        }
     }
-}
-            body.page-template-page-programs .header #inner-header nav#siteSections ul li#campusprograms a,
-            body.page-template-page-articles-books .header #inner-header nav#siteSections ul li#articles a,
-            body.page-template-page-edugraphics-printables .header #inner-header nav#siteSections ul li#edugraphics a,
-            body.page-template-page-activities-classes .header #inner-header nav#siteSections ul li#activities a,
-            body.page-template-page-videos-podcasts .header #inner-header nav#siteSections ul li#videos a{
-                background:#fefefe; margin-bottom:-1px;
+
+    #siteSections {
+        margin:0;
+        display:flex;
+        align-self:stretch;
+
+        ul {
+            margin:0;
+            padding:0;
+
+            li {
+                display:flex;
+                align-items: stretch;
+
+                a {
+                    text-decoration:none;
+                    line-height:1;
+                    color:#454545;
+                    display:flex;
+                    flex-direction: column;
+                    padding:0 2vw;
+                    font-size:.9rem;
+                    justify-content: center;
+                    align-items: stretch;
+                    margin:10px;
+                    border-radius: 2px;
+                    border-bottom: 4px solid;
+                    transition: border .1s ease-out;
+
+                    &:hover {
+                        border: none;
+                        animation-name: wiggle;
+                        animation-duration: 300ms;
+                        animation-iteration-count: 1;
+                        animation-timing-function: ease-in-out;
+                    }
+                }
+
+                &#donate {display:none;}
+
+                .newsFlag {
+                    position:absolute;
+                    top:0;
+                    font-size:12px;
+                    font-weight:bold;
+                    padding:4px 6px;
+                    right:0;
+                    display:inline-block;
+                    border-radius:100px;
+                    color:black;
+                }
+
+                #CampusProgramsFlag {
+                    bottom:0;
+                    top:auto;
+                    left:50%;
+                    color:white;
+                    right:auto;
+                    transform:rotate(-12deg) translate(-50%,-50%);
+                }
+
+
+
+
+            }
+        }
+        #about a {border-color: $pink;}
+        #articles a {border-color: $orange; }
+        #edugraphics a {border-color: $yellow; .newsFlag {background: $yellow;} }
+        #activities a {border-color:$green; .newsFlag {background: $green;} }
+        #videos a {border-color:$blue; .newsFlag {background: $blue;} }
+
+        #about a:hover {color: $pink;}
+        #articles a:hover {color: $orange;}
+        #edugraphics a:hover {color: $yellow;}
+        #activities a:hover {color:$green;}
+        #videos a:hover {color:$blue;}
+        #donate a {color:$purple;}
+    }
+
+
+            .page-about #about a { color: $pink; }
+            .page-template-page-edugraphics-printables #edugraphics a { color: $yellow; }
+            .page-template-page-articles-books #articles a { color: $orange; }
+            .page-template-page-activities-courses #activities a { color: $green; }
+            .page-template-page-videos-podcasts #videos a { color: $blue; }
+
+
+            .page-template-page-articles-books #articles a,
+            .page-about #about a,
+            .page-template-page-edugraphics-printables #edugraphics a,
+            .page-template-page-activities-courses #activities a,
+            .page-template-page-videos-podcasts #videos a{
+                background:#fff;
+                margin-bottom:-1px;
+                border-bottom: none;
                 -webkit-border-radius: 4px 4px 0 0;
                 border-radius: 4px 4px 0 0;
                 -webkit-box-shadow: 0 -10px 20px -10px rgba(0,0,0,.2);
@@ -149,20 +200,84 @@ NAVIGATION STYLES
 }
 
 .single {
-    .authorSnapshot, .catSplaining, .byline {
+    .catSplaining, .byline {
 		font-size:.8em;
 	}
 }
 
+/*********************
+HOME STYLES
+*********************/
 
+#home--intro--about {
+
+    .gradient-cool {
+        p {
+            position: relative;
+            margin-right:110px;
+            z-index: 1;
+        }
+    }
+    .self-portrait {
+        display:block;
+        position:absolute;
+        bottom:-3vw;
+        top:auto;
+        width:140px;
+        right:0;
+        z-index:0;
+    }
+}
 
 /**********************
 ACTIVITIES AND CLASSES PAGE STYLES
 **********************/
 
-.page-template-page-activities-classes {
+.page-template-page-activities-courses {
 
-	aside#TheHotness {
-		flex-basis:500px;
+	#TheHotness {
+		font-size: .8em;
     }
+}
+
+/**********************
+SHORTCODE STYLES
+**********************/
+.heyHeyLook {
+
+    &.g2g2 {
+        float:left;
+        max-width:240px;
+        margin:3vw 6vw 3vw -120px;
+        flex-direction: column;
+        padding:10px;
+        font-size:16px;
+
+        .image {
+            padding-bottom:0;
+        }
+
+        p {
+            padding:20px;
+            line-height:1.25;
+
+            a {
+                display:block;
+                text-align:center;
+                padding:0;
+                margin:.75em 0 0;
+            }
+        }
+    }
+}
+
+/*********************
+GLOSSARY TERMINOLOGY LGBTQ POST
+*********************/
+
+.entry-content {
+
+	.term {
+		margin-left:-2vw;
+	}
 }

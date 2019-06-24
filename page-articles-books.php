@@ -13,69 +13,119 @@ Template Name: Articles & Books
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 			<section class="" itemprop="articleBody">
 				<?php the_content(); ?>
 			</section> <!-- end article section -->
+			<p>
+				<a class="mobileHide" href="#recentUpdates">Jump to the Articles &darr;</a>
+				<a class="desktopHide" href="#myBooks">Jump to my Books &darr;</a>
+			</p>
 
 		</article> <!-- end article -->
 
 		<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
+		<section id="popular">
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🐐 Greatest of All Time (G.O.A.T.s)</h3>
+				<span>
+					Shared over <strong class="count">500,000</strong> times
+				</span>
+			</div>
+			<div class="flickable-posts-wrap">
+				<?php $goatQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'greatest-of-all-time',
+					)
+				); ?>
 
-		<div id="popularByCat">
-			<h3 class="pageSubhead">Most Popular Articles</h3>
-			<div class="grid grid--flexCells grid--guttersLg grid--full small-grid--fit">
-				<div class="grid-cell">
-					<div class="card all-time">
-						<span class="title">All-Time Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card edugraphics">
-						<span class="title"><a class="green" href="<?php echo home_url(); ?>/category/edugraphics">Edugraphics</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='70'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card opEd">
-						<span class="title"><a class="orange" alt="All Op-Ed" href="<?php echo home_url(); ?>/category/op-ed">Opinion Editorial</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&stats_comments=0&cat='67'&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
+				<ul class="flickable-posts">
+					<?php while($goatQuery->have_posts()) : $goatQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🏆 Greatest Hits</h3>
+				<span>
+					Shared over <strong class="count">100,000</strong> times
+				</span>
+			</div>
+			<div class="flickable-posts-wrap">
+				<?php $greatestHitsQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'greatest-hits',
+					)
+				); ?>
+
+				<ul class="flickable-posts">
+					<?php while($greatestHitsQuery->have_posts()) : $greatestHitsQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+			<div class="shareBrag">
+				<h3 class="pageSubhead">🏅 Bona Fide Hits</h3>
+				<span>
+					Approaching <strong class="count">100,000</strong> social media shares
+				</span>
+			</div>
+			<div class="flickable-posts-wrap">
+				<?php $bonaFideHitsQuery = new WP_Query(
+					array(
+						'posts_per_page' => -1,
+						'tag' => 'bona-fide-hit',
+					)
+				); ?>
+
+				<ul class="flickable-posts">
+					<?php while($bonaFideHitsQuery->have_posts()) : $bonaFideHitsQuery->the_post();?>
+					<li class="flickable-post shadowbox loopCard">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<div class="loopImage featuredImage">
+								<?php the_post_thumbnail('thumbnail');?>
+							</div>
+							<div class="loopText">
+								<h4 class="loopTitle"><?php the_title(); ?></h4>
+							</div>
+						</a>
+					</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</div><!--/flickable-posts-wrap-->
+			<div class="text-center bigpad">
+				<a class="button" title="All Popular Posts" href="https://www.itspronouncedmetrosexual.com/popular">View All Popular Posts &rarr;</a>
 			</div>
 
-			<div class="grid grid--flexCells grid--guttersLg small-grid--fit">
-				<div class="grid-cell">
-					<div class="card socialJustice">
-						<span class="title"><a class="blue" alt="All Social Justice" href="<?php echo home_url(); ?>/category/socialjustice">Social Justice</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='27'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-
-				<div class="grid-cell">
-					<div class="card gender">
-						<span class="title"><a class="yellow" alt="All Gender" href="<?php echo home_url(); ?>/category/gender-2">Gender</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='96'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-				<div class="grid-cell">
-					<div class="card sexuality">
-						<span class="title"><a class="purple" alt="All Sexuality" href="<?php echo home_url(); ?>/category/sexuality-2">Sexuality</a> Top 3</span>
-						<?php wpp_get_mostpopular("post_type=post&range='all'&cat='82'&stats_comments=0&limit=3&pages='0'&order_by='views'"); ?>
-					</div>
-				</div>
-			</div><!--/grid-->
-
-		</div><!--/popularByCat-->
+		</section><!--/popular-->
 
 		<?php getPatreonAsk();?>
 
-		<div id="recentUpdates">
+		<section id="recentUpdates">
 
-			<h3 class="pageSubhead">Recent Articles</h3>
+			<h3 class="pageSubhead">The Latest</h3>
 
 			<?php $articlesBooksQuery = new WP_Query(
 				array(
@@ -99,31 +149,53 @@ Template Name: Articles & Books
 
 			endwhile; wp_reset_postdata(); ?>
 
-		</div><!--/recentUpdates-->
-		<a href="http://itspronouncedmetrosexual.com/all-articles/" class="button button-wide" alt="All Articles">View All Articles</a>
+		</section><!--/recentUpdates-->
+		<a href="https://www.itspronouncedmetrosexual.com/all-articles/" class="button button-wide" alt="All Articles">View All Articles</a>
 	</div><!--/main-->
 
 	<div id="myBooks" role="complementary">
 
 		<h3 class="pageSubhead">My Books</h3>
 
-			<!--GUIDE TO GENDER -->
 			<div class="bookCard">
-				<a class="grid grid--center grid--justifyCenter" href="http://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
-					<h4 class="grid-cell">A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</h4>
-					<img class="grid-cell" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg"/>
-					<p class="grid-cell">
-						<em><a href="http://guidetogender.com" alt="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
+				<a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">
+					<img src="<?php echo get_template_directory_uri();?>/library/images/book-mockup-defining-lgbtq-sam-killermann.jpg" alt="Defining LGBTQ+: A Guide to Gender & Sexuality Terminology by Sam Killermann"/>
+					<h4>Defining LGBTQ+: A Guide to Gender &amp; Sexuality Terminology</h4>
+					<p>
+						<em><strong><a href="https://gum.co/defininglgbtq?wanted=true" title="Defining LGBTQ+ by Sam Killermann">Defining LGBTQ+</a></strong></em> is an elaborately annotated and expanded glossary turned into an e-book. It's great for getting your mind around the language of gender &amp; sexuality, and has helpful rules and foundational principles sprinkled throughout to complement the terms.
 					</p>
 				</a>
-				<ul class="grid grid--center grid--justifyCenter">
-					<li class="grid-cell">
-						<a class="button" alt="Get A Guide to Gender" href="http://guidetogender.com">
+				<ul>
+					<li>
+						<a class="button" title="Get Defining LGBTQ+ by Sam Killermann" href="https://gum.co/defininglgbtq?wanted=true">
+							Get the E-Book
+						</a>
+					</li>
+					<li>
+						<a class="button accent-button" title="Learn more about Defining LGBTQ+" href="https://www.itspronouncedmetrosexual.com/2019/02/defining-lgbtq-guide-to-gender-sexuality-terminology/">
+							Learn More
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--GUIDE TO GENDER -->
+			<div class="bookCard">
+				<a href="https://amzn.to/2hx0gba" title="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
+					<img alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-guide-to-gender-2nd-edition-sam-killermann.jpg"/>
+					<h4>A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook</h4>
+					<p>
+						<em><a href="https://guidetogender.com" title="The Social Justice Advocate's Handbook: A Guide to Gender"><strong>A Guide to Gender</strong></a></em> is all about gender from a (you guessed it) social justice perspective. It's a 2-time best-seller in Gender on Amazon, has been adopted by dozens of gender studies professors as an intro book, and was written for a general audience.
+					</p>
+				</a>
+				<ul>
+					<li>
+						<a class="button" title="Get A Guide to Gender" href="https://guidetogender.com">
 							Book Website
 						</a>
 					</li>
-					<li class="grid-cell">
-						<a class="button accent-button" alt="Buy A Guide to Gender on Amazon" href="http://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
+					<li>
+						<a class="button accent-button" title="Buy A Guide to Gender on Amazon" href="https://www.amazon.com/gp/product/0989760200/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0989760200&linkCode=as2&tag=itspronmetr-20&linkId=JU2MWWAS3YSZMMCY">
 							Amazon
 						</a>
 					</li>
@@ -138,7 +210,7 @@ Template Name: Articles & Books
 
 				<div class="mc-field-group">
 					<input type="email" value="" placeholder="your@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
-					<button type="submit" name="subscribe" id="mc-embedded-subscribe">
+					<button class="button" type="submit" name="subscribe" id="mc-embedded-subscribe">
 				    	Want.
 				    </button>
 				</div>
@@ -154,26 +226,28 @@ Template Name: Articles & Books
 
 			<!--UTMOF-->
 			<div class="bookCard">
-				<a class="grid grid--center grid--justifyCenter" href="http://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
-					<h4 class="grid-cell">Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know</h4>
-					<img class="grid-cell" alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-unlocking-the-magic-of-facilitation.jpg"/>
-					<p class="grid-cell">
-						<em><a href="http://facilitationmagic.com" alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know"><strong>Unlocking the Magic of Facilitation</strong></a></em> is the book we wrote to help you help others understand everything on this site. It's for facilitators of all stripes, educators, and trainers, and is the perfect complement to <i>A Guide to Gender</i>. It's the "HOW?" where the rest of this site is the "WHAT?" and "WHY?"
+				<a href="https://amzn.to/2hx0gba" alt="A Guide to Gender (2nd Edition): The Social Justice Advocate's Handbook">
+					<img alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know" src="<?php echo get_template_directory_uri(); ?>/library/images/book-mockup-unlocking-the-magic-of-facilitation.jpg"/>
+					<h4>Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know</h4>
+					<p>
+						<em><a href="https://facilitationmagic.com" alt="Unlocking the Magic of Facilitation: 11 Key Concepts You Didn't Know You Didn't Know"><strong>Unlocking the Magic of Facilitation</strong></a></em> is the book we wrote to help you help others understand everything on this site. It's for facilitators of all stripes, educators, and trainers, and is the perfect complement to <i>A Guide to Gender</i>. It's the "HOW?" where the rest of this site is the "WHAT?" and "WHY?"
 					</p>
 				</a>
-				<ul class="grid grid--center grid--justifyCenter">
-					<li class="grid-cell">
-						<a class="button" alt="Get Unlocking the Magic of Facilitation" href="http://facilitationmagic.com">
+				<ul>
+					<li>
+						<a class="button" alt="Get Unlocking the Magic of Facilitation" href="https://facilitationmagic.com">
 							Book Website
 						</a>
 					</li>
-					<li class="grid-cell">
-						<a class="button accent-button" alt="Buy Unlocking the Magic of Facilitation on Amazon" href="http://bit.ly/UtMoFaz">
+					<li>
+						<a class="button accent-button" alt="Buy Unlocking the Magic of Facilitation on Amazon" href="https://bit.ly/UtMoFaz">
 							Amazon
 						</a>
 					</li>
 				</ul>
 			</div><!--/bookcard-->
+
+			<script src="https://gumroad.com/js/gumroad.js"></script>
 
 			<!-- <div class="bookCard preorder ">
 				<div class="comingSoon">Coming Soon</div>

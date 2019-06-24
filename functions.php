@@ -12,6 +12,8 @@ sidebars, comments, ect.
 
 require_once('loops.php'); // Where all the loopCard functions are stored
 require_once('hooks.php'); // Where all the custom hooks are registered and stored
+require_once('template-tags.php'); // Where all the custom hooks are registered and stored
+
 
 /*
 1. library/bones.php
@@ -48,8 +50,17 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
-/************* THUMBNAIL SIZE OPTIONS *************/
+/************* ADD FEATURED IMAGE TO RSS *************/
 
+// function rss_post_thumbnail($content) {
+// global $post;
+// if(has_post_thumbnail($post->ID)) {
+//     $content = $content = '<p>' . get_the_post_thumbnail( $post->ID, 'large', array( 'style' => 'max-width:100%; height:auto; margin:1.5em auto;' ) ) . '</p>' . $content;
+//     }
+//     return $content;
+// }
+//
+// add_filter('the_content_feed', 'rss_post_thumbnail');
 
 /************* ENABLE HTML IN CATEGORY DESCRIPTIONS ********************/
 
@@ -122,106 +133,167 @@ function bones_register_sidebars() {
     		),
     		'show_admin_column' => true,
     		'show_ui' => true,
+            'show_in_rest' => true,
     		'query_var' => true,
     		'rewrite' => array( 'slug' => 'section' ),
     	)
     );
 
-/************* CIRCLE SHARE *********************/
 
-function circleShare() {
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
 
-	  $shareExcerpt = get_the_excerpt();
-	  $tags = array("<p>", "</p>");
-	  $shareExcerpt = urlencode(html_entity_decode(str_replace($tags, "", $shareExcerpt)));
+/************* ACF OPTIONS PAGE *********************/
 
-	  $uncodedThumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-	  $shareThumb = urlencode(html_entity_decode($uncodedThumb[0]));?>
+if( function_exists('acf_add_options_page') ) {
 
-	<ul class="circleShare">
-		<li>
-			<a id="fb" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_title());?>" target="_blank" alt="Share on Facebook">
-				<i class="fa fa-facebook"></i>
-			</a>
-		</li>
-		<li>
-			<a id="tw" href="https://twitter.com/share?text=<?php echo urlencode(get_the_title());?>&url=<?php echo urlencode(the_permalink());?>&via=ActuallyMetro" target="_blank" alt="Share on Twitter">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-		<li>
-			<a id="tu" href="http://www.tumblr.com/share/link?url=<?php echo urlencode(get_the_title());?>&name=<?php echo urlencode(get_the_title());?>&description=<?php echo $shareExcerpt?>" target="_blank" alt="Share on Tumblr">
-				<i class="fa fa-tumblr"></i>
-			</a>
-		</li>
-		<li>
-			<a id="go" href="https://plus.google.com/share?url=<?php echo urlencode(the_permalink());?>" alt="Share on Google Plus" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">
-				<i class="fa fa-google-plus"></i>
-			</a>
-		</li>
-		<li>
-			<a target="_blank" id="pi" href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode(the_permalink());?>&media=<?php echo $shareThumb?>&description=<?php echo $shareExcerpt?>">
-					<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	</ul>
-<?php
+    acf_add_options_page(array(
+		'page_title' 	=> 'Patronage',
+		'menu_title'	=> 'Patronage',
+		'menu_slug' 	=> 'patronage',
+		'capability'	=> 'edit_posts',
+	));
+
 }
 
-function getPatreonAsk() {?>
-    <div class="fundedByPatreon">
-        <div class="grid grid--fit">
-            <p class="grid-cell">
-                <strong><?php
-                    if( is_single() ){
-                        echo '"';
-                        echo the_title();
-                        echo '"';
-                    } else {echo 'IPM';}
-                ?> is reader &amp; patron funded, 100% free and uncopyrighted.</strong>
-                <span>Join or donate to help support social justice media.</span>
-            </p>
+/**
+ * ALGOLIA
+ * Don't index pages where the robot index option
+ * in the Yoast SEO plugin is set to noindex.
+ *
+ * @param bool    $should_index
+ * @param WP_Post $post
+ *
+ * @return bool
+ */
 
-            <div class="funding--buttons grid-cell">
-                <a class="button" href="http://bit.ly/2pfQrTl" target="_blank" alt="Become an IPM Patron" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Patronize'});">
-                    <div>🤗 Become a Supporting Patron</div>
-                </a>
-                <a class="button" href="http://itspronouncedmetrosexual.com/donate/" alt="Donate" onClick="ga('send', 'event', { eventCategory: 'Donations', eventAction: 'button_click', eventLabel: 'Donate'});">
-                    <div>💳 Donate</div>
-                </a>
-            </div>
-        </div>
-    </div><!--/fundedbypatreon--><?php
+function filter_post( $should_index, WP_Post $post )
+{
+    if ( false === $should_index ) {
+        return false;
+    }
+
+    return get_post_meta($post->ID, '_yoast_wpseo_meta-robots-noindex', true) == 1 ? false : true;
 }
+
+// Hook into Algolia to manipulate the post that should be indexed.
+add_filter( 'algolia_should_index_searchable_post', 'filter_post', 10, 2 );
+
+
+/*------------------------------------*\
+	Lazy Load All the Images
+\*------------------------------------*/
+
+/**
+ * Use Lozad (lazy loading) for images within the posts
+ */
+
+add_filter('the_content', function ($content) {
+
+	// Bail on amp
+	if (function_exists( 'is_amp_endpoint' ) && is_amp_endpoint()) {
+		return $content;
+	}
+	//-- Change src/srcset to data attributes.
+	$content = preg_replace("/<img(.*?)(src=|srcset=)(.*?)>/i", '<img$1data-$2$3>', $content);
+
+	//-- Add .lazy-load class to each image that already has a class.
+	$content = preg_replace('/<img(.*?)class=\"(.*?)\"(.*?)>/i', '<img$1class="$2 lazy-load"$3>', $content);
+
+	//-- Add .lazy-load class to each image that doesn't already have a class.
+	$content = preg_replace('/<img((?:(?!class=).)*?)>/i', '<img class="lazy-load"$1>', $content);
+
+	return $content;
+});
+
+/**
+* Use Lozad (lazy loading) for attachments/featured images
+*/
+add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
+	// Bail on admin
+	if (is_admin()) {
+	 	return $attr;
+	}
+
+	// Bail on amp
+	if (function_exists( 'is_amp_endpoint' ) && is_amp_endpoint()) {
+		return $attr;
+	}
+
+	$attr['data-src'] = $attr['src'];
+	$attr['data-src-set'] = $attr['src-set'];
+	$attr['class'] .= ' lazy-load';
+	unset($attr['src']);
+	unset($attr['src-set']);
+
+	return $attr;
+}, 10, 2);
+
 
 /************* ADS SHORTCODE *********************/
 
+
 function heyHeyLook(){
-    $heyHeyLookContent = '
-	<div class="heyHeyLook alignright">
-		<a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">
-		<img src="http://itspronouncedmetrosexual.com/wp-content/themes/ipmtheme/library/images/a-guide-to-gender-2nd-edition-sam-killermann-600.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
-		</a>
-        <h3><a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">My New(-ish) Book!</a></h3>
-        <small>Get the 2nd Edition of my first book <em><a href="http://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">A Guide to Gender</a></em>: it is fully revised, expanded, and shinier than ever!</small></br>
-        <small>
-            <strong><a href="http://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a></strong> | <strong><a href="http://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a></strong> | <strong><a href="http://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">Pay-What-You-Want/Can .PDF</a></strong>
-        </small>
-	</div>';
+
+    if ( has_tag( 'guide-to-gender') ) {
+        $heyHeyLookContent = '
+        <aside class="heyHeyLook g2g2">
+            <a class="image" href="https://bit.ly/2m4IAFr" title="A Guide to Gender 2nd Edition by Sam Killermann">
+            <img src="'. get_template_directory_uri() .'/library/images/a-guide-to-gender-2nd-edition-sam-killermann-200.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+            </a>
+            <div class="aside--text">
+                <p><strong>The post you\'re reading right now</strong> is included in my book, <em>A Guide to Gender</em>. You can get the 2nd Edition now (and read the expanded version of this post):<br/>
+                    <a href="https://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a> <a href="https://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a> <a href="https://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">.PDF (pay-what-you-want/can) </a>
+                </p>
+            </div>
+        </aside>';
+    }
+
+    else {
+        $heyHeyLookContent = '
+    	<aside class="heyHeyLook wednesdayEmail">
+    		<p><strong>Most Wednesdays 💌</strong> I publish new Social Justice, Gender, &amp; Sexuality Resources &xrarr;</p>
+            <a class="button" title="Join my mailing list" href="http://bit.ly/2MmE28c" target="_blank">
+                Get the Email.
+            </a>
+    	</aside>';
+    }
     return $heyHeyLookContent;
 }
 
 add_shortcode('adsmall', 'heyHeyLook');
 
 
+/* OLD CTAs
+
+<div class="heyHeyLook alignright">
+    <a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+    <img src="https://www.itspronouncedmetrosexual.com/wp-content/themes/ipmtheme/library/images/a-guide-to-gender-2nd-edition-sam-killermann-600.jpg" alt="A Guide to Gender 2nd Edition by Sam Killermann">
+    </a>
+    <h3><a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">My New(-ish) Book!</a></h3>
+    <small>Get the 2nd Edition of my first book <em><a href="https://bit.ly/2m4IAFr" alt="A Guide to Gender 2nd Edition by Sam Killermann">A Guide to Gender</a></em>: it is fully revised, expanded, and shinier than ever!</small></br>
+    <small>
+        <strong><a href="https://amzn.to/2li0YWS" alt="Get A Guide to Gender 2nd Edition Paperback">Paperback</a></strong> | <strong><a href="https://amzn.to/2li3Pzn" alt="Get A Guide to Gender 2nd Edition Kindle">Kindle</a></strong> | <strong><a href="https://gum.co/g2g2" alt="Get A Guide to Gender 2nd Edition PDF">Pay-What-You-Want/Can .PDF</a></strong>
+    </small>
+</div>
+
+*/
+
+
 /************* SEARCH FORM LAYOUT *****************/
 
 // Search Form
 function bones_wpsearch($form) {
-	$form = '<div class="searchContainer"><form role="search" method="get" class="searchform" action="' . home_url( '/' ) . '" >
+	$form = '<div class="searchContainer"><form role="search" method="get" class="searchform" >
 	<label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('To search, type and hit enter...','bonestheme').'" />
-	<input type="submit" class="searchsubmit" value="'. esc_attr__('Search') .'" />
+	<input type="search" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search','bonestheme').'" />
 	</form></div>';
 	return $form;
 } // don't remove this bracket!

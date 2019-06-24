@@ -11,11 +11,11 @@ Template Name: Edugraphics & Printables
 	<h1 class="page-title"><?php the_title(); ?></h1>
 
 </header> <!-- end article header -->
-<div id="content">
-	<div id="main" role="main">
+<div id="content" class="halfsies">
+	<main id="main" role="main">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(' pageIntro'); ?> role="article" itemscope itemtype="https://schema.org/BlogPosting">
 
 			<section class="" itemprop="articleBody">
 				<?php the_content(); ?>
@@ -26,9 +26,9 @@ Template Name: Edugraphics & Printables
 		<?php endwhile; endif; wp_reset_query(); ?> <!--reset page intro -->
 
 
-		<div id="edugraphics">
+		<section id="recentEdugraphics">
 
-			<h3 class="pageSubhead">Recent Edugraphics <a href="http://itspronouncedmetrosexual.com/category/edugraphics/" alt="All Edugraphics">(show all)</a></h3>
+			<h3 class="pageSubhead">Recent Edugraphics <a href="https://www.itspronouncedmetrosexual.com/category/edugraphics/" alt="All Edugraphics">(show all)</a></h3>
 
 			<?php $edugraphics_query = new WP_Query(
 				array(
@@ -52,16 +52,16 @@ Template Name: Edugraphics & Printables
 
 			endwhile; wp_reset_postdata(); ?>
 
-			<a href="http://itspronouncedmetrosexual.com/category/edugraphics/" class="button button-wide" alt="All Edugraphics">View All Edugugraphics</a>
+			<a href="https://www.itspronouncedmetrosexual.com/category/edugraphics/" class="button button-wide" alt="All Edugraphics">View All Edugugraphics</a>
 
-		</div><!--/edugraphics-->
+		</section><!--/edugraphics-->
 
-	</div> <!-- end #main -->
+	</main> <!-- end #main -->
 
 
-	<div id="printables" role="main">
+	<section id="printables" role="sidebar" class="sidebar">
 		<?php getPatreonAsk();?>
-		<h3 class="pageSubhead">Recent Printable Resources <a href="http://itspronouncedmetrosexual.com/category/printable-resources/" alt="All Printables">(show all)</a></h3>
+		<h3 class="pageSubhead">Recent Printable Resources <a href="https://www.itspronouncedmetrosexual.com/section/printables/" title="All Printables">(show all)</a></h3>
 
 		<?php $printables_query = new WP_Query(
 			array(
@@ -87,9 +87,9 @@ Template Name: Edugraphics & Printables
 
 		endwhile; wp_reset_postdata(); ?>
 
-		<a href="http://itspronouncedmetrosexual.com/category/printable-resources/" class="button button-wide" alt="All Printables">View All Printable Resources</a>
+		<a href="https://www.itspronouncedmetrosexual.com/section/printables/" class="button button-wide" title="All Printables">View All Printable Resources</a>
 
-	</div><!--/printables-->
+	</section><!--/printables-->
 
 
 </div> <!-- end #content -->
