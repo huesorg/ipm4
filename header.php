@@ -137,7 +137,7 @@
 			<div id="mask"></div>
 
 			<div id="ipmNews" class="hide">
-				<button id="closeIpmNews" title="Close Question" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'SJD Mooc Invite', eventAction: 'button_click', eventLabel: 'X-out Question'});">
+				<button id="closeIpmNews" title="Close Question" class="hideIpmNews" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'X-out Question'});">
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
@@ -181,5 +181,5 @@
 					<h4>No prob. Sorry to interrupt!</h4>
 					<p>This message should auto-hide in the future, and you can click the <strong>X</strong> to hide it now.</p>
 				</div>
-				<p>(<a style="text-decoration-color: white" target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community">Read more about the Course + Community</a>)</p>
+				<p>(<a style="text-decoration-color: white" target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Read more about the Course + Community'});">Read more about the Course + Community</a>)</p>
 			</div>
