@@ -116,7 +116,7 @@ function getSJDFooter() {
 			This post is part of the <a href="https://www.itspronouncedmetrosexual.com/tag/social-justice-dogma/" alt="Social Justice Dogma Series">Social Justice Dogma Series</a>. The Social Justice Dogma, as defined in the <a href="https://www.itspronouncedmetrosexual.com/2017/12/introduction-social-justice-dogma/" alt="Introduction to Social Justice Dogma">first article</a> in this series, is <strong>"The set of beliefs, stances, and acceptable actions laid down by the authorities within the social justice movement that we hold as incontrovertibly true."</strong>
         </p>
         <p style="margin-top: 1em">
-            <a href="https://www.sjmd.space" target="_blank" title="Social Justice, Minus Dogma Course + Community"><strong>Join the Social Justice, Minus Dogma Course + Community</strong></a> to discuss it.</strong>
+            <a href="https://www.sjmd.space" target="_blank" title="Social Justice, Minus Dogma Course + Community"><strong>Join the Social Justice, Minus Dogma Course + Community</strong></a> to do something about.</strong>
 		</p>
 	</div>
 
