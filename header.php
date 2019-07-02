@@ -141,21 +141,19 @@
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
-					<h4>2,046 of you pre-registered,<br/> and now it's open for everyone:</h4>
-					<p>The <strong>Social Justice, Minus Dogma Online Course + Community</strong> launched this week. You can join now and get started learning and participating in the community immediately.</p>
+					<p><span>🎉 <strong>Brand new!</strong></span> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission happening now. You can start learning and join our community in minutes 😊</p>
 
-					<ul>
-						<li>
-							<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Im In'});">
-								<span>👍 I'm in!</span>
-							</a>
-						</li>
-						<li>
-							<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me'});">
-								<span>👎 Not</span> for me
-							</a>
-						</li>
-					</ul>
+					<div class="response-options">
+						<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Im In'});">
+							<span>👍 I'm in!</span>
+						</a>
+						<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me'});">
+							<span>👎 Not for me.</span>
+						</a>
+						<a target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Learn more arrow'});">Learn more &rarr;</a>
+					</div>
+
+
 				</div>
 
 				<div id="yesMOOC-email" class="hide mailchimp">
@@ -181,5 +179,5 @@
 					<h4>No prob. Sorry to interrupt!</h4>
 					<p>This message should auto-hide in the future, and you can click the <strong>X</strong> to hide it now.</p>
 				</div>
-				<p>(<a style="text-decoration-color: white" target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Read more about the Course + Community'});">Read more about the Course + Community</a>)</p>
+
 			</div>
