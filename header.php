@@ -141,8 +141,9 @@
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
-					<p><span>🎉 <strong>Brand new!</strong></span> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission happening now. You can start learning and join our community in minutes 😊</p>
-
+					<p>
+						<span>🎉 <strong>Brand new!</strong></span> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission happening now. You can start learning and join our community in minutes 😊
+					</p>
 					<div class="response-options">
 						<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Im In'});">
 							<span>👍 I'm in!</span>
@@ -152,8 +153,6 @@
 						</a>
 						<a target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Learn more arrow'});">Learn more &rarr;</a>
 					</div>
-
-
 				</div>
 
 				<div id="yesMOOC-email" class="hide mailchimp">
