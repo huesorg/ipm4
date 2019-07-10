@@ -141,14 +141,15 @@
 					<img title="Close Menu" src="<?php echo get_template_directory_uri(); ?>/library/images/ipm-icon-close.svg"/>
 				</button>
 				<div id="MOOC-question">
+					<h3>I made a new thing you might like! 🎉</h3>
 					<p>
-						<span>🎉 <strong>Brand new!</strong></span> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission happening now. You can start learning and join our community in minutes 😊
+						<!-- <span>🎉 <strong>Brand new!</strong></span>--> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission (pay-what-you-choose) happening now. You can start learning in minutes 😊 &nbsp;<strong>Do you want to join?</strong>
 					</p>
 					<div class="response-options">
-						<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Im In'});">
-							<span>👍 I'm in!</span>
+						<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Yes! Im in.'});">
+							<span>👍 Yes! I'm in.</span>
 						</a>
-						<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me'});">
+						<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me.'});">
 							<span>👎 Not for me.</span>
 						</a>
 						<a target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Learn more arrow'});">Learn more &rarr;</a>
@@ -156,7 +157,7 @@
 				</div>
 
 				<div id="yesMOOC-email" class="hide mailchimp">
-					<h4>I'm excited to learn alongside you!</h4>
+					<h3>I'm excited to learn alongside you!</h3>
 					<p>This message will go away, and shouldn't pop back up again.</p>
 					<!-- <h3>Great! Drop your email address below 👇</h3>
 					<p>I'm looking forward to learning with you!</p>
@@ -175,7 +176,7 @@
 				</div>
 
 				<div id="noMOOC-response" class="hide">
-					<h4>No prob. Sorry to interrupt!</h4>
+					<h3>No prob. Sorry to interrupt!</h3>
 					<p>This message should auto-hide in the future, and you can click the <strong>X</strong> to hide it now.</p>
 				</div>
 
