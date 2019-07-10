@@ -1182,6 +1182,12 @@ ul.circleShare {
 
 		} /* end .entry-content */
 
+		.entry-content {
+			p + pre,
+			p + address {
+				margin: 2em auto 2.5em;
+			}
+		}
 		.entry-content pre, pre,
 		.entry-content address, address {
 			font-family:$sans-serif;
