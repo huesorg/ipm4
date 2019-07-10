@@ -1182,17 +1182,12 @@ ul.circleShare {
 
 		} /* end .entry-content */
 
-		.entry-content {
-			p + pre,
-			p + address {
-				margin: 2em auto 2.5em;
-			}
-		}
 		.entry-content pre, pre,
 		.entry-content address, address {
 			font-family:$sans-serif;
 			font-style: normal;
 			font-size:.8em;
+			margin: 2em auto 2.5em;
 			padding: 20px;
 			position:relative;
 			line-height: 1.3;
@@ -1252,11 +1247,6 @@ ul.circleShare {
 				}
 			}
 
-		}
-
-		.entry-content > pre:first-child,
-		.entry-content > address:first-child {
-			margin-top: 2em;
 		}
 
 		.wp-block-image .aligncenter>figcaption, .wp-block-image .alignleft>figcaption, .wp-block-image .alignright>figcaption, .wp-block-image.is-resized>figcaption {
