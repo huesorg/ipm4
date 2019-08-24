@@ -143,16 +143,16 @@
 				<div id="MOOC-question">
 					<h3>I made a new thing you might like! 🎉</h3>
 					<p>
-						<!-- <span>🎉 <strong>Brand new!</strong></span>--> I just launched the <strong>Social Justice, Minus Dogma Online Course + Community</strong>, with rolling admission (pay-what-you-choose) happening now. You can start learning in minutes 😊 &nbsp;<strong>Do you want to join?</strong>
+						<!-- <span>🎉 <strong>Brand new!</strong></span>--> I just launched the <strong>Social Justice, Minus Dogma Online Course</strong>, with rolling admission (pay-what-you-choose) happening now. You can start learning in minutes 😊 &nbsp;<strong>Do you want to join?</strong>
 					</p>
 					<div class="response-options">
-						<a id="yesMOOC" class="newsButton" target="_blank" href="https://www.sjmd.space/join/#sign-up" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Yes! Im in.'});">
+						<a id="yesMOOC" class="newsButton" target="_blank" href="https://gum.co/sjmdcourse?wanted=true" onClick="ga('send', 'event', { eventCategory: 'SJMD Re-Launch', eventAction: 'button_click', eventLabel: 'Yes! Im in.'});">
 							<span>👍 Yes! I'm in.</span>
 						</a>
-						<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Not for me.'});">
+						<a id="noMOOC" class="newsButton" href="#" onClick="ga('send', 'event', { eventCategory: 'SJMD Re-Launch', eventAction: 'button_click', eventLabel: 'Not for me.'});">
 							<span>👎 Not for me.</span>
 						</a>
-						<a target="_blank" href="https://www.sjmd.space" title="Social Justice, Minus Dogma Online Course + Community" onClick="ga('send', 'event', { eventCategory: 'SJMD Launch', eventAction: 'button_click', eventLabel: 'Learn more arrow'});">Learn more &rarr;</a>
+						<a target="_blank" href="https://course.sjmd.space" title="Social Justice, Minus Dogma Online Course" onClick="ga('send', 'event', { eventCategory: 'SJMD Re-Launch', eventAction: 'button_click', eventLabel: 'Learn more arrow'});">Learn more &rarr;</a>
 					</div>
 				</div>
 

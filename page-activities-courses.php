@@ -32,17 +32,17 @@ Template Name: Activities & Courses
 	<aside id="TheHotness" class="featuredClass sidebar" role="complementary">
 		<article class="vidcard loopCard">
 			<div class="loopText">
-				<h3 class="loopTitle"><a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community"><span class="flag">New!</span> Social Justice, Minus Dogma Online Course + Community</a></h3>
+				<h3 class="loopTitle"><a href="https://course.sjmd.space" title="Social Justice, Minus Dogma Online Course"><span class="flag">New!</span> Social Justice, Minus Dogma Online Course</a></h3>
 				<p>
-					Charting a path toward equity. It's 6 modules that are spread over 6 weeks (or go at your own pace), with a dedicated community for discussion and continuing education.
+					Charting a path toward equity. It's 6 modules that are spread over 6 weeks (or go at your own pace), with a dedicated community available to you for discussion and continuing education.
 				</p>
 				<p style="font-size: .8em">
 					<strong>Fun Fact:</strong>It was created by Sam Killermann in response to the ask of over 15,000 IPM readers this past Spring, 2,046 of whom pre-registered.
 				</p>
-				<a class="button" href="http://bit.ly/2N7jftl" title="Join Now" target="_blank">Join Now</a> <a href="http://bit.ly/2xeaD9z" title="Learn More" target="_blank">Learn More</a>
+				<a class="button" href="https://gum.co/sjmdcourse?wanted=true" title="Join Now" target="_blank">Join Now</a> <a href="http://bit.ly/2xeaD9z" title="Learn More" target="_blank">Learn More</a>
 			</div>
 			<div class="loopImage">
-				<a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community">
+				<a href="https://course.sjmd.space" title="Social Justice, Minus Dogma Online Course">
 					<img src="<?php echo get_template_directory_uri(); ?>/library/images/sjmd-course-featured-image.jpg" alt="Three people pointing at computer"/>
 				</a>
 			</div>
@@ -170,8 +170,8 @@ Template Name: Activities & Courses
 
 				<p>If taking a course with me sounds like something you'd like to do, here's what's currently open for enrollment:</p>
 				<article class="IPMclass">
-					<a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course + Community">
-						<h4>Social Justice, Minus Dogma Online Course + Community</h4>
+					<a href="http://bit.ly/2xeaD9z" title="Social Justice, Minus Dogma Online Course">
+						<h4>Social Justice, Minus Dogma Online Course</h4>
 						<p>
 							Charting a path toward equity, SJMD is 6 modules that are spread over 6 weeks (or go at your own pace), with a dedicated community for discussion and continuing education.
 						</p>
